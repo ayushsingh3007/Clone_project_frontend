@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+
+.login-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Times New Roman', Times, serif;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgb(135, 182, 235);
+}
+
+.login-left-container{
+    width: 49%;
+    height: 50%;
+    position: relative;
+    top:50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+.login-left-container img{
+    width: 43%;
+    height: 95%;
+    position: relative;
+    top: 20px;
+}
+
+.login-right-container{
+    width: 50%;
+    border:1px solid black;
+}
+
+
+.left-div{
+    width: 36%;
+    height: 100%;
+    
+    background: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 3px;
+    
+}
+
+.left-div span{
+    position: relative;
+    left: 80px;
+    
+    font-weight: bolder;
+}
+.left-div span p{
+   font-weight: lighter;
+}
+.left-div div img{
+    width: 40px;
+    height: 40px;
+}

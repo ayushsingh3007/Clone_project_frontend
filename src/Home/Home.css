@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.home-container{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction:row;
+    width: 100vw;
+}
+
+.home-page-left{
+    width:50%;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 60px;
+    background: white;
+    
+}
+.home-page-right{
+    width: 50%;
+    
+}
+.home-page-right img{
+    width: 100%;
+}
+
+.home-page-top-heading-1{
+    color: rgb(226, 109, 109);
+    font-weight: bold;
+}
+
+.home-page-top-para{
+    color: rgb(226, 109, 109);
+
+}
+.home-page-left button{
+    width: 40%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: light;
+    border: none;
+    background:rgb(9, 137, 187);
+    color: white;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.top-links-img{
+    width: 95vw;
+    position: relative;
+    top:30px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    gap: 14%;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+.top-links-img img{
+    width: 10%;
+
+}
+
+
+.bottom-boy-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background: whitesmoke;
+    position: relative;
+    top: 80px;
+}
+.bottom-boy-container-left{
+    width: 50%;
+}
+.bottom-boy-container-left img{
+    width: 80%;
+    padding: 20px  20px;
+    
+}
+.bottom-boy-container-right{
+    width: 50%;
+}
+
+.bottom-boy-container-right-text{
+    width: 80%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: normal;
+    position: relative;
+    top:10%;
+}
