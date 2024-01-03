@@ -11,6 +11,23 @@ export default function Navbar() {
     <>
     
     <BrowserRouter>
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
         
     <div className='nav-container'>
         <div><img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/navbar/logoPrepBytes.svg' alt='not-found' className='logo-img'/></div>
@@ -18,8 +35,9 @@ export default function Navbar() {
         <button className='login-btn' ><Link to="/login">Login</Link></button>
         <button className='signup-btn'><Link to="/register">Sing up</Link></button>
         </div>
+        <div className='nav-link-container'></div>
     </div>
-    
+   
     
       
       <Routes>

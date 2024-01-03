@@ -3,6 +3,7 @@ import "../Login/Login.css"
 function Login() {
   return (
     <>
+    <section>
 
     <div className='login-container'>
           <div className='login-left-container'>
@@ -38,9 +39,36 @@ function Login() {
 
 
 
-          <div className='login-right-container'></div>
+          <div className='login-right-container'>
+
+
+
+          <div className='login-form'>
+            <h2>SIGNUP LOGIN</h2><hr />
+            <h3 style={{textAlign:"center",color:"grey"}}>Sign in to your account</h3>
+            <div className='inner-form'>
+              <form autoComplete='off'>
+                <label htmlFor='email'>Email</label>
+                <input type='text' id='email' name='email' className='input-field'/>
+                <label htmlFor='email'>Password</label>
+                <input type='password' id='pwd' name='pwd' className='input-field' />
+              </form>
+            <div className='button-container-login'>
+              <h4>Forgot your password?</h4>
+              <button className='btn-login-form'>Sign In </button>
+              <button className='btn-login-form'>Login Via OTP</button>
+            </div>
+            </div>
+
+
+
+          </div>
+
+
+          </div>
 
     </div>
+    </section>
     </>
   )
 }

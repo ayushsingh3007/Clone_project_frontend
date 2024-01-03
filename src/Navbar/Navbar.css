@@ -1,31 +1,36 @@
 .nav-container{
     width: 100%;
     background-color: white;
-    box-shadow: 10px, rgb(221, 218, 218);
+    box-shadow: 40px rgb(143, 138, 138);
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
+    border-bottom: 2px solid rgb(199, 192, 192);
 }
 .nav-container div{
-    width: 10%;
+    width: 47%;
 
     
 }
 
 
   .logo-img{
-    width: 100%;
+    width: 15%;
     position: relative;
     left: 30px;
 }
 
 .button-container{
-    margin-right: 10%;
-    margin-top: 1%;
+    
+    
     display: flex;
-    width: 30%;
-    height: 10%;
-    justify-content: space-between;
-    gap: 4%;
+    justify-content: center;
+    width: 48%;
+    height: 7%;
+      gap: 4%;
+      position: relative;
+      top: 10px;
 }
 
 .login-btn{
@@ -35,6 +40,8 @@
     border-radius: 5px;
     font-weight: bolder;
     border: 1px solid #ff219f;
+    float: right;
+    right: 0px;
 }
 .login-btn:hover{
     color: black;
@@ -61,4 +68,14 @@
 .signup-btn:hover{
     color: black;
     cursor: pointer;
+}
+
+
+.nav-link-container{
+    width: 50%;
+    height: 25px;
+  position: relative;
+  bottom: 0px;  
+  left: 50%;
+    border:1px solid black;
 }
