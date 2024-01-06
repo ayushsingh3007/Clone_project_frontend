@@ -11,7 +11,9 @@ function Login() {
             <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/illustrated.webp' alt='not-found' className='top-box-logo'/>
 
             <div className='left-div'>
-            {/* <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/logo.webp' alt='not-found' style={{width:"10%"}}/> */}
+            <div class="image-container">
+        <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/logo.webp" alt="Logo"/>
+                              </div>
             <div>
             <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/students.webp' alt='not' className='login-icon'/>
                 <span>100k <p>Students Enrolled</p></span>

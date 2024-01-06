@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mock-test-top-banner{
+    width: 100vw;
+    background: #1d3557;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+ 
+.mock-test-top-banner h3{
+    color: white;
+    width: 50%;
+    margin-top: 1%;
+    margin-left: 10%;
+}
+.mock-test-top-banner p{
+    color: white;
+    width: 40%;
+    margin-top: 1%;
+    margin-left: 10%;
+    font-size: 14px;
+}
+
+.feature-mock-test-container{
+    width: 80vw;
+    border: none;
+    position: relative;
+    top:5rem;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    color: #1d3557;
+    font-weight: lighter;
+}
+.past-mock-test{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 80vw;
+    position: relative;
+    top: 5rem;
+    align-items: center;
+    gap: 1%;
+
+
+}
+.past-mock-test  {
+    
+    color: #1d3557;
+}
+
+.past-mock-text  {
+    width: 13%;
+    color: #ffa000;
+}
+
+.hrline-left{
+    width: 42%;
+    border: 1px solid #1d3557;
+    height: 0px;
+}
+.hrline-right{
+    width: 42%;
+    height: 0px;
+    border: 1px solid #1d3557 ;
+
+}

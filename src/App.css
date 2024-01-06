@@ -4,7 +4,6 @@
   font-family: 'Courier New', Courier, monospace;
 }
 body{
-  width: 100vw;
-  height: auto;
+  overflow-x: none;
   background:white;
 }

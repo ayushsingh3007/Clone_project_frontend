@@ -1,67 +1,66 @@
-/* *{
-    margin:0;
-    padding:0;
-    
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
 }
 
-.login-container{
+.register-container{
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    font-family: 'Times New Roman', Times, serif;
-    flex-direction: row;
-    justify-content: space-between;
-    background: rgb(135, 182, 235);
+    background-image: url('https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/blue-background.webp');
 }
 
-.login-left-container{
-    width: 49%;
-    height: 50%;
-    position: relative;
-    top:50px;
+.register-all-item{
+    width: 100vw;
+    height:90vh;
+
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     
-    
-}
-.login-left-container img{
-    width: 43%;
-    height: 95%;
+    gap: 1%;
     position: relative;
-    top: 20px;
+    top:5%
 }
-
-.login-right-container{
-    width: 50%;
-    border:1px solid black;
+.img-container{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    margin-left: 5%;
 }
-
-
-.left-div{
-    width: 36%;
+.img-item{
+     width: 55%;
+     
+}
+.img-item img{
+    width: 100%;
     height: 100%;
-    
-    background: white;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    gap: 20px;
-    border-radius: 3px;
-    
+}
+.card-item-register{
+    width: 25%;
+    height: 63%;
+     margin-top: 10%;
+     margin-left: 4%;
+     background: white;
+     border-radius: 3px;
+     display: flex;
+     flex-direction: column;
+}
+.card-item-register div{
+    width: 100%;
+     height: 20%;
+    border: 1px solid black;
 }
 
-.left-div span{
-    position: relative;
-    left: 80px;
-    
-    font-weight: bolder;
+
+
+.register-form-container{
+    width: 30%;
+    height: 80%;
+    border: 1px solid black;
+    background: white;
+
 }
-.left-div span p{
-   font-weight: lighter;
-}
-.left-div div img{
-    width: 40px;
-    height: 40px;
-} */

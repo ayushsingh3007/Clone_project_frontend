@@ -9,14 +9,15 @@
     border-bottom: 2px solid rgb(199, 192, 192);
 }
 .nav-container div{
-    width: 47%;
+    width: 40%;
+    display: flex;
 
     
 }
 
 
   .logo-img{
-    width: 15%;
+    width:18%;
     position: relative;
     left: 30px;
 }
@@ -47,9 +48,7 @@
     color: black;
     cursor: pointer;
 }
-.login-btn Link{
-    text-decoration: none;
-}
+
 
 .signup-btn{
     color:white;
@@ -62,20 +61,98 @@
     border: 1px solid rgb(255, 192, 236);
     
 }
-.signup-btn Link{
-    text-decoration: none;
-}
+
 .signup-btn:hover{
     color: black;
     cursor: pointer;
 }
 
 
-.nav-link-container{
+.navlink-container{
     width: 50%;
-    height: 25px;
+    height: 2%;
   position: relative;
   bottom: 0px;  
   left: 50%;
-    border:1px solid black;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 3%;
+  color:grey;
+  word-spacing: 1px;
+  cursor: pointer;
+    font-size: small;
 }
+
+.drop-icons{
+    width: 15px;
+    height: 10px;
+    margin-bottom: 0px;
+    color: black;
+    font-weight: bolder;
+    
+}
+
+.drop-lists{
+    width: 27%;
+    height: 100px;
+    padding: 10px 20px;
+    list-style: none;
+    z-index: 999;
+    margin: 2px 0;
+    padding: auto;
+    border: none;
+    background-color: white;
+    line-height: 40px;
+    position: absolute;
+    box-shadow: 1px 1px 10px grey;
+    font-weight: bold;
+    display: none;
+    }
+
+    .study-material-drop:hover .drop-lists{
+  display: block;
+}
+.drop-lists-course{
+    width: 35%;
+    height: 100px;
+    padding: 10px 20px;
+    list-style: none;
+    z-index: 999;
+    margin: 2px 0;
+    padding: auto;
+    border: none;
+    background-color: white;
+    line-height: 40px;
+    position: absolute;
+    box-shadow: 1px 1px 10px grey;
+    font-weight: bold;
+    display: none;
+    
+}
+.course-program-drop:hover .drop-lists-course{
+    display: block;
+}
+.drop-lists-project{
+    width: 20%;
+    height: auto;
+    padding: 10px 20px;
+    list-style: none;
+    z-index: 999;
+    margin: 2px 0;
+    padding: auto;
+    border: none;
+    background-color: white;
+    line-height: 40px;
+    position: absolute;
+    box-shadow: 1px 1px 10px grey;
+    font-weight: bold;
+    display: none;
+    
+}
+.project-drop:hover .drop-lists-project {
+    display: block;
+}
+/* .study-material-drop :hover .study-material-drop .drop-lists{
+    display: block;
+} */
