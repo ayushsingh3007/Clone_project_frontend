@@ -42,21 +42,88 @@ function Masterprogram() {
           <section className='master-mentors-container'>
                <h2 style={{textAlign:"center"}}>Get Guidance From Industry Leading  </h2>
                <h3 style={{textAlign:'center'}}>Other Mentors You Will Be Interacting With</h3>
+              
+              <div className='card-container-master-mentor'>
+                <div className='card-master-mentor-1'>
+                   <div className='master-card-mentor-image '>
+                    <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/Student+Placed+Section/Mentor_Mamta.webp" alt="" />
+                   </div>
+                   <div className='master-card-mentor-details'>
+                    <h2>Mamta</h2>
+                    <p>Co-Founder,Prepbytes</p>
+                    <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/zenithWebp/Mentor-Company1.webp" alt="" />
+                   </div>
+                   
+                
 
-               <div className='master-mentor-card'>
-                <div>
-                  
+
                 </div>
 
 
+                <div className='card-master-mentor-2'>
+                <div className='master-card-mentor-image '>
+                    <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/Student+Placed+Section/Mentor_Mamta.webp" alt="" />
+                   </div>
+                   <div className='master-card-mentor-details'>
+                    <h2>Mamta</h2>
+                    <p>Co-Founder,Prepbytes</p>
+                    <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/zenithWebp/Mentor-Company1.webp" alt="" />
+                   </div>
+                </div>
 
 
-                <div></div>
-                <div></div>
-               </div>
+                <div className='card-master-mentor-3'>
+                <div className='master-card-mentor-image '>
+                    <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/Student+Placed+Section/Mentor_Mamta.webp" alt="" />
+                   </div>
+                   <div className='master-card-mentor-details'>
+                    <h2>Mamta</h2>
+                    <p>Co-Founder,Prepbytes</p>
+                    <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/zenithWebp/Mentor-Company1.webp" alt="" />
+                   </div>
+                </div>
+                
+              </div>
+              <h2 style={{textAlign:'center',marginTop:"10%"}}>Master Competitive Programming With Us</h2>
           </section>
 
 
+          <section className='master-program-des-container'>
+                  <div className='master-program-des-left'>
+                    <div>
+                      <h3>Personalised Program</h3>
+                      <p>Master your skills from where you are, with India's only personalised program</p>
+                      <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/MCPWebp/Course+Feature+Section/Icons_Personalised+Program.webp" alt="" />
+                    </div>
+                    <div>
+                      <h3>Quick Doubt Support</h3>
+                      <p>Get your doubts cleared by coding experts and have a smooth learning</p>
+
+                    </div>
+                    <div>
+                    <h3>250+ Coding Questions</h3>
+                      <p>Best way to master a language is by coding in the language</p>
+                    </div>
+                    <div>
+                    <h3>50+ Hours of Videos</h3>
+                      <p>Recorded video lectures by experts to help you understand the concepts easily</p>
+                    </div>
+                  </div>
+                  <div className='master-program-des-img'>
+                    <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/zenithWebp/Vector.svg" alt="" />
+                  </div>
+
+
+
+
+
+
+
+
+                  <div className='master-program-des-right'></div>
+          </section>
+
+            
 
 
 

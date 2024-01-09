@@ -9,6 +9,7 @@ import Home from '../Home/Home'
 import VideoTutorial from '../StudyMaterial/VideoTutorial';
 import MockTest from '../StudyMaterial/MockTest';
 import Masterprogram from '../CourseProgram/Masterprogram';
+import ElevationAcad from '../Elevation/ElevationAcad';
 export default function Navbar() {
    
   return (
@@ -66,6 +67,7 @@ export default function Navbar() {
         <Route path='/videotutorial' element={<VideoTutorial/>}/>
         <Route path='/mock-test' element={<MockTest/>}/>
         <Route path='/master-competitive-program' element={<Masterprogram/>}></Route>
+        <Route  path='/elevation-academy' element={<ElevationAcad/>}/>
     
       </Routes>
       
