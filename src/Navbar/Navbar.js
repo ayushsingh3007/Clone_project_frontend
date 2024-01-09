@@ -8,6 +8,7 @@ import Login from '../Login/Login'
 import Home from '../Home/Home'
 import VideoTutorial from '../StudyMaterial/VideoTutorial';
 import MockTest from '../StudyMaterial/MockTest';
+import Masterprogram from '../CourseProgram/Masterprogram';
 export default function Navbar() {
    
   return (
@@ -19,20 +20,7 @@ export default function Navbar() {
 
       
 
-
-
-
-
-
-
-
-
-
-
-
-
-        
-    <div className='nav-container'>
+<div className='nav-container'>
         <div><img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/navbar/logoPrepBytes.svg' alt='not-found' className='logo-img'/></div>
         <div className='button-container'>
         <button className='login-btn' ><Link to="/login">Login</Link></button>
@@ -77,6 +65,7 @@ export default function Navbar() {
         <Route path='/register' element={<Register/>}/>
         <Route path='/videotutorial' element={<VideoTutorial/>}/>
         <Route path='/mock-test' element={<MockTest/>}/>
+        <Route path='/master-competitive-program' element={<Masterprogram/>}></Route>
     
       </Routes>
       

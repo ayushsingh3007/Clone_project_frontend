@@ -1,40 +1,72 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import "../Login/Login.css"
 function Login() {
   return (
     <>
-    <section>
+    <section className='register-container'>
+         <div className='register-all-item'>
 
-    <div className='login-container'>
-          <div className='login-left-container'>
+            <div className='img-container'>
+                <div className='img-item'>
+                  <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/illustrated.webp' alt=''/>
+                </div>
 
-            <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/illustrated.webp' alt='not-found' className='top-box-logo'/>
 
-            <div className='left-div'>
-            <div class="image-container">
-        <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/logo.webp" alt="Logo"/>
-                              </div>
-            <div>
-            <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/students.webp' alt='not' className='login-icon'/>
-                <span>100k <p>Students Enrolled</p></span>
-                </div>
-                <div>
-            <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/college.webp' alt='not' className='login-icon'/>
-                <span>100k <p>Reach in Colleges</p></span>
-                </div>
-                <div>
-            <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/learning.webp' alt='not' className='login-icon'/>
-                <span>10k <p>Hours of Learning</p></span>
-                </div>
-                <div>
-            <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/social.webp' alt='not' className='login-icon'/>
-                <span>150k <p>Social Community</p></span>
-                </div>
+
+                <div className='card-item-register'>
+                  <div className='logo-img-container'>
+                    <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/logo.webp' alt=''/>
+                  </div>
+
+
+                  <div className='student-enrolled-item'>
                 
+                  <img  src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/students.webp' alt=''/>
+                  <div><h4 className='rating-text'>10K+</h4>
+                  <p>Students Enrolled</p>
+                
+                    </div>
+                  </div>
+
+
+                  <div className='student-enrolled-item'>
+                  <img  src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/college.webp' alt=''/>
+                  <div><h4 className='rating-text'>100k</h4>
+                  <p>Reach in Colleges</p>
+                
+                    </div>
+                  </div>
+                  
+                  
+                  
+                <div className='student-enrolled-item'>
+                <img  src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/learning.webp' alt=''/>
+                  <div><h4 className='rating-text'>10K+</h4>
+                  <p>Hours of Learning</p>
+                
+                    </div>
+                </div>
+                  
+                  
+                <div className='student-enrolled-item'>
+                <img  src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/social.webp' alt=''/>
+                  <div><h4 className='rating-text'>150k</h4>
+                  <p>Social Community</p>
+                
+                    </div>
+                </div>
+                  
+                  
+                  
+                  
+                </div>
+            
+            
+            
+            
+            
             </div>
-          </div>
-
-
 
 
 
@@ -46,7 +78,7 @@ function Login() {
 
 
           <div className='login-form'>
-            <h2>SIGNUP LOGIN</h2><hr />
+          <h2 ><Link to="/register" style={{textDecoration:"none",color:"grey"}}>SIGNUP</Link > <Link to="/login" style={{textDecoration:"none",color:"grey"}}>LOGIN</Link></h2><hr/>
             <h3 style={{textAlign:"center",color:"grey"}}>Sign in to your account</h3>
             <div className='inner-form'>
               <form autoComplete='off'>
