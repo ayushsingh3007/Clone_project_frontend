@@ -62,3 +62,476 @@
     color:#00a5ec ;
     border: 1px solid #00a5ec ;
 }
+
+.forgraduate20222023{
+    width: 95vw;
+    height: 10rem;
+    margin: auto;
+    background: rgb(153, 209, 231);
+    display: flex;
+    flex-direction: row;
+}
+
+.forgraduate20222023-left{
+    width: 40%;
+    
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    justify-content: space-between;
+    
+    }
+    .forgraduate20222023 h1{
+        color:#095170;
+        text-align: center;
+        padding: 10px 5px;
+    }
+
+ .batchstartdiv{
+    width: 90%;
+    min-height: 50%;
+    /* padding: 12px 20px; */
+    background:  #00a5ec;
+    font-size: large;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:3% ;
+ }   
+
+ .forgraduate20222023-right{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    
+ }
+ .forgraduate20222023-right-item-1, .forgraduate20222023-right-item-2, .forgraduate20222023-right-item-3{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3%;
+    justify-content: center;
+    
+ }
+ .forgraduate20222023-right-item-1 p{
+       font-size: 14px;
+    background: #d6f3ff 0 0 no-repeat padding-box;
+    border: .5px dashed #00a5ec;
+    border-radius: 6px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 8px;
+ }
+ .forgraduate20222023-right-item-1 h4{
+      color:#095170;
+      font-size: 16px;
+ }
+
+ .forgraduate20222023-right-item-2 p{
+    font-size: 14px;
+ background: #d6f3ff 0 0 no-repeat padding-box;
+ border: .5px dashed #00a5ec;
+ border-radius: 6px;
+ width: 80%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 10px 8px;
+}
+.forgraduate20222023-right-item-2 h4{
+    color:#095170;
+}
+.forgraduate20222023-right-item-3 p{
+    font-size: 14px;
+ background: #d6f3ff 0 0 no-repeat padding-box;
+ border: .5px dashed #00a5ec;
+ border-radius: 6px;
+ width: 80%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 10px 8px;
+}
+.forgraduate20222023-right-item-3 h4{
+    color:#095170;
+}
+
+ .forgraduate20222023-right div img{
+    width: 40%;
+ }
+ .linebetween{
+    
+    width: 30%;
+    border: 1px solid  #00a5ec;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    margin: auto;
+ }
+
+ .howtoreachdreamjob{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 6%;
+
+ }
+
+ .howtoreachdreamjob-left{
+    width: 40%;
+    height: 50rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9%;
+
+ }
+ 
+
+ .howtoreachdreamjob-left-item-1{
+     width: 80%;
+     height: 4rem;
+     border: 1px solid #c2c2c2;;
+     border-radius: 5px;
+     display: flex;
+     flex-direction: row;
+     gap: 2%;
+     justify-content: center;
+     align-items: center;
+     color: orange;
+
+ }
+ .span-1{
+    position: relative;
+    left: -22%;
+    width: auto;
+    height: auto;
+    padding: 8px 10px;
+    font-size: 18px;
+    color:black;
+    border: 1px dashed orange;
+    border-radius: 5px;
+    font-weight: bold;
+    background: rgb(180, 234, 255);
+ }
+ .span-2{
+    position: relative;
+    left: -22%;
+    width: auto;
+    height: auto;
+    padding: 8px 10px;
+    font-size: 18px;
+    color:black;
+    border: 1px dashed  rgb(232, 63, 63);
+    border-radius: 5px;
+    font-weight: bold;
+    background: rgb(180, 234, 255);
+
+ }
+ .span-3{
+    position: relative;
+    left: -22%;
+    width: auto;
+    height: auto;
+    padding: 8px 10px;
+    font-size: 18px;
+    color:black;
+    border: 1px dashed rgb(192, 39, 175);
+    border-radius: 5px;
+    font-weight: bold;
+    background: rgb(180, 234, 255);
+
+ }
+ .span-4{
+    position: relative;
+    left: -22%;
+    width: auto;
+    height: auto;
+    padding: 8px 10px;
+    font-size: 18px;
+    color:black;
+    border: 1px dashed  #00a5ec;
+    border-radius: 5px;
+    font-weight: bold;
+    background: rgb(180, 234, 255);
+
+ }
+ .span-5{
+    position: relative;
+    left: -22%;
+    width: auto;
+    height: auto;
+    padding: 8px 10px;
+    font-size: 18px;
+    color:black;
+    border: 1px dashed orange;
+    border-radius: 5px;
+    font-weight: bold;
+    background: rgb(180, 234, 255);
+
+ }
+
+ 
+ .howtoreachdreamjob-left-item-2{
+    width: 80%;
+    height: 4rem;
+    border: 1px solid rgb(232, 63, 63);
+    color: rgb(232, 63, 63);
+     border-radius: 5px;
+     animation: glowing 5s infinite, border 5s infinite;
+     display: flex;
+     flex-direction: row;
+     gap: 2%;
+     justify-content: center;
+     align-items: center;
+     color: orange;
+}
+.howtoreachdreamjob-left-item-3{
+    width: 80%;
+    height: 4rem;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+    color:rgb(192, 39, 175);
+}
+.howtoreachdreamjob-left-item-4{
+    width: 80%;
+    height: 4rem;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+    color:  #00a5ec;
+}
+.howtoreachdreamjob-left-item-5{
+    width: 80%;
+    height: 4rem;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+    color:green;
+}
+.howtoreachdreamjob-right{
+    width: 54%;
+    height: 45rem;
+    
+    background: #f7f7f7 ;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+  box-shadow: 1px 1px 20px grey;
+  border: none;
+    
+ }
+.howtoreachdreamjob-right-item-1{
+    width: 90%;
+    height: 18%;
+        display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    /* align-items: center; */
+    border: none;
+    box-shadow: 1px 1px 5px grey;
+
+
+}
+.forgraduate20222023-right-item-1 p{
+    align-items: center;
+    display: flex;
+    width: 65%;
+}
+.forgraduate20222023-right-item-1 img{
+    width: 25%;
+    height: 90%;
+    
+}
+.elevationlearningcard{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+    flex-direction:column;
+
+}
+.elevationlearningcard-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10%;
+    
+}
+
+.elevationlearningcard-item{
+    width: 30%;
+    height: 14rem;
+    
+    margin-bottom: 2%;
+    border-radius: 2%;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 5px grey;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8%;
+}
+.elevationlearningcard-item img{
+    width: 20%;
+    background: #fdf0d7 ;
+    border-radius: 5px;
+}
+.elevationlearningcard-item p{
+    width: 80%;
+    font-size: 16px;
+    font-style: normal;
+    color: grey;
+}
+
+.programsyllubus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    margin-top: 5%;
+}
+.programsyllubus-text{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.programsyllubus-text p{
+    width: 80%;
+    text-align: center;
+    margin-top: 6%;
+    color:grey;
+    line-height: 25px;
+    font-weight: bold;
+    
+}
+
+
+.elevation-course-program-container{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+     padding-top: 4rem;
+     box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 5rem;
+}
+
+.elevation-course-program-container-item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 12rem;
+    
+}
+.elevation-course-program-container-item hr{
+    width: 0px;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    border: 1px solid grey;
+}
+.elevation-course-program-week{
+    width: 100%;
+    height: 40%;
+    background: rgb(247, 128, 119);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.elevation-course-program-week h4{
+    color:white;
+    font-weight: lighter;
+    font-size: 22px;
+
+}
+
+.elevation-course-program-developertype{
+    width: 100%;
+    height: 39%;
+    border: 1px solid grey;
+    border-left: 5px solid   rgb(247, 128, 119);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bolder;
+    font-size: larger;
+
+}
+.elevation-course-program-developertype-text-number{
+    background: rgb(247, 128, 119);
+    border: 5px solid white;
+    font-size: larger;
+    padding: 10px 13px;
+    border-radius: 10px;
+    color:white;
+    box-sizing: border-box;
+     
+}
+
+.elevation-course-program-developertype-plus{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:large;
+    color:rgb(247, 128, 119);
+    background: rgb(243, 242, 242);
+    margin-right: 2%;
+
+}
