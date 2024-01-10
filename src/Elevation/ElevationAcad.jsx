@@ -165,109 +165,120 @@ function ElevationAcad() {
 
 
        <section className='elevation-course-program-container'>
-                  <div className='elevation-course-program-container-item'>
-                    <div className='elevation-course-program-week'>
+                  <div className='elevation-course-program-container-item-1'>
+                    <div className='elevation-course-program-week-1'>
                       <h4>1st Week - 4th Week</h4>
                       </div><hr />
-                    <div className='elevation-course-program-developertype'>
-                      <div className='elevation-course-program-developertype-text'><span className='elevation-course-program-developertype-text-number'>1</span>  Frontend  Devlopment Basic </div>
-                      <div className='elevation-course-program-developertype-plus'>+</div>
+                    <div className='elevation-course-program-developertype-1'>
+                      <div className='elevation-course-program-developertype-text-1'><span className='elevation-course-program-developertype-text-number-1'>1</span>  Frontend  Devlopment Basic </div>
+                      <div className='elevation-course-program-developertype-plus-1'>+</div>
 
                     </div>
                   </div>
 
-                  <div className='elevation-course-program-container-item'>
-                    <div className='elevation-course-program-week'>
-                      <h4>1st Week - 4th Week</h4>
+                  <div className='elevation-course-program-container-item-2'>
+                    <div className='elevation-course-program-week-2'>
+                      <h4>5th Week - 8th Week</h4>
                       </div><hr />
-                    <div className='elevation-course-program-developertype'>
-                      <div className='elevation-course-program-developertype-text'><span className='elevation-course-program-developertype-text-number'>1</span>  Frontend  Devlopment Basic </div>
-                      <div className='elevation-course-program-developertype-plus'>+</div>
+                    <div className='elevation-course-program-developertype-2'>
+                      <div className='elevation-course-program-developertype-text-2'><span className='elevation-course-program-developertype-text-number-2'>2</span>  Javascript Fundamentals & Problem Solving </div>
+                      <div className='elevation-course-program-developertype-plus-2'>+</div>
 
                     </div>
                   </div>
                    
 
-                  <div className='elevation-course-program-container-item'>
-                    <div className='elevation-course-program-week'>
-                      <h4>1st Week - 4th Week</h4>
+                  <div className='elevation-course-program-container-item-3'>
+                    <div className='elevation-course-program-week-3'>
+                      <h4>9th Week - 12th Week</h4>
                       </div><hr />
-                    <div className='elevation-course-program-developertype'>
-                      <div className='elevation-course-program-developertype-text'><span className='elevation-course-program-developertype-text-number'>1</span>  Frontend  Devlopment Basic </div>
-                      <div className='elevation-course-program-developertype-plus'>+</div>
+                    <div className='elevation-course-program-developertype-3'>
+                      <div className='elevation-course-program-developertype-text-3'><span className='elevation-course-program-developertype-text-number-3'>3</span>  Building Websites using JS </div>
+                      <div className='elevation-course-program-developertype-plus-3'>+</div>
 
                     </div>
                   </div>
 
               
 
-                  <div className='elevation-course-program-container-item'>
-                    <div className='elevation-course-program-week'>
-                      <h4>1st Week - 4th Week</h4>
+                  <div className='elevation-course-program-container-item-4'>
+                    <div className='elevation-course-program-week-4'>
+                      <h4>13th Week - 16th Week</h4>
                       </div><hr />
-                    <div className='elevation-course-program-developertype'>
-                      <div className='elevation-course-program-developertype-text'><span className='elevation-course-program-developertype-text-number'>1</span>  Frontend  Devlopment Basic </div>
-                      <div className='elevation-course-program-developertype-plus'>+</div>
+                    <div className='elevation-course-program-developertype-4'>
+                      <div className='elevation-course-program-developertype-text-4'><span className='elevation-course-program-developertype-text-number-4'>4</span>  React </div>
+                      <div className='elevation-course-program-developertype-plus-4'>+</div>
 
                     </div>
                   </div>
                  
 
-                  <div className='elevation-course-program-container-item'>
-                    <div className='elevation-course-program-week'>
-                      <h4>1st Week - 4th Week</h4>
+                  <div className='elevation-course-program-container-item-5'>
+                    <div className='elevation-course-program-week-5'>
+                      <h4>17th Week - 19th Week</h4>
                       </div><hr />
-                    <div className='elevation-course-program-developertype'>
-                      <div className='elevation-course-program-developertype-text'><span className='elevation-course-program-developertype-text-number'>1</span>  Frontend  Devlopment Basic </div>
-                      <div className='elevation-course-program-developertype-plus'>+</div>
+                    <div className='elevation-course-program-developertype-5'>
+                      <div className='elevation-course-program-developertype-text-5'><span className='elevation-course-program-developertype-text-number-5'>5</span>  NodeJS </div>
+                      <div className='elevation-course-program-developertype-plus-5'>+</div>
 
                     </div>
                   </div>
                 
-                  <div className='elevation-course-program-container-item'>
-                    <div className='elevation-course-program-week'>
-                      <h4>1st Week - 4th Week</h4>
+                  <div className='elevation-course-program-container-item-6'>
+                    <div className='elevation-course-program-week-6'>
+                      <h4>20th Week - 22nd Week</h4>
                       </div><hr />
-                    <div className='elevation-course-program-developertype'>
-                      <div className='elevation-course-program-developertype-text'><span className='elevation-course-program-developertype-text-number'>1</span>  Frontend  Devlopment Basic </div>
-                      <div className='elevation-course-program-developertype-plus'>+</div>
+                    <div className='elevation-course-program-developertype-6'>
+                      <div className='elevation-course-program-developertype-text-6'><span className='elevation-course-program-developertype-text-number-6'>6</span>  Database </div>
+                      <div className='elevation-course-program-developertype-plus-6'>+</div>
 
                     </div>
                   </div>
                   
 
-                  <div className='elevation-course-program-container-item'>
-                    <div className='elevation-course-program-week'>
-                      <h4>1st Week - 4th Week</h4>
+                  <div className='elevation-course-program-container-item-7'>
+                    <div className='elevation-course-program-week-7'>
+                      <h4>23rd - 24th Week</h4>
                       </div><hr />
-                    <div className='elevation-course-program-developertype'>
-                      <div className='elevation-course-program-developertype-text'><span className='elevation-course-program-developertype-text-number'>1</span>  Frontend  Devlopment Basic </div>
-                      <div className='elevation-course-program-developertype-plus'>+</div>
+                    <div className='elevation-course-program-developertype-7'>
+                      <div className='elevation-course-program-developertype-text-7'><span className='elevation-course-program-developertype-text-number-7'>7</span>  Code Review & Deployment </div>
+                      <div className='elevation-course-program-developertype-plus-7'>+</div>
 
                     </div>
                   </div>
                  
 
-                  <div className='elevation-course-program-container-item'>
-                    <div className='elevation-course-program-week'>
-                      <h4>1st Week - 4th Week</h4>
+                  <div className='elevation-course-program-container-item-8'>
+                    <div className='elevation-course-program-week-8'>
+                      <h4>25th - 28th Week</h4>
                       </div><hr />
-                    <div className='elevation-course-program-developertype'>
-                      <div className='elevation-course-program-developertype-text'><span className='elevation-course-program-developertype-text-number'>1</span>  Frontend  Devlopment Basic </div>
-                      <div className='elevation-course-program-developertype-plus'>+</div>
+                    <div className='elevation-course-program-developertype-8'>
+                      <div className='elevation-course-program-developertype-text-8'><span className='elevation-course-program-developertype-text-number-8'>8</span>  Interview Preparation & Major Projects </div>
+                      <div className='elevation-course-program-developertype-plus-8'>+</div>
 
                     </div>
                   </div>
 
        </section>
 
+      <section className='upcoming-batch-banner-container'>
+               <div className='upcoming-batch-banner-text'>
+                <h3>Upcoming Elevation Academy Batch - Full Stack Web Development Career - May 2023 now OPEN</h3>
+                <button>Apply Now</button>
+               </div>
+               <div className='upcoming-batch-banner-img'>
+                <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/batches-back.webp" alt="" />
+               </div>
 
+      </section>
 
-
+         <section className='students-elevation-slider'>
+                  
+         </section>
 
 
     </>
   )
 }
 
-export default ElevationAcad
+export default ElevationAcad;

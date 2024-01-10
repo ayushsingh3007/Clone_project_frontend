@@ -464,14 +464,14 @@
     gap: 5rem;
 }
 
-.elevation-course-program-container-item{
+.elevation-course-program-container-item-1{
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 12rem;
     
 }
-.elevation-course-program-container-item hr{
+.elevation-course-program-container-item-1 hr{
     width: 0px;
     height: 20%;
     display: flex;
@@ -479,7 +479,7 @@
     margin: auto;
     border: 1px solid grey;
 }
-.elevation-course-program-week{
+.elevation-course-program-week-1{
     width: 100%;
     height: 40%;
     background: rgb(247, 128, 119);
@@ -488,14 +488,14 @@
     align-items: center;
     
 }
-.elevation-course-program-week h4{
+.elevation-course-program-week-1 h4{
     color:white;
     font-weight: lighter;
     font-size: 22px;
 
 }
 
-.elevation-course-program-developertype{
+.elevation-course-program-developertype-1{
     width: 100%;
     height: 39%;
     border: 1px solid grey;
@@ -510,7 +510,7 @@
     font-size: larger;
 
 }
-.elevation-course-program-developertype-text-number{
+.elevation-course-program-developertype-text-number-1{
     background: rgb(247, 128, 119);
     border: 5px solid white;
     font-size: larger;
@@ -521,7 +521,7 @@
      
 }
 
-.elevation-course-program-developertype-plus{
+.elevation-course-program-developertype-plus-1{
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -534,4 +534,581 @@
     background: rgb(243, 242, 242);
     margin-right: 2%;
 
+}
+
+
+
+.elevation-course-program-container-item-2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 12rem;
+    
+}
+.elevation-course-program-container-item-2 hr{
+    width: 0px;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    border: 1px solid grey;
+}
+.elevation-course-program-week-2{
+    width: 100%;
+    height: 40%;
+     
+    background: rgb(101, 187, 229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.elevation-course-program-week-2 h4{
+    color:white;
+    font-weight: lighter;
+    font-size: 22px;
+
+}
+
+.elevation-course-program-developertype-2{
+    width: 100%;
+    height: 39%;
+    border: 1px solid grey;
+    border-left: 5px solid   rgb(101, 187, 229);;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bolder;
+    font-size: larger;
+
+}
+.elevation-course-program-developertype-text-number-2{
+
+    background: rgb(101, 187, 229);
+        border: 5px solid white;
+    font-size: larger;
+    padding: 10px 13px;
+    border-radius: 10px;
+    color:white;
+    box-sizing: border-box;
+     
+}
+
+.elevation-course-program-developertype-plus-2{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:large;
+    color:rgb(101, 187, 229);
+    background: rgb(243, 242, 242);
+    margin-right: 2%;
+
+}
+
+
+.elevation-course-program-container-item-3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 12rem;
+    
+}
+.elevation-course-program-container-item-3 hr{
+    width: 0px;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    border: 1px solid grey;
+}
+.elevation-course-program-week-3{
+    width: 100%;
+    height: 40%;
+
+    background: rgb(101, 187, 229);
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.elevation-course-program-week-3 h4{
+    color:white;
+    font-weight: lighter;
+    font-size: 22px;
+
+}
+
+.elevation-course-program-developertype-3{
+    width: 100%;
+    height: 39%;
+    border: 1px solid grey;
+    border-left: 5px solid   rgb(247, 128, 119);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bolder;
+    font-size: larger;
+
+}
+.elevation-course-program-developertype-text-number-3{
+
+    background: rgb(101, 187, 229);
+        border: 5px solid white;
+    font-size: larger;
+    padding: 10px 13px;
+    border-radius: 10px;
+    color:white;
+    box-sizing: border-box;
+     
+}
+
+.elevation-course-program-developertype-plus-3{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:large;
+    color: rgb(101, 187, 229);;
+    background: rgb(243, 242, 242);
+    margin-right: 2%;
+
+}
+
+.elevation-course-program-container-item-4{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 12rem;
+    
+}
+.elevation-course-program-container-item-4 hr{
+    width: 0px;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    border: 1px solid grey;
+}
+.elevation-course-program-week-4{
+    width: 100%;
+    height: 40%;
+    background: rgb(247, 128, 119);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.elevation-course-program-week-4 h4{
+    color:white;
+    font-weight: lighter;
+    font-size: 22px;
+
+}
+
+.elevation-course-program-developertype-4{
+    width: 100%;
+    height: 39%;
+    border: 1px solid grey;
+    border-left: 5px solid   rgb(247, 128, 119);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bolder;
+    font-size: larger;
+
+}
+.elevation-course-program-developertype-text-number-4{
+    background: rgb(247, 128, 119);
+    border: 5px solid white;
+    font-size: larger;
+    padding: 10px 13px;
+    border-radius: 10px;
+    color:white;
+    box-sizing: border-box;
+     
+}
+
+.elevation-course-program-developertype-plus-4{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:large;
+    color:rgb(247, 128, 119);
+    background: rgb(243, 242, 242);
+    margin-right: 2%;
+
+}
+
+
+
+
+.elevation-course-program-container-item-5{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 12rem;
+    
+}
+.elevation-course-program-container-item-5 hr{
+    width: 0px;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    border: 1px solid grey;
+}
+.elevation-course-program-week-5{
+    width: 100%;
+    height: 40%;
+    background: rgb(247, 128, 119);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.elevation-course-program-week-5 h4{
+    color:white;
+    font-weight: lighter;
+    font-size: 22px;
+
+}
+
+.elevation-course-program-developertype-5{
+    width: 100%;
+    height: 39%;
+    border: 1px solid grey;
+    border-left: 5px solid   rgb(247, 128, 119);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bolder;
+    font-size: larger;
+
+}
+.elevation-course-program-developertype-text-number-5{
+    background: rgb(247, 128, 119);
+    border: 5px solid white;
+    font-size: larger;
+    padding: 10px 13px;
+    border-radius: 10px;
+    color:white;
+    box-sizing: border-box;
+     
+}
+
+.elevation-course-program-developertype-plus-5{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:large;
+    color:rgb(247, 128, 119);
+    background: rgb(243, 242, 242);
+    margin-right: 2%;
+
+}
+
+
+
+
+.elevation-course-program-container-item-6{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 12rem;
+    
+}
+.elevation-course-program-container-item-6 hr{
+    width: 0px;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    border: 1px solid grey;
+}
+.elevation-course-program-week-6{
+    width: 100%;
+    height: 40%;
+
+    background: rgb(101, 187, 229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.elevation-course-program-week-6 h4{
+    color:white;
+    font-weight: lighter;
+    font-size: 22px;
+
+}
+
+.elevation-course-program-developertype-6{
+    width: 100%;
+    height: 39%;
+    border: 1px solid grey;
+    border-left: 5px solid   rgb(101, 187, 229);;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bolder;
+    font-size: larger;
+
+}
+.elevation-course-program-developertype-text-number-6{
+
+    background: rgb(101, 187, 229);
+    border: 5px solid white;
+    font-size: larger;
+    padding: 10px 13px;
+    border-radius: 10px;
+    color:white;
+    box-sizing: border-box;
+     
+}
+
+.elevation-course-program-developertype-plus-6{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:large;
+    
+    background: rgb(101, 187, 229);
+    background: rgb(243, 242, 242);
+    margin-right: 2%;
+
+}
+
+
+
+.elevation-course-program-container-item-7{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 12rem;
+    
+}
+.elevation-course-program-container-item-7 hr{
+    width: 0px;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    border: 1px solid grey;
+}
+.elevation-course-program-week-7{
+    width: 100%;
+    height: 40%;
+    background: rgb(247, 128, 119);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.elevation-course-program-week-7 h4{
+    color:white;
+    font-weight: lighter;
+    font-size: 22px;
+
+}
+
+.elevation-course-program-developertype-7{
+    width: 100%;
+    height: 39%;
+    border: 1px solid grey;
+    border-left: 5px solid   rgb(247, 128, 119);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bolder;
+    font-size: larger;
+
+}
+.elevation-course-program-developertype-text-number-7{
+    background: rgb(247, 128, 119);
+    border: 5px solid white;
+    font-size: larger;
+    padding: 10px 13px;
+    border-radius: 10px;
+    color:white;
+    box-sizing: border-box;
+     
+}
+
+.elevation-course-program-developertype-plus-7{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:large;
+    color:rgb(247, 128, 119);
+    background: rgb(243, 242, 242);
+    margin-right: 2%;
+
+}
+
+
+
+.elevation-course-program-container-item-8{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 12rem;
+    
+}
+.elevation-course-program-container-item-8 hr{
+    width: 0px;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    border: 1px solid grey;
+}
+.elevation-course-program-week-8{
+    width: 100%;
+    height: 40%;
+    background:rgb(247, 182, 67);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.elevation-course-program-week-8 h4{
+    color:white;
+    font-weight: lighter;
+    font-size: 22px;
+
+}
+
+.elevation-course-program-developertype-8{
+    width: 100%;
+    height: 39%;
+    border: 1px solid grey;
+    border-left: 5px solid   rgb(247, 182, 67);;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bolder;
+    font-size: larger;
+
+}
+.elevation-course-program-developertype-text-number-8{
+    background:rgb(247, 182, 67);;
+    border: 5px solid white;
+    font-size: larger;
+    padding: 10px 13px;
+    border-radius: 10px;
+    color:white;
+    box-sizing: border-box;
+     
+}
+
+.elevation-course-program-developertype-plus-8{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:large;
+    color:rgb(247, 182, 67);;
+    background: rgb(243, 242, 242);
+    margin-right: 2%;
+
+}
+
+.upcoming-batch-banner-container{
+     width: 80vw;
+
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     margin: auto;
+     margin-top: 5rem;
+     background: #fdf0d7;
+
+}
+
+.upcoming-batch-banner-text{
+    width: 55%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    gap: 10%;
+    justify-content: space-around;
+
+}
+.upcoming-batch-banner-text button{
+    width: 30%;
+    height: 30%;
+    color: white;
+    font-size: large;
+    background:  rgb(101, 187, 229);
+    border: none;
+}
+.upcoming-batch-banner-img{
+    width: 30%;
+    height: 10rem;
+}
+.upcoming-batch-banner-img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.students-elevation-slider{
+    width: 80vw;
+    height: 30rem;
+    border: 1px solid black;
+    box-shadow: 1px 1px 10px grey;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+    position: relative;
+    top: 5rem;
 }
