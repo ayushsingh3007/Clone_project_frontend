@@ -273,9 +273,15 @@ function ElevationAcad() {
       </section>
 
          <section className='students-elevation-slider'>
-                  
-         </section>
 
+         </section>
+              
+
+          <section className='student-place-text-container'>
+            <h1>Where our Students are placed</h1>
+            <p>"You guarantee hard work, We guarantee placements"</p>
+            
+            </section>  
 
     </>
   )

@@ -1102,7 +1102,7 @@
 
 .students-elevation-slider{
     width: 80vw;
-    height: 30rem;
+    
     border: 1px solid black;
     box-shadow: 1px 1px 10px grey;
     display: flex;
@@ -1110,5 +1110,27 @@
     flex-direction: row;
     margin: auto;
     position: relative;
-    top: 5rem;
+    top: 2%;
+   
+}
+
+
+.student-place-text-container{
+    width: 50vw;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    text-align: center;
+    margin: auto;
+    line-height: 30px;
+    padding-top: 10%;
+    
+
+}
+.student-place-text-container p{
+   width: 50%;
+   display: flex;
+   margin: auto;
+    
+    
 }
