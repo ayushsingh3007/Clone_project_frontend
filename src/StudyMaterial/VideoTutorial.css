@@ -47,21 +47,19 @@ body{
     flex-wrap: wrap;
     margin: auto;
     border-bottom: 3px solid #22559c;
-    position: relative;
-    top:3rem;
+    margin-top: 3rem;
     color: #22559c;
     
 }
 
 .videos-card-container{
-    width: 80%;
+    width: 80vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: auto;
     
-    position: relative;
-    top: 10rem;
+      margin-top: 8%;
     justify-content: space-evenly;
 
 

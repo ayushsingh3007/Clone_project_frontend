@@ -15,7 +15,7 @@
 
 
   .logo-img{
-    width:18%;
+    width:20%;
     position: relative;
     left: 30px;
 }
@@ -42,6 +42,7 @@
     float: right;
     right: 0px;
 }
+
 .login-btn:hover{
     color: black;
     cursor: pointer;
@@ -59,6 +60,9 @@
     border: 1px solid rgb(255, 192, 236);
     
 }
+.signup-btn Link{
+    text-decoration: none;
+}
 
 .signup-btn:hover{
     color: black;
@@ -71,7 +75,7 @@
     height: 2%;
   position: relative;
   bottom: 0px;  
-  left: 50%;
+  left: 40%;
   list-style: none;
   display: flex;
   flex-direction: row;

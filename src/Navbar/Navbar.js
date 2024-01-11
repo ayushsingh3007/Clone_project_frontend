@@ -26,8 +26,8 @@ export default function Navbar() {
 <div className='nav-container'>
         <div><img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/navbar/logoPrepBytes.svg' alt='not-found' className='logo-img'/></div>
         <div className='button-container'>
-        <button className='login-btn' ><Link to="/login">Login</Link></button>
-        <button className='signup-btn'><Link to="/register">Sing up</Link></button>
+        <button className='login-btn' ><Link to="/login" style={{textDecoration:'none',color:' #ff219f'}}>Login</Link></button>
+        <button className='signup-btn'><Link to="/register" style={{textDecoration:'none',color:'white'}}>Sing up</Link></button>
         </div>
       <ul className='navlink-container'>
              <li  className='study-material-drop'>Study Material<AiOutlineDown className='drop-icons'/> 

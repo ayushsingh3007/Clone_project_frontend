@@ -19,7 +19,7 @@ function Login() {
       const datasubmit=(e)=>{
         e.preventDefault()
         axios
-          .post('http://localhost:4000/login',logindata)
+          .post('https://clone-backend-evgl.onrender.com/login',logindata)
           
           .then((res) => {
             
@@ -130,7 +130,7 @@ function Login() {
 
 
           <div className='login-form'>
-          <h2 ><Link to="/register" style={{textDecoration:"none",color:"grey"}}>SIGNUP</Link > <Link to="/login" style={{textDecoration:"none",color:"grey"}}>LOGIN</Link></h2><hr/>
+          <h2 ><Link to="/register" >SIGNUP</Link > <Link to="/login" >LOGIN</Link></h2><hr/>
             <h3 style={{textAlign:"center",color:"grey"}}>Sign in to your account</h3>
             <div className='inner-form'>
               <form autoComplete='off'>

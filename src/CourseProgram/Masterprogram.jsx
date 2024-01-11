@@ -157,12 +157,13 @@ function Masterprogram() {
                   </div>
           </section>
 
+          <section className='coding-contest-container'>
+                   <h1 style={{textAlign:'center',color:'#322e2e'}}>Crack Reputed Coding Contests</h1>
+                   <div>
+                    <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/MCPWebp/MCP-company-new.webp" alt="" />
+                   </div>
+                   <h1 style={{textAlign:'center',color:'#322e2e'}}>Curriculum</h1>
 
-          <section className='number-student-enrolled-container'>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  
           </section>
 
             

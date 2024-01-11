@@ -1135,12 +1135,12 @@
 
 .company-img-card{
     width: 80vw;
-    border: 1px solid black;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: auto;
-    
+    margin-top: 3%;
     justify-content: space-between;
 
 
@@ -1148,56 +1148,8 @@
 
 .company-img-card img{
     width: 27%;
-    height: 20%;
+    height: 5rem;
     
     margin-bottom: 2%;
 }
 
-
-.number-student-enrolled-container{
-    width: 80vw;
-    display: flex;
-    flex-direction: row;
-
-    border-top: 2px solid grey;
-    border-bottom: 2px solid grey;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-top: 10%;
-    gap: 10%;
-    
-    
-}
-.number-student-enrolled-container div{
-    width: 25%;
-    height: 12rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.student-place-text-container div h1{
-    color: #00a6eb;
-}
-
-
-.coding-contest-container{
-    width:80vw;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-}
-.coding-contest-container div{
-    width: 80%;
-    height: 25rem;
-}
-.coding-contest-container div img{
-    width: 100%;
-}
