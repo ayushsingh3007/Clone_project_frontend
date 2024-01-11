@@ -281,9 +281,49 @@ function Home() {
      </div>
       
 
-      <div className='banner-bottom-home'>
+      <section className='banner-bottom-home'>
+        
         <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/campus-business-manager/banner/CBM-WEB.webp" alt="" />
-      </div>
+      </section>
+
+        <section className='mentor-college-text'>
+          <h1>PrepBytes for Mentors & Colleges</h1>
+          <p>"Join PrepBytes in the journey to reach more colleges and mentor more students"</p>
+        </section>
+
+      <section className='be-a-part-card-container'>
+             <div className='be-a-part-card'>
+              <div className='be-a-part-img'>
+                <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/be_a_part_of_mentors.png" alt="" />
+              </div>
+              <div className='be-a-part-heading'>
+                <h2>Be a part of growing Mentor Community of PrepBytes</h2>
+              </div>
+              <div className='be-a-part-des'>
+                <p>We look forward to industry experts who have a passion for teaching, mentoring & making students future-ready</p>
+              </div>
+              <button className='be-a-part-btn'>Know More</button>
+             </div>
+
+
+
+
+
+             <div className='be-a-part-card'>
+             <div className='be-a-part-img'>
+                <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/be_a_part_of_mentors.png" alt="" />
+              </div>
+              <div className='be-a-part-heading'>
+                <h2>Be a part of growing Mentor Community of PrepBytes</h2>
+              </div>
+              <div className='be-a-part-des'>
+                <p>We look forward to industry experts who have a passion for teaching, mentoring & making students future-ready</p>
+              </div>
+              <button className='be-a-part-btn'>Know More</button>
+             </div>
+
+      </section>
+
 
 
     </>

@@ -621,7 +621,7 @@ body{
 }
 .banner-bottom-home{
     position: relative;
-    top: 30rem;
+    top: 25rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -631,4 +631,76 @@ body{
     
     border-radius: 10px;
     box-shadow: 1px 1px 10px grey;
+}
+
+.mentor-college-text{
+    width: 50vw;
+    height: 10rem;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top: 30rem;
+
+    gap: 10%;
+
+}
+.mentor-college-text p{
+    color: grey;
+}
+
+.be-a-part-card-container{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+
+    position: relative;
+    top: 30rem;
+}
+
+.be-a-part-card{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2%;
+      width: 40%;
+      height: 32rem;
+      
+      background: white;
+      box-shadow: 1px 1px 10px grey;
+}
+.be-a-part-img{
+    width: 80%;
+    height: 45%;
+    
+}
+.be-a-part-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.be-a-part-heading{
+    width: 68%;
+    height: 18%;
+    
+}
+.be-a-part-des{
+    width: 80%;
+    height: 18%;
+    text-align: center;
+    color: #858585;
+    font-size: 14px;
+}
+.be-a-part-btn{
+    width: 30%;
+    height: 10%;
+    background: #00a5ec;
+    border: none;
+    color: white;
 }
