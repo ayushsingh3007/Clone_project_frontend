@@ -8,8 +8,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
     /* max-height: 15000px; */
+    margin: auto;
     width: 96%;
     flex-wrap: wrap;
     

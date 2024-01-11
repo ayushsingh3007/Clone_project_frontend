@@ -93,7 +93,6 @@ function Masterprogram() {
                     <div>
                       <h3>Personalised Program</h3>
                       <p>Master your skills from where you are, with India's only personalised program</p>
-                      <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/MCPWebp/Course+Feature+Section/Icons_Personalised+Program.webp" alt="" />
                     </div>
                     <div>
                       <h3>Quick Doubt Support</h3>
@@ -110,7 +109,24 @@ function Masterprogram() {
                     </div>
                   </div>
                   <div className='master-program-des-img'>
-                    <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/zenithWebp/Vector.svg" alt="" />
+                  <div className='img-border-left'>
+                  <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/MCPWebp/Course+Feature+Section/Icons_Personalised+Program.webp" alt=""  className='border-icon-left-master' />
+                  <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/MCPWebp/Course+Feature+Section/Icons_Personalised+Program.webp" alt="" className='border-icon-left-master'/>
+                  <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/MCPWebp/Course+Feature+Section/Icons_Personalised+Program.webp" alt="" className='border-icon-left-master' />
+                  <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/MCPWebp/Course+Feature+Section/Icons_Personalised+Program.webp" alt="" className='border-icon-left-master'/>
+                     </div>
+
+                     <div className='img-border-right'>
+                     <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/MCPWebp/Course+Feature+Section/Icons_Personalised+Program.webp" alt=""  className='border-icon-right-master' />
+                  <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/MCPWebp/Course+Feature+Section/Icons_Personalised+Program.webp" alt="" className='border-icon-right-master'/>
+                  <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/MCPWebp/Course+Feature+Section/Icons_Personalised+Program.webp" alt="" className='border-icon-right-master' />
+                  <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/MCPWebp/Course+Feature+Section/Icons_Personalised+Program.webp" alt="" className='border-icon-right-master'/>
+                    
+                     </div>
+
+
+
+                    {/* <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/zenithWebp/Vector.svg" alt="" /> */}
                   </div>
 
 
@@ -120,7 +136,33 @@ function Masterprogram() {
 
 
 
-                  <div className='master-program-des-right'></div>
+                  <div className='master-program-des-right'>
+                  <div>
+                      <h3>Personalised Program</h3>
+                      <p>Master your skills from where you are, with India's only personalised program</p>
+                    </div>
+                    <div>
+                      <h3>Quick Doubt Support</h3>
+                      <p>Get your doubts cleared by coding experts and have a smooth learning</p>
+
+                    </div>
+                    <div>
+                    <h3>250+ Coding Questions</h3>
+                      <p>Best way to master a language is by coding in the language</p>
+                    </div>
+                    <div>
+                    <h3>50+ Hours of Videos</h3>
+                      <p>Recorded video lectures by experts to help you understand the concepts easily</p>
+                    </div>
+                  </div>
+          </section>
+
+
+          <section className='number-student-enrolled-container'>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  
           </section>
 
             

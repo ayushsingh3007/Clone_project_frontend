@@ -179,7 +179,7 @@
 
 .master-program-des-container{
     width: 80vw;
-    border: 1px solid black;
+
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -190,7 +190,6 @@
 .master-program-des-left{
     width: 28%;
     height: 30rem;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     
@@ -198,19 +197,22 @@
 .master-program-des-img{
     width: 38%;
     height: 30rem;
-    border:1px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
     
-    background:skyblue;
-   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: flex-end; */
+    gap: 12%;
+    background:rgb(221, 239, 247);
+    background-image: url('https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/zenithWebp/Vector.svg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-size: 50%;
+   background-position: bottom;
 }
 .master-program-des-right{
     width: 28%;
     height: 30rem;
-    border: 1px solid black;
 }
 .master-program-des-left div{
     width: 100%;
@@ -230,5 +232,57 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 1px solid black;
+
 }
+.master-program-des-right div{
+    width: 100%;
+    line-height: 20px;
+    text-align:left;
+    padding: 15px 10px;
+}
+
+.master-program-des-right div p{
+    font-size: 14px;
+    color:grey
+}
+.master-program-des-right div img{
+    position: relative;
+    top: -50%;
+    right: -12%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+.border-icon-left-master{
+   
+    border: 1px solid white;
+    border-radius: 50%;
+    background: white;
+} 
+.border-icon-right-master{
+   
+    border: 1px solid white;
+    border-radius: 50%;
+    background: white;
+} 
+.img-border-right{
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    gap: 18%;
+    position: relative;
+    top: -10%;
+    right: -74%;
+}
+.img-border-left{
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    gap: 18%;
+    position: relative;
+    top: -10%;
+    left: -5%;
+    
+}
+

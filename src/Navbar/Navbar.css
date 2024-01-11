@@ -11,8 +11,6 @@
 .nav-container div{
     width: 40%;
     display: flex;
-
-    
 }
 
 
@@ -156,7 +154,3 @@
 /* .study-material-drop :hover .study-material-drop .drop-lists{
     display: block;
 } */
-
-.navlink-container Link{
-    text-decoration: none;
-}

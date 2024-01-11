@@ -302,7 +302,33 @@ function ElevationAcad() {
      
       </section>
 
+         
 
+
+      <section className='number-student-enrolled-container'>
+                    <div>
+                      <h1 style={{color:'#00a6eb'}}>10K+</h1>
+                      <p style={{color:'#322e2e',fontWeight:'bold'}}>Students Enrolled</p>
+                    </div>
+                    <div>
+                      <h1 style={{color:'#00a6eb'}}>1000K+</h1>
+                      <p style={{color:'#322e2e',fontWeight:'bold'}}>Doubts Solved</p>
+                    </div>
+                    <div>
+                      <h1 style={{color:'#00a6eb'}}>2k+ hrs</h1>
+                      <p style={{color:'#322e2e',fontWeight:'bold'}}>Mentor Interaction</p>
+                    </div>
+                  
+          </section>
+
+          <section className='coding-contest-container'>
+                   <h1 style={{textAlign:'center',color:'#322e2e'}}>Crack Reputed Coding Contests</h1>
+                   <div>
+                    <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/MCPWebp/MCP-company-new.webp" alt="" />
+                   </div>
+                   <h1 style={{textAlign:'center',color:'#322e2e'}}>Curriculum</h1>
+
+          </section>
 
 
     </>

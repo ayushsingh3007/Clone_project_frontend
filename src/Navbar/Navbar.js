@@ -11,6 +11,7 @@ import MockTest from '../StudyMaterial/MockTest';
 import Masterprogram from '../CourseProgram/Masterprogram';
 import ElevationAcad from '../Elevation/ElevationAcad';
 import Fullstack from '../CourseProgram/FullStack';
+import Dashboard from '../Dashboard/Dashboard';
 export default function Navbar() {
    
   return (
@@ -70,7 +71,7 @@ export default function Navbar() {
         <Route path='/master-competitive-program' element={<Masterprogram/>}></Route>
         <Route  path='/elevation-academy' element={<ElevationAcad/>}/>
         <Route path='/fullstack' element={<Fullstack/>}/>
-    
+         <Route path='/dashboard' element={<Dashboard/>}/>
       </Routes>
       
       </BrowserRouter>  
