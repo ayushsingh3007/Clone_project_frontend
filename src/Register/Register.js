@@ -1,7 +1,66 @@
-import React from 'react'
+import React,{useState} from 'react'
 import '../Register/Register.css'
-import {Link} from "react-router-dom"
+import axios from 'axios'
+import {Link, useNavigate} from "react-router-dom"
 function Register() {
+
+    const navigate=useNavigate()
+
+  const [registerdata,registerdataset]=useState({
+    username:"",
+    
+    email:"",
+    phone:"",
+    password:"",
+    college:"",
+    passingyear:""
+    
+  })
+const registervalue=(e)=>{
+
+    registerdataset({ ...registerdata, [e.target.name]: e.target.value });
+    console.log(registerdata)
+  };
+  const datasubmit=(e)=>{
+    e.preventDefault()
+    
+    axios
+      .post('http://localhost:4000/register',registerdata)
+      .then((res) => {
+        
+        // setStore(res.data.msg);
+        // alert(res.data.msg);
+        console.log(res.data)
+        
+        if (res.data.msg === "user successfully registered") {
+          localStorage.setItem('token',res.data.token)
+
+          console.log(res.data.token)
+          
+          alert(res.data.msg)
+          navigate('/login')
+      }
+      else{
+        alert(res.data.msg)
+      }
+      })
+      .catch((error) => {
+        console.log(error);
+        
+      });
+
+      registerdataset({
+        name: "",            
+        email: "",
+        phonenumber:"",
+        password: "",
+        college:"",
+        passyear:""
+       
+      });
+
+  };
+
   return (
     <>
     
@@ -84,40 +143,40 @@ function Register() {
               </div>
            <div className='name-item'>
              <label htmlFor='name'><h3>Name</h3></label>
-             <input type='text' name='name'/>
+             <input type='text' id='name' name='name' value={registerdata.name} onChange={registervalue}/>
            </div>
 
 
            <div className='email-item'>
            <label htmlFor='email'><h3>Email</h3></label>
-             <input type='text' name='email'/>
+             <input type='text' id='email' name='email' value={registerdata.email} onChange={registervalue}/>
            </div>
            <div className='phone-item'>
            <label htmlFor='phone'><h3>Phone no.</h3></label>
-             <input type='number' name='phone'/>
+             <input type='number' id='phone' name='phone' value={registerdata.phone} onChange={registervalue}/>
            </div>
            <div className='password-item'>
-           <label htmlFor='password'><h3>Passwprd</h3></label>
-             <input type='password' name='password'/>
+           <label htmlFor='password'><h3>Password</h3></label>
+             <input type='password'  id='password' name='password' value={registerdata.password} onChange={registervalue}/>
            </div>
 
 
            <div className='bottom-div'>
             <div className='collegepassyear'>
             <div className='college'>
-              <label><h3>College</h3></label>
-              <input type='text' name='college' />
+              <label htmlFor='college'><h3>College</h3></label>
+              <input type='text' id='college' name='college' value={registervalue.college}  onChange={registervalue}/>
             </div>
             <div className='passingyear'>
-            <label><h3>Passing year</h3></label>
-            <input type="number" min="1900" max="2099" step="1"  />
+            <label htmlFor='passyear'><h3>Passing year</h3></label>
+            <input  type='Number' id='passyear' name="passyear" value={registerdata.passyear} onChange={registervalue} />
             </div>
            </div>
 
             </div>
             <div>
-            <p>    <input type="checkbox" name="agreeTerms" id='checkbox'/> I agree to the terms and conditions</p>
-             <button className='sinup-submit'>SIGNUP</button>
+            <p>    <input type="checkbox" name="agree" id='checkbox'/> I agree to the terms and conditions</p>
+             <button className='sinup-submit' onClick={datasubmit}>SIGNUP</button>
             </div>
             </div>
             

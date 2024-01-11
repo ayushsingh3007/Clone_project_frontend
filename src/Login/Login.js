@@ -1,7 +1,59 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React,{useState} from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import axios from 'axios'
+
 import "../Login/Login.css"
 function Login() {
+  
+  const navigate=useNavigate()
+    const [logindata,logindataset]=useState({         
+        email:"",        
+        password:"",       
+        
+      })
+      const storedata=(e)=>{
+    
+        logindataset({ ...logindata, [e.target.name]: e.target.value });
+        console.log(logindata)
+      };
+      const datasubmit=(e)=>{
+        e.preventDefault()
+        axios
+          .post('http://localhost:4000/login',logindata)
+          
+          .then((res) => {
+            
+            
+            
+            if (res.data.msg === "your login successfully") {
+                localStorage.setItem("token", res.data.token);
+                console.log(res.data.token)
+                console.log(res.data.userdetail.username)
+                console.log(res.data.userdetail.email)
+                localStorage.setItem("selfname",res.data.userdetail.username)
+                localStorage.setItem("selfdetails",res.data.userdetail.email)
+                // localStorage.setItem("loginhandle",false)
+              
+                alert(res.data.msg)
+                navigate('/')
+               
+              
+          }
+          else{
+            alert(res.data.msg);
+          }
+          })
+          .catch((error) => {
+            console.log(error);
+           
+          });
+    
+          logindataset({        
+            email: "",
+            password: "",
+          });
+    
+      };
   return (
     <>
     <section className='register-container'>
@@ -83,13 +135,13 @@ function Login() {
             <div className='inner-form'>
               <form autoComplete='off'>
                 <label htmlFor='email'>Email</label>
-                <input type='text' id='email' name='email' className='input-field'/>
-                <label htmlFor='email'>Password</label>
-                <input type='password' id='pwd' name='pwd' className='input-field' />
+                <input type='text' id='email' name='email' className='input-field' value={logindata.email} onChange={storedata}/>
+                <label htmlFor='password'>Password</label>
+                <input type='password' id='password' name='password'value={logindata.password} onChange={storedata} className='input-field' />
               </form>
             <div className='button-container-login'>
               <h4>Forgot your password?</h4>
-              <button className='btn-login-form'>Sign In </button>
+              <button className='btn-login-form'  onClick={datasubmit}>Sign In </button>
               <button className='btn-login-form'>Login Via OTP</button>
             </div>
             </div>

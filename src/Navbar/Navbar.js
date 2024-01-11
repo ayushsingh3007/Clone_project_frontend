@@ -10,6 +10,7 @@ import VideoTutorial from '../StudyMaterial/VideoTutorial';
 import MockTest from '../StudyMaterial/MockTest';
 import Masterprogram from '../CourseProgram/Masterprogram';
 import ElevationAcad from '../Elevation/ElevationAcad';
+import Fullstack from '../CourseProgram/FullStack';
 export default function Navbar() {
    
   return (
@@ -30,17 +31,17 @@ export default function Navbar() {
       <ul className='navlink-container'>
              <li  className='study-material-drop'>Study Material<AiOutlineDown className='drop-icons'/> 
              <ul className='drop-lists'>
-              <li>Video Tutorial</li>
-              <li>Mock Test</li>
+              <li><Link to="/videotutorial">Video Tutorial</Link></li>
+              <li><Link to='/mock-test'>Mock Test</Link></li>
              </ul>
              </li>
              <li className='course-program-drop'>Courses and program<AiOutlineDown className='drop-icons'/> 
              <ul className='drop-lists-course'>
-              <li>Master Competitive Programing</li>
-              <li>Full Stack Program</li>
+              <li><Link to='/master-competitive-program'>Master Competitive Programing</Link></li>
+              <li><Link to='/fullstack'>Full Stack Program</Link></li>
              </ul>
              </li>
-             <li>Elevation Academy</li>
+             <li><Link to='/elevation-academy'>Elevation Academy</Link></li>
              <li className='project-drop'>Project<AiOutlineDown className='drop-icons'/> 
              <ul className='drop-lists-project'>
                <li>HTML</li>
@@ -68,6 +69,7 @@ export default function Navbar() {
         <Route path='/mock-test' element={<MockTest/>}/>
         <Route path='/master-competitive-program' element={<Masterprogram/>}></Route>
         <Route  path='/elevation-academy' element={<ElevationAcad/>}/>
+        <Route path='/fullstack' element={<Fullstack/>}/>
     
       </Routes>
       

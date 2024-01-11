@@ -1131,6 +1131,24 @@
    width: 50%;
    display: flex;
    margin: auto;
+}
+
+.company-img-card{
+    width: 80vw;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
     
+    justify-content: space-between;
+
+
+}
+
+.company-img-card img{
+    width: 27%;
+    height: 20%;
     
+    margin-bottom: 2%;
 }

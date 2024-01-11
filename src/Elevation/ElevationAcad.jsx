@@ -283,6 +283,28 @@ function ElevationAcad() {
             
             </section>  
 
+
+
+      <section className='company-img-card'>
+        <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/Paytm_Logo.webp" alt="" />
+        <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/ISA/info_edge_Logo.svg" alt="" />
+        <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/ISA/SAP_Logo.svg" alt="" />
+        <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/ISA/Intuit_Logo.svg" alt="" />
+        <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/ISA/Microsoft_Logo.svg" alt="" />
+        <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/ISA/Thoughtfocus_Logo.svg" alt="" />
+        <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/ISA/99_Games_Logo.svg" alt="" />
+        <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/ISA/Samsung_Logo.svg" alt="" />
+        <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/ISA/Amazon_Logo.svg" alt="" />
+        <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/ISA/Buy_Hatke_logo.svg" alt="" />
+        
+        
+        
+     
+      </section>
+
+
+
+
     </>
   )
 }
