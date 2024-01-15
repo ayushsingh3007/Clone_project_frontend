@@ -1,6 +1,13 @@
 import React from 'react'
 import "../Home/Home.css"
+import "../Home/Home1.css"
+
+
+
+
 function Home() {
+
+    
   return (
     <>
         <div className='home-container'>
@@ -175,10 +182,7 @@ function Home() {
 </div>
 
 
-   <div className='slider-container'>
-    <h2>100% of our students finishing the course have got placed</h2>
-    <div className='slider-home'></div>
-   </div>
+  
 
 
    <div className='selected-candidate-image'>
@@ -270,11 +274,19 @@ function Home() {
         <p>Which of the following loops will execute the body of loop even when condition controlling the loop is initially false?</p>
         
         <div className='options-container'>
-        <div> <input type="radio" /> do while</div>
-       <div>   <input type="radio" /> while</div>
-        <div> <input type="radio" /> for</div>
-          <div><input type="radio" /> none of the mentioned</div>
-        </div>
+  <div>
+    <input type="radio" name="answer" value='do-while' /> do while
+  </div>
+  <div>
+    <input type="radio" name="answer" value='while' /> while
+  </div>
+  <div>
+    <input type="radio" name="answer" value='for' /> for
+  </div>
+  <div>
+    <input type="radio" name="answer" value='none' /> none of the mentioned
+  </div>
+</div>
         <button className='submit-ans-btn'>Submit Answer</button>
       </div>
     

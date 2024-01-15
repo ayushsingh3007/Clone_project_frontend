@@ -1,0 +1,7 @@
+/* Add styles for the selected item */
+.selected {
+    background-color: #e0e0e0; /* or any other styling you prefer */
+    font-weight: bold;
+    /* Add more styles as needed */
+  }
+  

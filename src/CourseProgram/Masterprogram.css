@@ -333,3 +333,12 @@
 .coding-contest-container div img{
     width: 100%;
 }
+
+
+.select-batch-container{
+  width: 100vw;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+  display: flex;
+  flex-direction: row;
+}

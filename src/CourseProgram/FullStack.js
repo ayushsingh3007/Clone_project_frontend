@@ -1,9 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../CourseProgram/FullStack.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
 const Fullstack = () => {
+  const [selectedBatch, setSelectedBatch] = useState(null);
+
+  const handleBatchChange = (event) => {
+    setSelectedBatch(event.target.value);
+  };
+  const getPriceForBatch = (batch) => {
+    // Add your logic to determine the price for each batch
+    // For example, you can use a switch statement or an object mapping
+    switch (batch) {
+      case '1may':
+        return '$10.99';
+      case '15may':
+        return '$15.99';
+      default:
+        return 'N/A';
+    }
+  };
   return (<>
   <div className='fs-container1'>
     <div className='fs-container1-item1'>
@@ -32,12 +49,39 @@ const Fullstack = () => {
         
       </div>
     </div>
-
+         
     </div>
-    {/* <div className='fs-container2'>
-      <div>SELECT BATCH</div>
+    <div className="batch-selector-container">
+      <label className='select-batch-label'>Select Batch</label>
+      <div className="radio-group">
+        <input
+          type="radio"
+          id="batch1"
+          name="batch"
+          value="1may"
+          checked={selectedBatch === '1may'}
+          onChange={handleBatchChange}
+        />
+        <label htmlFor="batch1">1 May</label>
 
-    </div> */}
+        <input
+          type="radio"
+          id="batch15"
+          name="batch"
+          value="15may"
+          checked={selectedBatch === '15may'}
+          onChange={handleBatchChange}
+        />
+        <label htmlFor="batch15">15 May</label>
+      </div>
+      <div className='priceandenroll-items'>
+      <p>Price: {getPriceForBatch(selectedBatch)}</p>
+      <span><button style={{background:'rgb(206, 50, 50)',borderRadius:'10px'}}>Enroll Now</button>
+      <button style={{background:' rgb(84, 139, 223)',borderRadius:'10px'}}>Try for free</button>
+      </span>
+      </div>
+    </div>
+   
     <div className='fs-container3'>
       <div className='fs-container3-sub1'>
         <div className='fs-container3-sub1-text1'>Languages & Tools you will learn
@@ -405,6 +449,56 @@ Start learning web development from basics of HTML, CSS, Javascript.Master lates
     </div>
     <div className='fs-container11-sub4'><div className='fs-container11-sub4-sty1'>Course Content</div><div> <button className='fs-container11-sub4-sty2'>Hide</button></div></div>
   
+
+     <div className='fs-container-12'>
+           <div className='fs-container-12-item-1'>
+            <img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/projects/HTML_HTML.svg' alt=''/>
+            <h5>HTML Blog Page</h5>
+            <p>Start your web development by making a simple blog page using HTML.</p>
+           </div>
+
+          
+           <div className='fs-container-12-item-1'>
+            <img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/projects/Clock.svg' alt=''/>
+            <h5>Reminder Clock App</h5>
+            <p>Want to build an app to keep your reminders? Build your own Digital Reminder Clock App using HTML, CSS and JS</p>
+           </div>
+           
+
+          
+           <div className='fs-container-12-item-1'>
+            <img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/projects/app_todo.svg' alt=''/>
+            <h5>HTML Blog Page</h5>
+            <p>Start your web development by making a simple blog page using HTML.</p>
+           </div>
+
+      
+           <div className='fs-container-12-item-1'>
+            <img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/projects/app_blog.svg' alt=''/>
+            <h5>ToDo App</h5>
+            <p>This will be a basic project to make your understanding of HTML and CSS clear but you can use it to keep your ToDos as well.</p>
+           </div>
+
+
+      
+           <div className='fs-container-12-item-1'>
+            <img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/projects/app_blog.svg' alt=''/>
+            <h5>React Blog App</h5>
+            <p>Create your own Medium website. Through the project you will understand how React , Node and MongoDB work together to create magic.</p>
+           </div>
+
+        </div>
+
+
+
+     <section className='fs-container-13'>
+          <div  className='fs-container-13-left'></div>
+          <div  className='fs-container-13-right'></div>
+     </section>
+
+
+
+
     </>
     
   )

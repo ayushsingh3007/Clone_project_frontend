@@ -185,7 +185,7 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    gap: 6%;
+    gap: 2%;
 
  }
 
@@ -200,7 +200,24 @@
     gap: 9%;
 
  }
- 
+ .hrline-howtoreachdreamjob-1{
+    width: 10%;
+    position: relative;
+    top: 20%;
+    left: 38%;
+    background:  rgb(180, 234, 255);
+    border: 1px solid rgb(180, 234, 255);
+
+ }
+ .hrline-howtoreachdreamjob-2{
+    width: 12%;
+    position: relative;
+    top: 11%;
+    left: 38%;
+    background:  rgb(180, 234, 255);
+    border: 1px solid rgb(180, 234, 255);
+
+ }
 
  .howtoreachdreamjob-left-item-1{
      width: 80%;
@@ -1103,7 +1120,6 @@
 .students-elevation-slider{
     width: 80vw;
     
-    border: 1px solid black;
     box-shadow: 1px 1px 10px grey;
     display: flex;
     justify-content: center;
@@ -1153,3 +1169,169 @@
     margin-bottom: 2%;
 }
 
+
+
+.applications-container{
+    width: 100vw;
+    background: #e5f4fb;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    
+}
+
+
+.applications-container-item-1{
+    width: 40%;
+    height: 10rem;
+    
+    padding: 5% 20px;
+    box-sizing: border-box;
+}
+.applications-container-item-1 h1{
+    font-size: 38px;
+    font-weight: bolder;
+
+
+}
+
+.applications-container-item-2{
+    width: 50%;
+    height: 10rem;
+
+    
+}
+
+.applications-container-item-2 h2{
+    font-size: 16px;
+    padding: 10% 20px;
+    font-weight: bold;
+}
+.applications-container-item-3{
+    width: 60%;
+    height: 26rem;
+    
+    background: white;
+    border-left: 5px solid rgb(232, 63, 63);
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.stepapplication{
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
+
+.stepapplication span{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+    padding: 10px;
+    font-size: large;
+    font-weight: lighter;
+    color: rgb(232, 63, 63);
+}
+
+
+.stepapplication span img{
+    width: 20%;
+    height: 50%;
+}
+
+.aplication{
+    width: 55%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25%;
+}
+.aplication ul{
+    display: flex;
+    flex-direction: column;
+    gap: 25%;
+    /* justify-content: space-around; */
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+.aplication ul li{
+    width: 98%;
+    height: 20%;
+    display: flex;
+    gap: 3%;
+    font-weight: bold;
+    color: grey;
+}
+
+.payment-plans-container{
+    width: 100vw;
+    height: 38rem;
+    background: #fdf0d7;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.payment-plans-container button{
+    background: #00a5ec;
+    height: 10%;
+    width: 10%;
+    border: none;
+    color: white;
+}
+.payment-plans-container-item {
+    width: 40%;
+    height: 50%;
+    border-radius: 10px;
+    background:#d6f4ff;
+    display: flex;
+    padding: 12px 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.payment-plans-container-item img{
+    width: 40%;
+    height: 25%;
+    position: relative;
+    left: 4%;
+}
+
+.payment-plans-container-item div{
+    width: 58%;
+    height: 100%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+}
+.mentors-card_elevation{
+    margin-top: 2%;
+    width: 90vw;
+   margin: auto;
+
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    font-weight: bolder;
+    gap: 5rem;
+}

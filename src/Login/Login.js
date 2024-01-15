@@ -19,18 +19,18 @@ function Login() {
       const datasubmit=(e)=>{
         e.preventDefault()
         axios
-          .post('https://clone-backend-evgl.onrender.com/login',logindata)
+          .post('http://localhost:4000/login',logindata)
           
           .then((res) => {
             
             
             
-            if (res.data.msg === "your login successfully") {
+            if (res.data.msg === "login successfully") {
                 localStorage.setItem("token", res.data.token);
                 console.log(res.data.token)
-                console.log(res.data.userdetail.username)
+                console.log(res.data.userdetail.name)
                 console.log(res.data.userdetail.email)
-                localStorage.setItem("selfname",res.data.userdetail.username)
+                localStorage.setItem("selfname",res.data.userdetail.name)
                 localStorage.setItem("selfdetails",res.data.userdetail.email)
                 // localStorage.setItem("loginhandle",false)
               

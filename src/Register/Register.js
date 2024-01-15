@@ -7,13 +7,13 @@ function Register() {
     const navigate=useNavigate()
 
   const [registerdata,registerdataset]=useState({
-    username:"",
+    name:"",
     
     email:"",
     phone:"",
     password:"",
     college:"",
-    passingyear:""
+    passyear:""
     
   })
 const registervalue=(e)=>{
@@ -25,7 +25,7 @@ const registervalue=(e)=>{
     e.preventDefault()
     
     axios
-      .post('https://clone-backend-evgl.onrender.com/register',registerdata)
+      .post('http://localhost:4000/register',registerdata)
       .then((res) => {
         
         // setStore(res.data.msg);
@@ -52,7 +52,7 @@ const registervalue=(e)=>{
       registerdataset({
         name: "",            
         email: "",
-        phonenumber:"",
+        phone:"",
         password: "",
         college:"",
         passyear:""
@@ -165,7 +165,7 @@ const registervalue=(e)=>{
             <div className='collegepassyear'>
             <div className='college'>
               <label htmlFor='college'><h3>College</h3></label>
-              <input type='text' id='college' name='college' value={registervalue.college}  onChange={registervalue}/>
+              <input type='text' id='college' name='college' value={registerdata.college}  onChange={registervalue}/>
             </div>
             <div className='passingyear'>
             <label htmlFor='passyear'><h3>Passing year</h3></label>

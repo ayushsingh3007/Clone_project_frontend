@@ -5,10 +5,11 @@
    padding-right: 5%;
    text-align: left;
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
+   flex-direction: row;
 }
 .fs-container1-item1{
-   width: 45%;
+   width: 55%;
    padding-top: 80px;
 }
 .fs-container1-sub1{
@@ -17,6 +18,75 @@
    font-size: 16px;
 
 }
+.batch-selector-container{
+   width: 100vw;
+   height: 5rem;
+   display: flex;
+   flex-direction: row;
+   gap: 10%;
+   justify-content: center;
+   margin-top:0% ;
+   border-bottom: 1px solid grey;
+}
+
+.select-batch-label{
+  border: 1px solid grey;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+  font-weight: bold;
+  font-size: 18px;
+}
+.radio-group{
+   display: flex;
+   flex-direction: row;
+   width: 30%;
+   gap: 2%;
+   justify-content: center;
+   align-items: center;
+}
+.radio-group input{
+   width: 25%;
+   height: 30%;
+   }
+
+.priceandenroll-items{
+   display: flex;
+   flex-direction: column;
+   width: 20%;
+   height: 4rem;
+   border: 1px solid rgb(209, 62, 62);
+   align-items: center;
+   justify-content: space-between;
+   gap: 2%;
+}
+.priceandenroll-items p{
+   font-weight: bold;
+   color:rgb(206, 50, 50);
+   font-size: larger;
+}
+.priceandenroll-items span{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 2%;
+}
+.priceandenroll-items span button{
+   width: 45%;
+   height: 100%;
+   border: none;
+   color: white;
+}
+
+
+
+
+
 .fs-container1-sub2{
    text-align: left;
    background-color: white;
@@ -39,20 +109,23 @@
 
 }
 .fs-container1-sub5{
-   text-align: left;
+   
    color: rgb(246, 38, 135);
    font-size: 20px;
    margin-bottom:30px ;
-   width:200px;
+   width:250px;
    height:50px;
    padding-top: 4px;
    padding-left: 12px;
    border: 1px solid rgb(246, 38, 135) ;  
    background-color: rgb(34, 29, 57);
+   display: flex;
+   justify-content: center;
+   align-items: center;
 
 }
 .fs-container1-item2{
-   width: 45%;
+   width: 40%;
    margin-top: 100px;
    padding:100px ;
    align-items: center;
@@ -134,9 +207,11 @@
 .fs-container4-sub1{
    padding-top: 50px;
   font-size: 30px;
+  text-align: center;
 }
 .fs-container4-sub2{
    font-size: 18px;
+   text-align: center;
    color: rgb(158, 158, 158);
 }
 .fs-container4-sub3{
@@ -510,4 +585,69 @@
    border-radius: 5px;
    height:25px;
 
+}
+
+.fs-container-12{
+   width: 80vw;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 5%;
+   margin-top: 2%;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   transform: translate(10%);
+ 
+   
+   
+}
+
+
+.fs-container-12-item-1{
+   width:28%;
+   margin-bottom: 2%;
+   background: transparent linear-gradient(180deg,#d0dee9,#fff) 0 0 no-repeat padding-box;
+  border-radius: 5px;
+   height: 30rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10%;
+}
+.fs-container-12-item-1 img{
+   width: 50%;
+}
+.fs-container-12-item-1 h5{
+   font-size: 28px;
+   font-weight: 500;
+}
+.fs-container-12-item-1 p{
+   font-weight: 500;
+   text-align: center;
+   color: grey;
+   width: 80%;
+}
+
+.fs-container-13{
+   width: 100vw;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   border: 1px solid black;
+   
+
+}
+.fs-container-13-left{
+   width: 45%;
+   height: 40rem;
+   border: 1px solid black;
+}
+.fs-container-13-right{
+   width: 45%;
+   height: 40rem;
+   border: 1px solid black;
 }

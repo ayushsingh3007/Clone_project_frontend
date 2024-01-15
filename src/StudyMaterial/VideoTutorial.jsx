@@ -3,6 +3,7 @@ import '../StudyMaterial/VideoTutorial.css'
 function VideoTutorial() {
   return (
     <>
+    
     <section className='top-banner-video-tutorial'>
       <div className='top-banner-video-tutorial-text'>
         <h2>Prepbytes Video Library</h2>
@@ -109,7 +110,7 @@ function VideoTutorial() {
        
      </section>
 
-
+        
 
 
 

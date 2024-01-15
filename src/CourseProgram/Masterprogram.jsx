@@ -1,8 +1,11 @@
 import React from 'react'
 import "../CourseProgram/Masterprogram.css"
+
 function Masterprogram() {
+
   return (
     <>
+
              <section className='master-competitive-program-container-top'>
                 <div className='master-competitive-program-container-top-left'>
                  <h1>MASTER COMPETITIVE PROGRAMMING</h1>
@@ -167,7 +170,9 @@ function Masterprogram() {
           </section>
 
             
+<section className='select-batch-container'>
 
+</section>
 
 
 

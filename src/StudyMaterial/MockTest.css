@@ -3,15 +3,15 @@
 }
 .mock-sub-container{
     /* border:1px solid blue; */
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 0%;
+    padding-right: 0%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     /* margin-bottom: 5%; */
     /* max-height: 15000px; */
     margin: auto;
-    width: 96%;
+    width: 100vw;
     flex-wrap: wrap;
     
 }
@@ -108,6 +108,7 @@
     align-items: center;
     justify-content: center;
     margin: auto;
+    
 }
 .course-sub-cont-1{
     display: flex;

@@ -1,160 +1,160 @@
 .nav-container{
-    width: 100%;
-    background-color: white;
-    box-shadow: 40px rgb(143, 138, 138);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: 2px solid rgb(199, 192, 192);
+  width: 100%;
+  background-color: white;
+  box-shadow: 40px rgb(143, 138, 138);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(199, 192, 192);
 }
 .nav-container div{
-    width: 40%;
-    display: flex;
+  width: 40%;
+  display: flex;
 }
 
 
-  .logo-img{
-    width:20%;
-    position: relative;
-    left: 30px;
+.logo-img{
+  width:20%;
+  position: relative;
+  left: 30px;
 }
 
 .button-container{
-    
-    
-    display: flex;
-    justify-content: center;
-    width: 48%;
-    height: 7%;
-      gap: 4%;
-      position: relative;
-      top: 10px;
+  
+  
+  display: flex;
+  justify-content: center;
+  width: 48%;
+  height: 7%;
+    gap: 4%;
+    position: relative;
+    top: 10px;
 }
 
 .login-btn{
-    color: #ff219f;
-    background: white;
-    padding: 4px 10px;
-    border-radius: 5px;
-    font-weight: bolder;
-    border: 1px solid #ff219f;
-    float: right;
-    right: 0px;
+  color: #ff219f;
+  background: white;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-weight: bolder;
+  border: 1px solid #ff219f;
+  float: right;
+  right: 0px;
 }
 
 .login-btn:hover{
-    color: black;
-    cursor: pointer;
+  color: black;
+  cursor: pointer;
 }
 
 
 .signup-btn{
-    color:white;
-    background: #ff219f;
-    width: 80px;
-    padding: 4px 4px;
-    border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none;
-    border: 1px solid rgb(255, 192, 236);
-    
+  color:white;
+  background: #ff219f;
+  width: 80px;
+  padding: 4px 4px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid rgb(255, 192, 236);
+  
 }
 .signup-btn Link{
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .signup-btn:hover{
-    color: black;
-    cursor: pointer;
+  color: black;
+  cursor: pointer;
 }
 
 
 .navlink-container{
-    width: 50%;
-    height: 2%;
-  position: relative;
-  bottom: 0px;  
-  left: 40%;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  gap: 3%;
-  color:grey;
-  word-spacing: 1px;
-  cursor: pointer;
-    font-size: small;
+  width: 70%;
+  height: 2%;
+position: relative;
+bottom: 0px;  
+left: 40%;
+list-style: none;
+display: flex;
+flex-direction: row;
+gap: 3%;
+color:grey;
+word-spacing: 1px;
+cursor: pointer;
+  font-size: small;
 }
 
 .drop-icons{
-    width: 15px;
-    height: 10px;
-    margin-bottom: 0px;
-    color: black;
-    font-weight: bolder;
-    
+  width: 15px;
+  height: 10px;
+  margin-bottom: 0px;
+  color: black;
+  font-weight: bolder;
+  
 }
 
 .drop-lists{
-    width: 27%;
-    height: 100px;
-    padding: 10px 20px;
-    list-style: none;
-    z-index: 999;
-    margin: 2px 0;
-    padding: auto;
-    border: none;
-    background-color: white;
-    line-height: 40px;
-    position: absolute;
-    box-shadow: 1px 1px 10px grey;
-    font-weight: bold;
-    display: none;
-    }
+  width: 27%;
+  height: 100px;
+  padding: 10px 20px;
+  list-style: none;
+  z-index: 999;
+  margin: 2px 0;
+  padding: auto;
+  border: none;
+  background-color: white;
+  line-height: 40px;
+  position: absolute;
+  box-shadow: 1px 1px 10px grey;
+  font-weight: bold;
+  display: none;
+  }
 
-    .study-material-drop:hover .drop-lists{
-  display: block;
+  .study-material-drop:hover .drop-lists{
+display: block;
 }
 .drop-lists-course{
-    width: 35%;
-    height: 100px;
-    padding: 10px 20px;
-    list-style: none;
-    z-index: 999;
-    margin: 2px 0;
-    padding: auto;
-    border: none;
-    background-color: white;
-    line-height: 40px;
-    position: absolute;
-    box-shadow: 1px 1px 10px grey;
-    font-weight: bold;
-    display: none;
-    
+  width: 35%;
+  height: 100px;
+  padding: 10px 20px;
+  list-style: none;
+  z-index: 999;
+  margin: 2px 0;
+  padding: auto;
+  border: none;
+  background-color: white;
+  line-height: 40px;
+  position: absolute;
+  box-shadow: 1px 1px 10px grey;
+  font-weight: bold;
+  display: none;
+  
 }
 .course-program-drop:hover .drop-lists-course{
-    display: block;
+  display: block;
 }
 .drop-lists-project{
-    width: 20%;
-    height: auto;
-    padding: 10px 20px;
-    list-style: none;
-    z-index: 999;
-    margin: 2px 0;
-    padding: auto;
-    border: none;
-    background-color: white;
-    line-height: 40px;
-    position: absolute;
-    box-shadow: 1px 1px 10px grey;
-    font-weight: bold;
-    display: none;
-    
+  width: 20%;
+  height: auto;
+  padding: 10px 20px;
+  list-style: none;
+  z-index: 999;
+  margin: 2px 0;
+  padding: auto;
+  border: none;
+  background-color: white;
+  line-height: 40px;
+  position: absolute;
+  box-shadow: 1px 1px 10px grey;
+  font-weight: bold;
+  display: none;
+  
 }
 .project-drop:hover .drop-lists-project {
-    display: block;
+  display: block;
 }
 /* .study-material-drop :hover .study-material-drop .drop-lists{
-    display: block;
+  display: block;
 } */

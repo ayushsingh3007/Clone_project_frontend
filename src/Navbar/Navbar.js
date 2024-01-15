@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../Navbar/Navbar.css"
 import {  AiOutlineDown } from 'react-icons/ai';
 
@@ -12,8 +12,14 @@ import Masterprogram from '../CourseProgram/Masterprogram';
 import ElevationAcad from '../Elevation/ElevationAcad';
 import Fullstack from '../CourseProgram/FullStack';
 import Dashboard from '../Dashboard/Dashboard';
+import Success from '../Pages/Success';
+import AllProject from '../Project/AllProject';
+
+
+
 export default function Navbar() {
-   
+   let token=localStorage.getItem('token')
+   let username=localStorage.getItem('selfname')
   return (
     <>
     
@@ -25,10 +31,10 @@ export default function Navbar() {
 
 <div className='nav-container'>
         <div><img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/navbar/logoPrepBytes.svg' alt='not-found' className='logo-img'/></div>
-        <div className='button-container'>
+       {token?`Hi, ${username} `: <div className='button-container'>
         <button className='login-btn' ><Link to="/login" style={{textDecoration:'none',color:' #ff219f'}}>Login</Link></button>
         <button className='signup-btn'><Link to="/register" style={{textDecoration:'none',color:'white'}}>Sing up</Link></button>
-        </div>
+        </div>}
       <ul className='navlink-container'>
              <li  className='study-material-drop'>Study Material<AiOutlineDown className='drop-icons'/> 
              <ul className='drop-lists'>
@@ -72,6 +78,8 @@ export default function Navbar() {
         <Route  path='/elevation-academy' element={<ElevationAcad/>}/>
         <Route path='/fullstack' element={<Fullstack/>}/>
          <Route path='/dashboard' element={<Dashboard/>}/>
+         <Route path='/success' element={<Success/>}/>
+         <Route path='/projects' element={<AllProject/>}/>
       </Routes>
       
       </BrowserRouter>  

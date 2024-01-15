@@ -301,12 +301,122 @@ function ElevationAcad() {
      
       </section>
 
-          <section className=''>
-             
+          <section className='applications-container'>
+             <div className='applications-container-item-1'>
+              <h1>How can you be part of the next batch</h1>
+             </div>
+             <div className='applications-container-item-2'>
+              <h2>Experts mentors designed to get you job-ready, designed for complete beginners as well. All this with absolute zero cost including real-time assignments that help you practice what you have learnt. for complete beginners as well.
+
+</h2>
+             </div>
+             <div className='applications-container-item-3'>
+
+
+               <div className='stepapplication'>
+                <span><img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/registeration-icon.webp" alt="" />Application</span>
+                <span><img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/qualification.webp" alt="" />ShortListing</span>
+                <span><img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/qualification.webp" alt="" />Free webinar</span>
+                <span><img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/registeration-icon.webp" alt="" />Application</span>
+
+               
+               
+               </div>
+               <div className='aplication'>
+                      <h2>Application</h2>
+                      <ul>
+                        <li><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMC4zNzUiIGhlaWdodD0iMjAuMzc1IiB2aWV3Qm94PSIwIDAgMjAuMzc1IDIwLjM3NSI+CiAgPHBhdGggaWQ9Ikljb25fYXdlc29tZS1jaGVjay1jaXJjbGUiIGRhdGEtbmFtZT0iSWNvbiBhd2Vzb21lLWNoZWNrLWNpcmNsZSIgZD0iTTIwLjkzOCwxMC43NUExMC4xODgsMTAuMTg4LDAsMSwxLDEwLjc1LjU2MywxMC4xODcsMTAuMTg3LDAsMCwxLDIwLjkzOCwxMC43NVpNOS41NzIsMTYuMTQ0LDE3LjEzLDguNTg2YS42NTcuNjU3LDAsMCwwLDAtLjkyOUwxNi4yLDYuNzI3YS42NTcuNjU3LDAsMCwwLS45MywwTDkuMTA3LDEyLjg5MSw2LjIyOSwxMC4wMTNhLjY1Ny42NTcsMCwwLDAtLjkzLDBsLS45MjkuOTI5YS42NTcuNjU3LDAsMCwwLDAsLjkyOWw0LjI3Miw0LjI3MmEuNjU3LjY1NywwLDAsMCwuOTMsMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjU2MyAtMC41NjMpIiBmaWxsPSIjZjc4MDc3Ii8+Cjwvc3ZnPgo=" alt="" /><p>We are inviting applications for 2023, 2022 & 2021 passouts.</p></li>
+                        <li><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMC4zNzUiIGhlaWdodD0iMjAuMzc1IiB2aWV3Qm94PSIwIDAgMjAuMzc1IDIwLjM3NSI+CiAgPHBhdGggaWQ9Ikljb25fYXdlc29tZS1jaGVjay1jaXJjbGUiIGRhdGEtbmFtZT0iSWNvbiBhd2Vzb21lLWNoZWNrLWNpcmNsZSIgZD0iTTIwLjkzOCwxMC43NUExMC4xODgsMTAuMTg4LDAsMSwxLDEwLjc1LjU2MywxMC4xODcsMTAuMTg3LDAsMCwxLDIwLjkzOCwxMC43NVpNOS41NzIsMTYuMTQ0LDE3LjEzLDguNTg2YS42NTcuNjU3LDAsMCwwLDAtLjkyOUwxNi4yLDYuNzI3YS42NTcuNjU3LDAsMCwwLS45MywwTDkuMTA3LDEyLjg5MSw2LjIyOSwxMC4wMTNhLjY1Ny42NTcsMCwwLDAtLjkzLDBsLS45MjkuOTI5YS42NTcuNjU3LDAsMCwwLDAsLjkyOWw0LjI3Miw0LjI3MmEuNjU3LjY1NywwLDAsMCwuOTMsMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjU2MyAtMC41NjMpIiBmaWxsPSIjZjc4MDc3Ii8+Cjwvc3ZnPgo=" alt="" /><p>Apply for the next batch by filling up the application form.</p></li>
+                          <li><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMC4zNzUiIGhlaWdodD0iMjAuMzc1IiB2aWV3Qm94PSIwIDAgMjAuMzc1IDIwLjM3NSI+CiAgPHBhdGggaWQ9Ikljb25fYXdlc29tZS1jaGVjay1jaXJjbGUiIGRhdGEtbmFtZT0iSWNvbiBhd2Vzb21lLWNoZWNrLWNpcmNsZSIgZD0iTTIwLjkzOCwxMC43NUExMC4xODgsMTAuMTg4LDAsMSwxLDEwLjc1LjU2MywxMC4xODcsMTAuMTg3LDAsMCwxLDIwLjkzOCwxMC43NVpNOS41NzIsMTYuMTQ0LDE3LjEzLDguNTg2YS42NTcuNjU3LDAsMCwwLDAtLjkyOUwxNi4yLDYuNzI3YS42NTcuNjU3LDAsMCwwLS45MywwTDkuMTA3LDEyLjg5MSw2LjIyOSwxMC4wMTNhLjY1Ny42NTcsMCwwLDAtLjkzLDBsLS45MjkuOTI5YS42NTcuNjU3LDAsMCwwLDAsLjkyOWw0LjI3Miw0LjI3MmEuNjU3LjY1NywwLDAsMCwuOTMsMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjU2MyAtMC41NjMpIiBmaWxsPSIjZjc4MDc3Ii8+Cjwvc3ZnPgo=" alt="" />
+                          <p>Apply for the next batch by filling up the application form.</p></li>
+                          <li><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMC4zNzUiIGhlaWdodD0iMjAuMzc1IiB2aWV3Qm94PSIwIDAgMjAuMzc1IDIwLjM3NSI+CiAgPHBhdGggaWQ9Ikljb25fYXdlc29tZS1jaGVjay1jaXJjbGUiIGRhdGEtbmFtZT0iSWNvbiBhd2Vzb21lLWNoZWNrLWNpcmNsZSIgZD0iTTIwLjkzOCwxMC43NUExMC4xODgsMTAuMTg4LDAsMSwxLDEwLjc1LjU2MywxMC4xODcsMTAuMTg3LDAsMCwxLDIwLjkzOCwxMC43NVpNOS41NzIsMTYuMTQ0LDE3LjEzLDguNTg2YS42NTcuNjU3LDAsMCwwLDAtLjkyOUwxNi4yLDYuNzI3YS42NTcuNjU3LDAsMCwwLS45MywwTDkuMTA3LDEyLjg5MSw2LjIyOSwxMC4wMTNhLjY1Ny42NTcsMCwwLDAtLjkzLDBsLS45MjkuOTI5YS42NTcuNjU3LDAsMCwwLDAsLjkyOWw0LjI3Miw0LjI3MmEuNjU3LjY1NywwLDAsMCwuOTMsMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjU2MyAtMC41NjMpIiBmaWxsPSIjZjc4MDc3Ii8+Cjwvc3ZnPgo=" alt="" />
+                          <p>Apply for the next batch by filling up the application form.</p></li>
+                      </ul>
+               </div>
+
+
+             </div>
           </section>
 
-
+  <section className='payment-plans-container'>
+    <h1 style={{textAlign:'center',fontSize:'36px'}}>Payment Plans</h1>
+    <h4  style={{textAlign:'center',fontSize:'25px'}}>Choose a payment plan suiting your needs</h4>
+       <div className='payment-plans-container-item'>
+         <div>
+          <h4 style={{fontSize:'larger'}}>Pay Upfront*</h4>
+          <p style={{margin:'5%',fontSize:'18px'}}>Pay Now</p>
+          <span style={{color:'dark skyblue',fontWeight:'bolder', fontSize:'large'}}>₹ 70,000</span>
+          <hr />
+          <p style={{fontSize:'small',color:'grey'}}>*Money-back guarantee on placements</p>
+          <h5>EMI Starting at</h5>
+          <h4 style={{color:'dark skyblue',fontWeight:'bolder', fontSize:'large'}}>₹ 5833/month</h4>
+         </div>
+<img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/zenithWebp/tag4-01.webp" alt=""  width='40%' />
+       </div>
+       <button>Register Now</button>
+       <h2><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNS45OTgiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNS45OTggMTYiPgogIDxwYXRoIGlkPSJJY29uX2F3ZXNvbWUtY2hlY2stZG91YmxlIiBkYXRhLW5hbWU9Ikljb24gYXdlc29tZS1jaGVjay1kb3VibGUiIGQ9Ik0xNS43NzcsNS40NjEsMTQuNTQsNC4yMjNhLjc0Ny43NDcsMCwwLDAtMS4wNTksMEw2LDExLjcwNywyLjUxNiw4LjIyM2EuNzQ3Ljc0NywwLDAsMC0xLjA1OSwwTC4yMTcsOS40NjNhLjc1MS43NTEsMCwwLDAsMCwxLjA2Mmw1LjI0OSw1LjI1MmEuNzQ3Ljc0NywwLDAsMCwxLjA1OSwwbDkuMjQ5LTkuMjU1QS43NTMuNzUzLDAsMCwwLDE1Ljc3Nyw1LjQ2MVpNNS42NDQsOC43NzNhLjUuNSwwLDAsMCwuNzA2LDBsNi41LTYuNTA1YS41LjUsMCwwLDAsMC0uNzA2TDExLjQzNy4xNDZhLjUuNSwwLDAsMC0uNzA2LDBMNiw0Ljg3OSw0LjI2NiwzLjE0NWEuNS41LDAsMCwwLS43MDYsMEwyLjE0NSw0LjU2MWEuNS41LDAsMCwwLDAsLjcwNloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDA0IDAuMDAyKSIgZmlsbD0iI2Y3ODA3NyIvPgo8L3N2Zz4K" alt="" /> Guaranteed Placement of minimum 5 LPA</h2>
+  </section>
       
+
+
+
+
+    <section className='mentors-card_elevation'>
+    
+      <h1 style={{marginTop:'2%'}}>PrepBytes Mentors</h1>
+      <p style={{width:'60%'}}>PrepBytes students get mentored by industry experts who have achieved in their careers and are passionate about helping students achieve their dream.</p>
+        
+        <div className='chart-items-mentor'>
+          <div className='mentor-chart-item item-1'>
+            <div className='mentor-img-item'>
+              <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/mamta_ma'am(Mentor).png" alt="" />
+            </div>
+            <h3 className='name-mentor'>Mamta </h3>
+            <p className='post-mentor'>Co-Founder, PrepBytes</p><hr />
+            <div className='detail-mentor'>Mamta has a great passion for coding and motivates students to pursue coding. Her mission is to use her knowledge and expertise to help students get placed in their dream company.</div>
+            <img  className='working-company-img' src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/Amazon%2Bsam.png" alt="" />
+          
+          </div>
+          
+          
+          
+          
+          <div className='mentor-chart-item item-2'>
+          <div className='mentor-img-item'>
+              <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/mamta_ma'am(Mentor).png" alt="" />
+            </div>
+            <h3 className='name-mentor'>Mamta </h3>
+            <p className='post-mentor'>Co-Founder, PrepBytes</p><hr />
+            <div className='detail-mentor'>Mamta has a great passion for coding and motivates students to pursue coding. Her mission is to use her knowledge and expertise to help students get placed in their dream company.</div>
+            <img  className='working-company-img' src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/Amazon%2Bsam.png" alt="" />
+          
+          </div>
+
+
+          <div className='mentor-chart-item item-3'>
+          <div className='mentor-img-item'>
+              <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/mamta_ma'am(Mentor).png" alt="" />
+            </div>
+            <h3 className='name-mentor'>Mamta </h3>
+            <p className='post-mentor'>Co-Founder, PrepBytes</p><hr />
+            <div className='detail-mentor'>Mamta has a great passion for coding and motivates students to pursue coding. Her mission is to use her knowledge and expertise to help students get placed in their dream company.</div>
+            <img  className='working-company-img' src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/Amazon%2Bsam.png" alt="" />
+          
+          </div>
+               </div>
+               
+    </section>
+
+
+
+
+
+
+      <section className='free-webinar-container'>
+                 
+      </section>
+
+
          
 
     </>
