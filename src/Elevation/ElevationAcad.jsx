@@ -413,7 +413,47 @@ function ElevationAcad() {
 
 
       <section className='free-webinar-container'>
+                 <div className='free-webinar-container-item-1'>
+                  <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/calendar.webp" alt="" />
+                 </div>
+
+
+                 <div className='free-webinar-container-item-2'>
+                  <h1>Free Webinar</h1>
+                  <p>Experts mentors designed to get you job-ready, designed for complete beginners as well.</p>
+                  <div>17 April</div>
+                  <button>Register</button>
+                 </div>
+
+
+
+
+                 <div className='free-webinar-container-item-3'>
+                  <div>
+                    <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/ISA/faculity-icon.svg" alt="" />
+                    <span><h1>1000+</h1>
+                    <p>student coding competition</p>
+                    </span>
+                  </div>
+
                  
+                  <div>
+                  <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/ISA/college-icon.svg" alt="" />
+                    <span><h1>80+</h1>
+                    <p>college</p>
+                    </span>
+                  </div>
+
+                      <div>
+                  <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/ISA/faculity-icon.svg" alt="" />
+                    <span><h1>100+</h1>
+                    <p>student Placed</p>
+                    </span>
+                  </div>    
+
+
+
+                 </div>
       </section>
 
 

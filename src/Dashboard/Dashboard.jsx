@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// import '../Dashboard/Dashboard.css';
+import '../Dashboard/Dashboard.css';
 import axios from 'axios';
 import { NavLink } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
@@ -15,14 +15,14 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/buy');
+        const response = await axios.get('https://clone-backend-evgl.onrender.com/buy');
         setBoughtCourses(response.data);
       } catch (error) {
         console.log(error);
       }
     };
     fetchData();
-  }, [boughtcourses]);
+  }, []);
 
   const sidebarStyle = {
     width: firstHandle ? '90px' : '300px',
@@ -82,6 +82,7 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+      <div className='container'></div>
     </>
   );
 };

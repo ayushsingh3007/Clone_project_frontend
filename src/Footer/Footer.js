@@ -3,11 +3,14 @@
 // import {LuPhoneCall } from "react-icons/lu";
 // import { BiSolidMessageDetail } from "react-icons/bi";
 // import "../Footer/Footer.css";
-// import { NavLink } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+
 
 // const Footer = () => {
 //   return (
 //     <>
+
+
 //     <div className='footer-main-container'>
 //     <div className='footer-sub-container-1'>
 //         <div className='margin-align-1'>FOLLOW US</div>
@@ -32,22 +35,22 @@
 //         <div className='margin-align-1'>LATEST ARTICLES</div>
         
 //         <div className='margin-align-2'>
-//         <NavLink className="footer-navlink-style">find Command in linux with Examples</NavLink><br/>
-//         <NavLink className="footer-navlink-style">awk Command in unix/Linux Examples</NavLink><br/>
-//         <NavLink className="footer-navlink-style">grep Command in unix/Linux </NavLink><br/>
-//     <NavLink className="footer-navlink-style">ps Command in unix/Linux Examples</NavLink><br/>
-//     <NavLink className="footer-navlink-style">curl Command in Linux with Examples</NavLink><br/>
+//         <Link className="footer-navlink-style">find Command in linux with Examples</Link><br/>
+//         <Link className="footer-navlink-style">awk Command in unix/Linux Examples</Link><br/>
+//         <Link className="footer-navlink-style">grep Command in unix/Linux </Link><br/>
+//     <Link className="footer-navlink-style">ps Command in unix/Linux Examples</Link><br/>
+//     <Link className="footer-navlink-style">curl Command in Linux with Examples</Link><br/>
     
 //     </div>
     
 //     <div className='margin-align-3'>POPULAR ARTICLES</div>
     
 //     <div className='margin-align-2'>
-//         <NavLink className="footer-navlink-style">ifconfig Command in linux with Examples</NavLink><br/>
-//     <NavLink className="footer-navlink-style">Touch Command in Linux with Examples</NavLink><br/>
-//     <NavLink className="footer-navlink-style">ssh Command in Linux with Examples </NavLink><br/>
-//     <NavLink className="footer-navlink-style">screen Command in Linux with Examples</NavLink><br/>
-//     <NavLink className="footer-navlink-style">netstat Command in Linux </NavLink><br/>
+//         <Link className="footer-navlink-style">ifconfig Command in linux with Examples</Link><br/>
+//     <Link className="footer-navlink-style">Touch Command in Linux with Examples</Link><br/>
+//     <Link className="footer-navlink-style">ssh Command in Linux with Examples </Link><br/>
+//     <Link className="footer-navlink-style">screen Command in Linux with Examples</Link><br/>
+//     <Link className="footer-navlink-style">netstat Command in Linux </Link><br/>
     
 //     </div>
 //     </div>
@@ -55,13 +58,13 @@
 //     <div className='margin-align-1'>QUICK LINKS</div>
     
 //     <div className='margin-align-2'>
-//     <NavLink className="footer-navlink-style">Interview Notes</NavLink><br/>
-//     <NavLink className="footer-navlink-style">Mock Tests</NavLink><br/>
-//     <NavLink className="footer-navlink-style">Placement</NavLink><br/>
-//     <NavLink className="footer-navlink-style">Programs</NavLink><br/>
-//     <NavLink className="footer-navlink-style">Coding Courses</NavLink><br/>
-//     <NavLink className="footer-navlink-style">About Us</NavLink><br/>
-//     <NavLink className="footer-navlink-style">Blog</NavLink><br/>
+//     <Link className="footer-navlink-style">Interview Notes</Link><br/>
+//     <Link className="footer-navlink-style">Mock Tests</Link><br/>
+//     <Link className="footer-navlink-style">Placement</Link><br/>
+//     <Link className="footer-navlink-style">Programs</Link><br/>
+//     <Link className="footer-navlink-style">Coding Courses</Link><br/>
+//     <Link className="footer-navlink-style">About Us</Link><br/>
+//     <Link className="footer-navlink-style">Blog</Link><br/>
 //     </div>
     
     
@@ -76,7 +79,7 @@
 //       <span className='last-line'>Privacy Policy </span> <span className='last-line'>Refund Policy</span><span className='last-line'>Terms Of Use</span>
 //     </div>
     
-//     <div className='request-call-line'> Need Help? Talk to us on 079 6900 2111 or <NavLink className='request-call-line-sub'>Request Callback</NavLink></div>
+//     <div className='request-call-line'> Need Help? Talk to us on 079 6900 2111 or <Link className='request-call-line-sub'>Request Callback</Link></div>
 //     </> )
 // }
 

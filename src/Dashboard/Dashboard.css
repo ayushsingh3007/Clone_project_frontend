@@ -232,10 +232,6 @@
   text-decoration: none;
   color: grey;
 }
-.mock-sub-container{
-  display: flex;
-  justify-content:left;
- 
-  /* width: 900px; */
-  /* flex-wrap: wrap; */
+.container{
+  width: 50%;
 }
