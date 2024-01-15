@@ -16,7 +16,7 @@ const MockTest = () => {
       useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await axios.post('https://clone-backend-evgl.onrender.com/storecourse');
+            const response = await axios.post('http://localhost:4000/storecourse');
             setbooksdata(response.data);
             console.log(response.data);
           } catch (error) {

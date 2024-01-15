@@ -19,7 +19,7 @@ function Login() {
       const datasubmit=(e)=>{
         e.preventDefault()
         axios
-          .post('https://clone-backend-evgl.onrender.com/login',logindata)
+          .post('http://localhost:3000/login',logindata)
           
           .then((res) => {
             

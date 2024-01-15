@@ -8,6 +8,7 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 
 const Dashboard = () => {
+  
   const [boughtcourses, setBoughtCourses] = useState([]);
   const [firstHandle, setFirstHandle] = useState(false);
   const [localName, setLocalName] = useState(localStorage.getItem('selfname'));
