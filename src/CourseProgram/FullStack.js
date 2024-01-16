@@ -497,7 +497,9 @@ Start learning web development from basics of HTML, CSS, Javascript.Master lates
 
      
       <section className='fs-container-13'>
-           <div className='fs-container-13-left'></div>
+           <div className='fs-container-13-left'>
+           
+           </div>
            <div className='fs-container-13-right'></div>
       </section>
 

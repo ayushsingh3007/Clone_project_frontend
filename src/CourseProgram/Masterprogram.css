@@ -335,10 +335,111 @@
 }
 
 
-.select-batch-container{
-  width: 100vw;
-  border-top: 2px solid grey;
-  border-bottom: 2px solid grey;
-  display: flex;
-  flex-direction: row;
-}
+.batch-selector-container-mpc{
+    width: 100vw;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    justify-content: center;
+    margin-top:0% ;
+    border-top:2px solid grey;
+    border-bottom: 2px solid grey;
+    margin-top: 10%;
+ }
+ 
+ .select-batch-label-mpc{
+   
+   width: 20%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: grey;
+   font-weight: bold;
+   font-size: 18px;
+ }
+ .radio-group-mpc{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+ }
+ .input-item-1{
+    width: 45%;
+    height: 45%;
+    border: none;
+    background: #00a6eb;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+ }
+ .input-item-1 :hover{
+    width: 45%;
+    height: 45%;
+    border: none;
+    background:white;
+    box-shadow: 1px 1px 10px grey;
+    border-radius: 5px;
+    color:#00a6eb;
+    border-bottom:2px solid #00a6eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .input-item-2{
+    width: 45%;
+    height: 45%;
+    border: none;
+    background:white;
+    box-shadow: 1px 1px 10px grey;
+    border-radius: 5px;
+    color:#00a6eb;
+    border-bottom:2px solid #00a6eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .radio-group-mpc input{
+    width: 25%;
+    height: 20%;
+    }
+ 
+ .priceandenroll-items-mpc{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+ 
+    align-items: center;
+    justify-content: space-between;
+    gap: 1%;
+ }
+ .priceandenroll-items-mpc p{
+    font-weight: bold;
+    color:#00a6eb;
+    font-size: larger;
+    padding-top: 10%;
+ }
+ .priceandenroll-items-mpc span{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+ }
+ .priceandenroll-items-mpc span button{
+    width: 45%;
+    height: 80%;
+    border: none;
+    color: white;
+    font-weight: bold;
+    
+ }
+ 
+ 

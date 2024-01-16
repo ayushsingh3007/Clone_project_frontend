@@ -1,6 +1,7 @@
 import React from 'react'
 import "../Home/Home.css"
 import "../Home/Home1.css"
+import Footer from '../Footer/Footer'
 
 
 

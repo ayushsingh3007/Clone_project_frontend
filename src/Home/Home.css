@@ -4,11 +4,11 @@
 }
 body{
     overflow-x: none;
-    font-family: Poppins,sans-serif;
+   font-family:  Poppins,"sans-serif";
 }
 
 .home-container{
-    font-family:'Roboto';
+    font-family:sans-serif;
     display: flex;
 
     width: 100vw;
@@ -660,8 +660,7 @@ body{
     margin: auto;
     align-items: center;
 
-    position: relative;
-    top: 30rem;
+    margin-top: 30rem;
 }
 
 .be-a-part-card{
@@ -704,4 +703,8 @@ body{
     background: #00a5ec;
     border: none;
     color: white;
+}
+.home-footer{
+    position: fixed;
+    bottom: 0px;
 }

@@ -1,8 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../CourseProgram/Masterprogram.css"
 
 function Masterprogram() {
+  const [selectedBatch, setSelectedBatch] = useState(null);
 
+  const handleBatchChange = (event) => {
+    setSelectedBatch(event.target.value);
+  };
+  const getPriceForBatch = (batch) => {
+    // Add your logic to determine the price for each batch
+    // For example, you can use a switch statement or an object mapping
+    switch (batch) {
+      case '1may':
+        return '$10.99';
+      case '15may':
+        return '$15.99';
+      default:
+        return 'N/A';
+    }
+  };
   return (
     <>
 
@@ -170,8 +186,39 @@ function Masterprogram() {
           </section>
 
             
-<section className='select-batch-container'>
-
+<section className='select-batch-container-mpc'>
+<div className="batch-selector-container-mpc">     <label className='select-batch-label-mpc'>Select Batch</label>
+      <div className="radio-group-mpc">
+       <div className='input-item-1'> <input
+          type="radio"
+          id="batch1"
+          name="batch"
+          value="1may"
+          checked={selectedBatch === '1may'}
+          onChange={handleBatchChange}
+        />
+        <label htmlFor="batch1">1 May</label>
+           </div>
+  <div  className='input-item-2'>         
+        <input
+          type="radio"
+          id="batch15"
+          name="batch"
+          value="15may"
+          checked={selectedBatch === '15may'}
+          onChange={handleBatchChange}
+          
+        />
+        <label htmlFor="batch15">15 May</label>
+        </div>
+      </div>
+      <div className='priceandenroll-items-mpc'>
+      <p>Price: {getPriceForBatch(selectedBatch)}</p>
+      <span><button style={{background:' #00a6eb',borderRadius:'10px'}}>Enroll Now</button>
+      </span>
+      </div>
+    </div>
+   
 </section>
 
 

@@ -1,10 +1,10 @@
-
+import React from 'react';
 
 import './App.css';
 
 
-// import Footer from './Footer/Footer.js';
 import Navbar from './Navbar/Navbar.js';
+import Footer from './Footer/Footer.js';
 
 
 
