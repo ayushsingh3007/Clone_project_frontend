@@ -32,7 +32,7 @@ const registervalue=(e)=>{
         // alert(res.data.msg);
         console.log(res.data)
         
-        if (res.data.msg === "user successfully registered") {
+        if (res.data.msg === "user registerd successfully") {
           localStorage.setItem('token',res.data.token)
 
           console.log(res.data.token)
