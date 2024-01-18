@@ -221,7 +221,36 @@ function Masterprogram() {
    
 </section>
 
+        <section className='endofcourse'>
+                <p>By The End Of This Course, You Will Be Able To</p>
+                <div className='endofcourse-item'>
+                  <div className='endofcourse-item-img'>
+                    <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/zenithWebp/Vecto2.webp" alt="" />
+                  </div>
+                  <div className='endofcourse-item-cards'>
+                         <div className='endofcourse-item-cards-item-1'>
+                          
+                          <p>
+                           <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/zenithWebp/1.webp" alt="" /> 4 star above or code chef</p>
+                         </div>
+                         <div className='endofcourse-item-cards-item-2'>
+                         <p>
+                           <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/zenithWebp/2.webp" alt="" /> Crack contests like Facebook Hacker Cup, Google Kickstart, ACM ICPC</p>
+                         </div>
+                         <div className='endofcourse-item-cards-item-3'>
+                         <p>
+                           <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/zenithWebp/3.webp" alt="" /> Candidate master and above in CodeForces</p>
+                         </div>
+                         <div className='endofcourse-item-cards-item-4'>
+                         <p>
+                           <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/zenithWebp/4.webp" alt="" /> Specialist and above in SPOJ.com</p>
+                         </div>
 
+
+
+                  </div>
+                </div>
+        </section>
 
     </>
   )

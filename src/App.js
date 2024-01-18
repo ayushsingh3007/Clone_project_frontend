@@ -3,8 +3,9 @@ import React from 'react';
 import './App.css';
 
 
-import Navbar from './Navbar/Navbar.js';
+
 import Footer from './Footer/Footer.js';
+import RouteCompo from './RouteCompo/RouteCompo.js';
 
 
 
@@ -13,10 +14,10 @@ import Footer from './Footer/Footer.js';
 function App() {
   return (
     <div >
-  
-<Navbar/>
 
-  {/* <Footer/> */}
+<RouteCompo/>
+
+  <Footer/>
   
   </div>
       

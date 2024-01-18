@@ -234,7 +234,7 @@
 }
 .container-dashboard{
 min-height:74%;
-width: 70%;
+min-width: 70%;
 display: flex;
 
 position: fixed;

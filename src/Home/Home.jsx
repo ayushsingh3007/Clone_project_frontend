@@ -1,7 +1,7 @@
 import React from 'react'
 import "../Home/Home.css"
 import "../Home/Home1.css"
-import Footer from '../Footer/Footer'
+
 
 
 
@@ -15,8 +15,8 @@ function Home() {
                   <div className='home-page-left'>
                <div>
                 <h2 className='home-page-top-heading-1'>Start your journey of success</h2>
-                <h2>Personalised Coding Programs</h2>
-                <h2>to make coding easier for you</h2>
+                <h2 className='home-page-top-heading-2'>Personalised Coding Programs</h2>
+                <h2 className='home-page-top-heading-2'>to make coding easier for you</h2>
                 <p className='home-page-top-para'>Want to know how PrepBytes can help you?</p>
                 <button>Know More</button>
                             </div>
@@ -77,7 +77,7 @@ function Home() {
       
 <div className='course-card-container'>
   
-  <p style={{textAlign:'center',color:'grey',fontSize:'bolder'}}> I WANT TO</p>
+  <p style={{textAlign:'center',color:'grey',fontSize:'30px',fontWeight:"600",marginTop:'10%'}}> I WANT TO</p>
   <div className='course-item'>
     <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/prepare_for_campus.webp' alt='' width='80%'/>
     <p>PREPARE FOR CAMPUS PLACEMENTS</p>
@@ -337,7 +337,64 @@ function Home() {
 
       </section>
 
+      <section className='most-popular-blogs-container'>
+                <h1>Most Popular Blog</h1>
+               <div  className='most-popular-blogs-container-cards'>
+                <div className='most-popular-blogs-container-cards-item-1'>
+                   <div>
+                    <img src="https://blog-images-upload.s3.ap-south-1.amazonaws.com/blog_top_50_interview_questions_answers.png" alt="" />
+                   </div>
+                   <div>
+                    <p className='topquestion'>Top 50 C Programming Interview Questions and Answers</p>
+                    <p className='readmore'>Read More</p>
+                   </div>
+                </div>
 
+                <div className='most-popular-blogs-container-cards-item-1'>
+                   <div>
+                    <img src="https://blog-images-upload.s3.ap-south-1.amazonaws.com/blog_top_50_interview_questions_answers.png" alt="" />
+                   </div>
+                   <div>
+                    <p className='topquestion'>Top 50 C Programming Interview Questions and Answers</p>
+                    <p className='readmore'>Read More</p>
+                   </div>
+                </div>
+                <div className='most-popular-blogs-container-cards-item-1'>
+                   <div>
+                    <img src="https://blog-images-upload.s3.ap-south-1.amazonaws.com/blog_top_50_interview_questions_answers.png" alt="" />
+                   </div>
+                   <div>
+                    <p className='topquestion'>Top 50 C Programming Interview Questions and Answers</p>
+                    <p className='readmore'>Read More</p>
+                   </div>
+                </div>
+
+
+
+
+               </div>
+              
+                
+      </section>
+
+        <section className='talkto-experts-container'>
+             <div className='talkto-experts-container-left'>
+              <h1>Talk to Our Expert</h1>
+              <p>Still Confused how PrepBytes can help you achieve your dream? Talk to our experts</p>
+              <div>              <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/call_back.svg" alt="" />
+</div>              
+             </div>
+
+
+
+             <div className='talkto-experts-container-right'>
+              <input type="text"  placeholder='Name' className='input-field-talkto'/>
+              <input type="email"  placeholder='Email' className='input-field-talkto'/>
+              <input type="number"  placeholder='phone' className='input-field-talkto'/>
+              <input type="text" placeholder='Query' className='query-input'/>
+             <button>Request a Call</button>
+             </div>
+        </section>
 
     </>
   )

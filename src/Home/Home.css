@@ -4,7 +4,7 @@
 }
 body{
     overflow-x: none;
-   font-family:  Poppins,"sans-serif";
+   
 }
 
 .home-container{
@@ -34,11 +34,14 @@ body{
 
 .home-page-top-heading-1{
     color: rgb(226, 109, 109);
-    font-weight: bold;
+    width: 100%;
+    font-size: 35px;
+    font-weight: 500;
 }
 
 .home-page-top-para{
     color: rgb(226, 109, 109);
+    
 
 }
 .home-page-left button{
@@ -51,6 +54,13 @@ body{
     color: white;
     padding: 8px;
     border-radius: 3px;
+}
+.home-page-top-heading-2{
+    width: 100%;
+    font-size: 35px;
+    font-weight: 600;
+    
+    color: #3e4041;
 }
 
 .top-links-img{
@@ -83,7 +93,7 @@ body{
     width: 50%;
 }
 .bottom-boy-container-left img{
-    width: 60%;
+    width: 70%;
     padding: 20px  50px;
     
 }
@@ -98,10 +108,10 @@ body{
 }
 
 .bottom-boy-container-right-text{
-    width: 80%;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-style: normal;
+    width: 100%;
+    color: #424242;
+    font-size: 28px;
+    font-weight: 500;
    margin-top: 10%;
 }
 
@@ -138,8 +148,8 @@ body{
     padding: 12px 12px;
     position: relative;
     left: 40%;
-    border: 1px dotted rgb(226, 109, 109);
-    color: rgb(247, 128, 119);
+    border: 1px dashed rgb(253, 205, 6);
+    color:rgb(253, 205, 6);
     font-weight: 600;
 
 }
@@ -155,8 +165,8 @@ body{
     width: 28%;
     height: 40%;
     padding: 10px 10px;
-    border: 1px dotted rgb(226, 109, 109);
-    color: rgb(247, 128, 119);
+    border: 1px dotted  rgb(15, 181, 130);
+    color: rgb(15, 181, 130);
     font-weight: 600;
     /* background-color: rgb(231, 142, 109); */
 }
@@ -169,7 +179,7 @@ body{
 
 .cards-item-4{
     width: 28%;
-    height: 30%;
+    height: 40%;
     padding: 12px 12px;
     position: relative;
     left: 40%;
@@ -180,9 +190,9 @@ body{
 }
 .card-4-arrow{
     width: 25%;
-    position: relative;
-    top:-20%;
-    left: 15%;
+
+    margin-top:-20%;
+    margin-left: 15%;
    }
 
 
@@ -191,8 +201,7 @@ body{
     
     background: white;
 
-    position: relative;
-    top:8rem;
+    margin-top: 10%;
     left: 10px;
     display: flex;
     flex-direction: row;
@@ -204,8 +213,9 @@ body{
    .course-card-container p{
     width: 100%;
     height: 5rem;
+    margin-top: 10%;
     font-size: larger;
-    font-weight: bolder;
+    font-weight: bold;
    }
 
    .course-item{
@@ -216,8 +226,8 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    word-wrap: break-word;
-    font-weight: bolder;
+    
+    font-weight: bold;
     box-shadow: 1px 1px 5px grey;
     color:rgb(0, 89, 255);
     border: none;
@@ -256,10 +266,16 @@ body{
     gap: 4%;
     padding: 10px 10px;
     font-style: normal;
+  }
+   .language-item-1 h2{
+    color: #3e4041;
+    font-size: 30px;
+    
+    margin-bottom: 25px;
    }
    .language-item-1 div{
        width: 90%;
-       height: 5rem;
+       height: 8rem;
        
        box-shadow: 1px 1px 5px grey;
        border-radius: 4px;
@@ -461,6 +477,9 @@ body{
     text-align: center;
     width: 40%;
     padding-top: 2%;
+    color: #3e4041;
+    font-size: 40px;
+    font-weight: 600;
 
 }
 .slider-home{
@@ -545,12 +564,14 @@ body{
 .post-mentor{
     font-size: 14px;
     color: #858585;
+    font-weight: 200px;
     margin-left: 15px;
     padding-top: 0px;
 }
 .detail-mentor{
     overflow:scroll;
     padding: 10px 10px;
+    font-size: 14px;
     color: #4f4f53;
     font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
@@ -707,4 +728,158 @@ body{
 .home-footer{
     position: fixed;
     bottom: 0px;
+}
+
+.most-popular-blogs-container{
+    width: 100%;
+   background:#fdf0d7;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+
+}
+.most-popular-blogs-container h1{
+    text-align: center;
+    padding-top: 5%;
+    margin-bottom: 30px;
+    color: #424242;
+    font-weight: 600;
+    font-size: 35px;
+
+}
+
+.most-popular-blogs-container-cards{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    
+    margin-bottom: 2%;
+    
+}
+.most-popular-blogs-container-cards-item-1{
+    width: 38%;
+    height: 33rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    background:white;
+}
+.most-popular-blogs-container-cards-item-1 div{
+    width: 100%;
+    height: 50%;
+    
+}
+.most-popular-blogs-container-cards-item-1 div img{
+    width: 100%;
+    height: 100%;
+}
+.topquestion{
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 30px;
+    text-align: left;
+    line-height: 2rem;
+}
+.readmore{
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    background: #fff;
+    color: #00a5ec;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 0px;
+}
+
+
+.talkto-experts-container{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+   margin-bottom: 2%;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 10%;
+    background: white;
+    box-shadow: 1px 1px 10px grey;
+}
+
+.talkto-experts-container-left{
+    width: 49%;
+    height: 40rem;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    
+}
+.talkto-experts-container-left p{
+    color: #858585;
+    font-size: 16px;
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+}
+.talkto-experts-container-left{
+    color: #424242;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+.talkto-experts-container-left div{
+    width: 100%;  
+    height: 50%;
+
+}
+.talkto-experts-container-left div img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.talkto-experts-container-right{
+    display: flex;
+    width: 49%;
+    height: 40rem;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+
+
+}
+.input-field-talkto{
+    width: 80%;
+    height: 8%;
+    border-radius: 5px;
+    margin: auto;
+    outline: none;
+    border: none;
+    border: 1px solid grey;
+    background: rgb(253, 251, 251);
+}
+
+.query-input{
+    width: 80%;
+    height: 23%;
+}
+.talkto-experts-container-right button{
+    width: 80%;
+    height: 7%;
+    font-size: 22px;
+    margin-top: 4%;
+    background: rgb(226, 109, 109);
+    color: white;
+    border: none;
+    margin-bottom: 4%;
 }
