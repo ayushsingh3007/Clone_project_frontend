@@ -266,6 +266,9 @@
    background-color: white;
    font-size: 35px;
    color: black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    
 }
 .fs-container4-sub3-item2-sty1{
@@ -279,15 +282,11 @@
    color: white;
    background-color: rgb(186, 186, 186);
    border-radius: 10px;
-
+   
 }
 .fs-container4-sub3-item2{
    width:60%;
-   
-   
-   
-   
-}
+   }
 .fs-container4-sub3-item2-insub{
    display: flex;
    justify-content: space-around;

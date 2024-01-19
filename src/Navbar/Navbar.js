@@ -92,8 +92,8 @@ const logoutbtn=()=>{
                <li><Link to='/css'>CSS</Link></li>
                <li><Link to='/react'>REACT</Link></li>
                <li><Link to='java'>JAVASCRIPT</Link></li>
-               <li>NODE</li>
-               <li>DB</li>
+               <li><Link to='/node'>NODE</Link></li>
+               <li><Link to='/db'>DB</Link></li>
   
              </ul>
              
