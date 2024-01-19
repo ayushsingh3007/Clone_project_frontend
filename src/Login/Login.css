@@ -150,12 +150,14 @@ body{
 }
 #email,#password{
   border-bottom: 1px solid rgb(136, 132, 132);
-  height: 0px;
+  height: 40%;
   outline: none;
   border: none;
 }
 
 #email,#password:hover{
- height: 30px;
+ height: 30%;
  border-bottom: 1px solid black;
+ outline: none;
+ border: none;
 }

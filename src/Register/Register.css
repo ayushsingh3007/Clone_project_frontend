@@ -166,28 +166,32 @@ label h3{
     justify-content: space-between;
 
 }
-input{
-    height: 30%;   
+#name,#email,#password,#college,#passyear,#phone{
+    height: 50%;   
     outline: none;
+    border: none;
     border-bottom: 1px solid rgb(128, 128, 128);
     
 }
 
-.college input{
+/* .college input{
     width: 100%;
-}
+} */
 
 .passingyear{
     width: 42%;
-    
-    height: 30%;
+    border-bottom: 1 px solid black;
+    height: 100%;
 }
-.passingyear input{
+#passyear{
     width: 100%;
 }
 .college{
     width: 42%;
-    height: 30%;
+    height: 100%;
+    border-bottom: 1px solid black;
+    border: none;
+    outline: none;
     
 } 
 

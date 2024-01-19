@@ -1,9 +1,8 @@
 import React from 'react'
-
-function Css() {
+import "../Project/Project.css"
+function JavaCompo() {
   return (
     <>
-    
     <div className='project_conatiner'>
              <div className='project_conatiner-left'>
               <h2 style={{fontFamily:"cursive",color:"grey"}}>Html Blog App </h2>
@@ -28,9 +27,8 @@ function Css() {
     
     
     
-    
     </>
   )
 }
 
-export default Css
+export default JavaCompo

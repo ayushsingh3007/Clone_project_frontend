@@ -400,15 +400,15 @@
 }
 
 .fs-container6-sub2-items-text2{
-   color:rgb(46, 46, 112);
-   font-size: 24px;
-   margin-top: 10px;
+   color: rgb(46, 46, 112);
+    font-size: 24px;
+    margin-top: 10px;
 }
 .fs-container6-sub2-items-text3{
    margin-top: 30px;
-   color:rgb(107, 107, 107);
-   font-size: 18px;
-   margin-bottom: 70px;
+   color: rgba(106,127,134,.9294117647058824);
+    text-align: center;
+    margin-bottom: 50px;
 }
 .fs-container6-sub2-items-text4{
    display: flex;
@@ -432,7 +432,7 @@
    width: 50%;
    font-size: 28px;
    font-weight: 600;
-   border: 1px solid red;
+
 }
 .fs-container7-sub1-item1{
    display: flex;
@@ -459,7 +459,7 @@
    width: 40%;
    font-size: 28px;
    font-weight: 600;
-   border: 1px solid red;
+   
 }
 .fs-container8{
    background-image: linear-gradient(to right,rgb(51, 51, 200),rgb(1, 1, 20));
@@ -478,7 +478,6 @@
    display: flex;
    justify-content: space-around;
    flex-wrap: wrap;
-   border: 1px solid red;
 }
 .fs-container8-sub2-items{
    position: relative;
@@ -651,16 +650,61 @@
    justify-content: center;
    align-items: center;
    margin: auto;
-   border: 1px solid black;
+   
   margin-top: 10%;
+  background: white;
    
 
 }
 .fs-container-13-left{
    width: 50%;
    height: 35rem;
-   border: 1px solid black;
+
+   display: flex;
+   flex-direction:column;
+   justify-content: center;
+   align-items: center;
+   gap: 1%;
 }
+.fs-container-13-left p{
+   color: rgba(10,45,71,.9294117647058824);
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.fs-container-13-left-img-text{
+   width: 80%;
+   height: 68%;
+   
+   display: flex;
+   flex-direction: column;
+   gap: 3%;
+   justify-content: center;
+   align-items: center;
+}
+.fs-container-13-left-img-text span{
+   width: 90%;
+   height: 25%;
+
+   display: flex;
+   flex-direction: row;
+   gap: 10%;
+   
+}
+.fs-container-13-left-img-text span img{
+   width: 15%;
+   height: 100%;
+}
+.fs-container-13-left-img-text span p{
+   color: rgba(72,55,55,.9294117647058824);
+   font-size: 18px;
+   margin: auto;
+}
+
+
+
+
 .fs-container-13-left img{
    width: 100%;
    height: 100%;
@@ -668,6 +712,127 @@
 .fs-container-13-right{
    width: 50%;
    height: 35rem;
-   border: 1px solid black;
+
    background: rgba(244,163,76,.9294117647058824);
+   display: flex;
+   flex-direction: column;
+   gap: 3%;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+
+.fs-container-13-right h2{
+   color: rgba(10,45,71,.9294117647058824);
+   font-size: 24px;
+   margin-top: 50px;
+   margin-bottom: 20px;
+   text-align: center;
+}
+.fs-container-13-right p{
+   color: hsla(0,0%,100%,.9294117647058824);
+    text-align: center;
+}
+.fs-container-13-right div{
+   width: 85%;
+   height: 65%;
+   
+}
+.fs-container-13-right div img{
+   width: 100%;
+   height: 100%;
+}
+
+
+.fs-container-14{
+   width: 100vw;
+   height: 35rem;
+   
+   display: flex;
+   
+ justify-content: center;
+ align-items: center;
+   background: transparent linear-gradient(89deg,rgba(45,111,162,.8862745098039215),rgba(2,9,14,.9294117647058824)) 0 0 no-repeat padding-box;
+}
+.fs-container-14-card{
+   width: 95%;
+   height: 30rem;
+   background: white;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+.fs-container-14-left{
+   width: 50%;
+   height: 80%;
+  border-right: 1px solid grey;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 10%;
+}
+.fs-container-14-left div{
+   width: 28%;
+   height: 30%;
+   display: flex;
+   flex-direction: column;
+   gap: 10%;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.fs-container-14-left div p{
+   color: grey;
+   font-weight: lighter;
+}
+.fs-container-14-left div h2{
+   letter-spacing: 0;
+    font-weight: 600;
+    color: #424242;
+    font-size: 14px;
+}
+.fs-container-14-right{
+   width: 50%;
+   height: 100%;
+
+   display: flex;
+   flex-direction: column;
+   gap: 10%;
+}
+.fs-container-14-right p{
+   text-align: center;
+   color: rgba(10,45,71,.9294117647058824);
+   font-size: 24px;
+   margin-bottom: 30px;
+   margin-top: 10%;
+}
+.fs-container-14-right div{
+   width: 95%;
+   height: 15%;
+   
+   display: flex;
+   flex-direction: column;
+   padding: 0px 10px;
+}
+.emailinput{
+   width: 100%;
+   height: 40%;
+   border: none;
+   border-bottom: 1px solid grey;
+   outline: none;
+}
+.getintouchbtn{
+   width: 30%;
+   height: 10%;
+   margin-bottom: 10%;
+   margin: auto;
+   border: none;
+   border: 1px solid  #ff219f;
+   color:  #ff219f;
+   font-size: 18px;
+   background: white;
 }

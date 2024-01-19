@@ -11,10 +11,10 @@ import RouteCompo from './RouteCompo/RouteCompo.js';
 
 
 
+
 function App() {
   return (
     <div >
-
 <RouteCompo/>
 
   <Footer/>
