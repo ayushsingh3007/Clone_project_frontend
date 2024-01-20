@@ -42,7 +42,7 @@ const Dashboard = () => {
     localStorage.clear('token')
     setBoughtCourses([])
     localStorage.removeItem('selfname');
-  
+   
     setLocalName(null);
     
   };

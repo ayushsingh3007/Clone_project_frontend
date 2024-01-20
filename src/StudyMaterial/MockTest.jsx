@@ -13,30 +13,30 @@ const MockTest = () => {
     
       
 
-      useEffect(() => {
-        const fetchData = async () => {
-          try {
-            const response = await axios.post('http://localhost:4000/storecourse');
-            setbooksdata(response.data);
-            console.log(response.data);
-          } catch (error) {
-            console.error(error);
-          }
-        };
+    useEffect(() => {
+      const fetchData = async () => {
+        try {
+          const response = await axios.post('https://clone-backend-evgl.onrender.com/storecourse');
+          setbooksdata(response.data);
+          console.log(response.data);
+        } catch (error) {
+          console.error(error);
+        }
+      };
+  
+      fetchData(); 
+    }, []);
+  
+    const checkitem=(id)=>{
+      for (let i=0;i<booksdata.length;i++){
+                    if(booksdata[i].id===id){
+                        booksdata[i]['email']=localStorage.getItem("selfdetails")
+                        return [booksdata[i]]
     
-        fetchData(); 
-      }, []);
-    
-      const checkitem=(id)=>{
-        for (let i=0;i<booksdata.length;i++){
-                      if(booksdata[i].id===id){
-                          booksdata[i]['email']=localStorage.getItem("selfdetails")
-                          return [booksdata[i]]
-      
-                      }
-                  }
+                    }
+                }
 
-      }
+    }
       const   dopayment=async (id)=>{
         const result=await checkitem(id)
         
@@ -50,7 +50,7 @@ const headers={
   "content-Type":"application/json"
 }
 try {
-  const response = await fetch("http://localhost:4000/createCheckout", {
+  const response = await fetch("https://clone-backend-evgl.onrender.com/createCheckout", {
     method: "POST",
     headers: headers,
     body: JSON.stringify(body),
