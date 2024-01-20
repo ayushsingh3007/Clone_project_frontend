@@ -18,9 +18,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* background-color: white;
-  border: 1px solid transparent; 
-  box-shadow: 0 4px 5px -0px rgba(0, 0, 0, 0.064); */
+  
  
 }
 .dashboard-navbar-subitem1{

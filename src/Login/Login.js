@@ -32,7 +32,7 @@ function Login() {
                 console.log(res.data.userdetail.email)
                 localStorage.setItem("selfname",res.data.userdetail.name)
                 localStorage.setItem("selfdetails",res.data.userdetail.email)
-                // localStorage.setItem("loginhandle",false)
+    
               
                 alert(res.data.msg)
                 navigate('/')

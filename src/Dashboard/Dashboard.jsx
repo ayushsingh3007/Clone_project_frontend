@@ -26,7 +26,7 @@ const Dashboard = () => {
   }, []);
 
   const sidebarStyle = {
-    width: firstHandle ? '8%' : '25%',
+    width: firstHandle ? '6%' : '18%',
     transition: 'width 2s',
   };
 
