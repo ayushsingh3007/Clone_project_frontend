@@ -16,7 +16,7 @@ const MockTest = () => {
     useEffect(() => {
       const fetchData = async () => {
         try {
-          const response = await axios.post('https://clone-backend-evgl.onrender.com/storecourse');
+          const response = await axios.post('http://localhost:4000/storecourse');
           setbooksdata(response.data);
           console.log(response.data);
         } catch (error) {
@@ -50,7 +50,7 @@ const headers={
   "content-Type":"application/json"
 }
 try {
-  const response = await fetch("https://clone-backend-evgl.onrender.com/createCheckout", {
+  const response = await fetch("http://localhost:4000/createCheckout", {
     method: "POST",
     headers: headers,
     body: JSON.stringify(body),
