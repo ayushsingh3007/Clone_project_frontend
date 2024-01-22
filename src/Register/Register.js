@@ -25,7 +25,7 @@ const registervalue=(e)=>{
     e.preventDefault()
     
     axios
-      .post('https://clone-backend-evgl.onrender.com/register',registerdata)
+      .post('http://http:localhost:4000/register',registerdata)
       .then((res) => {
         
         // setStore(res.data.msg);
