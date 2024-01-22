@@ -26,7 +26,7 @@ export default function Navbar() {
   useEffect(() => {
     if (token) {
       console.log(token);
-        axios.get("https://clone-backend-evgl.onrender.com/auth", { headers: { "authorization": `Bearer ${token}` } }) 
+        axios.get("http://localhost:4000/auth", { headers: { "authorization": `Bearer ${token}` } }) 
             .then((res) => {
                 console.log(res.data.msg);
                 if (res.data.msg ==="User Authorized") {
