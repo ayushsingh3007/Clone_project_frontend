@@ -212,9 +212,9 @@ function Home() {
           
           <div className='mentor-chart-item item-2'>
           <div className='mentor-img-item'>
-              <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/mamta_ma'am(Mentor).png" alt="" />
+              <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/Aditya_bhusan.png" alt="" />
             </div>
-            <h3 className='name-mentor'>Mamta </h3>
+            <h3 className='name-mentor'>Aditya </h3>
             <p className='post-mentor'>Co-Founder, PrepBytes</p><hr />
             <div className='detail-mentor'>Mamta has a great passion for coding and motivates students to pursue coding. Her mission is to use her knowledge and expertise to help students get placed in their dream company.</div>
             <img  className='working-company-img' src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/Amazon%2Bsam.png" alt="" />
@@ -224,9 +224,9 @@ function Home() {
 
           <div className='mentor-chart-item item-3'>
           <div className='mentor-img-item'>
-              <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/mamta_ma'am(Mentor).png" alt="" />
+              <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/aveek_sir.png" alt="" />
             </div>
-            <h3 className='name-mentor'>Mamta </h3>
+            <h3 className='name-mentor'>Aveek </h3>
             <p className='post-mentor'>Co-Founder, PrepBytes</p><hr />
             <div className='detail-mentor'>Mamta has a great passion for coding and motivates students to pursue coding. Her mission is to use her knowledge and expertise to help students get placed in their dream company.</div>
             <img  className='working-company-img' src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/Amazon%2Bsam.png" alt="" />
@@ -236,9 +236,9 @@ function Home() {
 
           <div className='mentor-chart-item item-4'>
           <div className='mentor-img-item'>
-              <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/mamta_ma'am(Mentor).png" alt="" />
+              <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/kunal_sir.png" alt="" />
             </div>
-            <h3 className='name-mentor'>Mamta </h3>
+            <h3 className='name-mentor'>Kunal </h3>
             <p className='post-mentor'>Co-Founder, PrepBytes</p><hr />
             <div className='detail-mentor'>Mamta has a great passion for coding and motivates students to pursue coding. Her mission is to use her knowledge and expertise to help students get placed in their dream company.</div>
             <img  className='working-company-img' src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/Amazon%2Bsam.png" alt="" />
@@ -246,9 +246,9 @@ function Home() {
           </div>
           <div className='mentor-chart-item item-5'>
           <div className='mentor-img-item'>
-              <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/mamta_ma'am(Mentor).png" alt="" />
+              <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/virali_vora.png" alt="" />
             </div>
-            <h3 className='name-mentor'>Mamta </h3>
+            <h3 className='name-mentor'>Virali </h3>
             <p className='post-mentor'>Co-Founder, PrepBytes</p><hr />
             <div className='detail-mentor'>Mamta has a great passion for coding and motivates students to pursue coding. Her mission is to use her knowledge and expertise to help students get placed in their dream company.</div>
             <img  className='working-company-img' src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/Amazon%2Bsam.png" alt="" />
@@ -256,9 +256,9 @@ function Home() {
           </div>
           <div className='mentor-chart-item item-6'>
           <div className='mentor-img-item'>
-              <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/mamta_ma'am(Mentor).png" alt="" />
+              <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/kushdeep_sir.png" alt="" />
             </div>
-            <h3 className='name-mentor'>Mamta </h3>
+            <h3 className='name-mentor'>Kushdeep </h3>
             <p className='post-mentor'>Co-Founder, PrepBytes</p><hr />
             <div className='detail-mentor'>Mamta has a great passion for coding and motivates students to pursue coding. Her mission is to use her knowledge and expertise to help students get placed in their dream company.</div>
             <img  className='working-company-img' src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/homepage/Amazon%2Bsam.png" alt="" />
