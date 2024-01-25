@@ -1,27 +1,28 @@
 import React, { useState } from 'react'
 import "../CourseProgram/Masterprogram.css"
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import "../CourseProgram/Masterprogram1.css"
+// import Carousel from "react-multi-carousel";
+// import "react-multi-carousel/lib/styles.css";
 function Masterprogram() {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 2
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 2
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
-  };
+  // const responsive = {
+  //   superLargeDesktop: {
+  //     // the naming can be any, depends on you.
+  //     breakpoint: { max: 4000, min: 3000 },
+  //     items: 2
+  //   },
+  //   desktop: {
+  //     breakpoint: { max: 3000, min: 1024 },
+  //     items: 2
+  //   },
+  //   tablet: {
+  //     breakpoint: { max: 1024, min: 464 },
+  //     items: 2
+  //   },
+  //   mobile: {
+  //     breakpoint: { max: 464, min: 0 },
+  //     items: 1
+  //   }
+  // };
 
 
 
@@ -136,7 +137,7 @@ function Masterprogram() {
                 </div>
                 
               </div>
-              <h2 style={{textAlign:'center',marginTop:"10%"}}>Master Competitive Programming With Us</h2>
+              <h2  className='master-competitive-program-text'>Master Competitive Programming With Us</h2>
           </section>
 
 
@@ -223,7 +224,7 @@ function Masterprogram() {
 
 
 
-           <section className='master-slider-container'>
+           {/* <section className='master-slider-container'>
 
            <Carousel responsive={responsive}>
   <div className='master-slider-container-item'>Item 1</div>
@@ -236,7 +237,7 @@ function Masterprogram() {
   <div className='master-slider-container-item'>Item 4</div>
                             </Carousel>
 
-           </section>
+           </section> */}
 
 
 

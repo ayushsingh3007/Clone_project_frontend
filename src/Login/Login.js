@@ -18,7 +18,7 @@ function Login() {
       };
       const datasubmit=(e)=>{
         e.preventDefault()
-        axios.post('https://clonebackend-koqz.onrender.com/login',logindata)      
+        axios.post('http://localhost:4200/login',logindata)      
           .then((res) => {
             
             
@@ -134,7 +134,7 @@ function Login() {
               <form autoComplete='off'>
                 <label htmlFor='email-login'>Email</label>
                 <input type='text' id='email-login' name='email' className='input-email-login' value={logindata.email} onChange={storedata}/>
-                <label htmlFor='password-logi '>Password</label>
+                <label htmlFor='password-login'>Password</label>
                 <input type='password' id='password-login' name='password'value={logindata.password} onChange={storedata} className='input-password-login' />
               </form>
             <div className='button-container-login'>

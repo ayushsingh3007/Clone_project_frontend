@@ -25,7 +25,7 @@ const registervalue=(e)=>{
     e.preventDefault()
     
     axios
-    .post('https://clonebackend-koqz.onrender.com/register',registerdata)
+    .post('http://localhost:4200/register',registerdata)
 
       .then((res) => {
         
@@ -144,7 +144,7 @@ const registervalue=(e)=>{
               </div>
            <div className='name-item'>
              <label htmlFor='name'><h3>Name</h3></label>
-             <input type='text' id='name' name='username' value={registerdata.username} onChange={registervalue}/>
+             <input type='text' id='name' name='username' value={registerdata.username} onChange={registervalue} autoComplete='on'/>
            </div>
 
 
@@ -153,8 +153,8 @@ const registervalue=(e)=>{
              <input type='text' id='email' name='email' value={registerdata.email} onChange={registervalue}/>
            </div>
            <div className='phone-item'>
-           <label htmlFor='phone'><h3>Phone no.</h3></label>
-             <input type='number' id='phone' name=' phonenumber' value={registerdata.phonenumber} onChange={registervalue}/>
+           <label htmlFor='phonenumber'><h3>Phone no.</h3></label>
+             <input type='number' id='phonenumber' name='phonenumber' value={registerdata.phonenumber} onChange={registervalue}/>
            </div>
            <div className='password-item'>
            <label htmlFor='password'><h3>Password</h3></label>
@@ -169,8 +169,8 @@ const registervalue=(e)=>{
               <input type='text' id='college' name='college' value={registerdata.college}  onChange={registervalue}/>
             </div>
             <div className='passingyear'>
-            <label htmlFor='passyear'><h3>Passing year</h3></label>
-            <input  type='Number' id='passyear' name=" passingyear" value={registerdata.passingyear} onChange={registervalue} />
+            <label htmlFor='passingyear'><h3>Passing year</h3></label>
+            <input  type='number' id='passingyear' name="passingyear" value={registerdata.passingyear} onChange={registervalue} />
             </div>
            </div>
 

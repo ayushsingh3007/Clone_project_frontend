@@ -16,7 +16,7 @@ const MockTest = () => {
     useEffect(() => {
       const fetchData = async () => {
         try {
-          const response = await axios.post('https://clonebackend-koqz.onrender.com/compltdata');
+          const response = await axios.post('http://localhost:4200/compltdata');
 
           setbooksdata(response.data);
           console.log(response.data);

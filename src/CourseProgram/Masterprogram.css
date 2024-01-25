@@ -285,7 +285,11 @@
     left: -5%;
     
 }
-
+.master-competitive-program-text{
+    text-align: center;
+    margin-top: 10%;
+}
+ 
 .number-student-enrolled-container{
     width: 80vw;
     display: flex;
