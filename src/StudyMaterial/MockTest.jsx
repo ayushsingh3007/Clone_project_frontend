@@ -16,7 +16,11 @@ const MockTest = () => {
     useEffect(() => {
       const fetchData = async () => {
         try {
+<<<<<<< HEAD
           const response = await axios.post('https://clonebackend-koqz.onrender.com/compltdata');
+=======
+          const response = await axios.post('http://localhost:4000/storecourse');
+>>>>>>> d860907913cb2fdb5c57ce07efc2f43951b5d114
           setbooksdata(response.data);
           console.log(response.data);
         } catch (error) {
@@ -50,7 +54,11 @@ const headers={
   "content-Type":"application/json"
 }
 try {
+<<<<<<< HEAD
   const response = await fetch("http://localhost:4200/createcheckout1", {
+=======
+  const response = await fetch("http://localhost:4000/createCheckout", {
+>>>>>>> d860907913cb2fdb5c57ce07efc2f43951b5d114
     method: "POST",
     headers: headers,
     body: JSON.stringify(body),
