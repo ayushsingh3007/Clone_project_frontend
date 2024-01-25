@@ -586,3 +586,17 @@
     width: 20%;
     height: 100%;
  }
+
+
+ .master-slider-container{
+       width: 80vw;
+    margin: auto;
+    
+    margin-top: 2%;
+ }
+
+ .master-slider-container-item{
+   width: 23rem;
+   height: 24rem;
+   border: 1px solid black;
+ }

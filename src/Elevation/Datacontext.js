@@ -1,4 +1,4 @@
-// DataContext.js
+
 
 import React, { createContext, useContext, useState } from 'react';
 
@@ -40,7 +40,7 @@ export const DataProvider = ({ children }) => {
         description: 'Prepbytes really helped me start my prep from basic. The teachers are really helpful and were always available to clear my doubts. Thats the reason I was able to crack the interview and land an internship.',
         image: 'https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/SusovanGhosh.webp',
       },
-    // Add more student data as needed
+
   ]);
 
   return (

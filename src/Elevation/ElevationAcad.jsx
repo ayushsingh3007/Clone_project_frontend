@@ -1,5 +1,6 @@
 import React from 'react'
 import "../Elevation/ElevationAcad.css"
+import "../Elevation/Elevation1.css"
 function ElevationAcad() {
   return (
     <>

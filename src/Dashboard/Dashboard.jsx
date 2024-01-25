@@ -16,7 +16,7 @@ const Dashboard = () => {
   useEffect(() => {
     const buyData = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/buy');
+        const response = await axios.get('http://localhost:4200/bought');
         setBoughtCourses(response.data);
       } catch (error) {
         console.log(error);

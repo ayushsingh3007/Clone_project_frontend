@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "../CourseProgram/FullStack.css"
+import "../CourseProgram/FllStack1.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import "../Navbar/Navbar.css"
-import {  AiOutlineDown,AiOutlineMenu } from 'react-icons/ai';
+import { AiOutlineMenu } from 'react-icons/ai';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {  faCaretDown } from '@fortawesome/free-solid-svg-icons';
 
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -26,7 +28,7 @@ export default function Navbar() {
   useEffect(() => {
     if (token) {
       console.log(token);
-        axios.get("https://clone-backend-evgl.onrender.com/auth", { headers: { "authorization": `Bearer ${token}` } }) 
+        axios.get("https://clonebackend-koqz.onrender.com/auth", { headers: { "authorization": `Bearer ${token}` } }) 
             .then((res) => {
                 console.log(res.data.msg);
                 if (res.data.msg ==="User Authorized") {
@@ -61,7 +63,7 @@ const logoutbtn=()=>{
     
     {userIcon && (<div className='usericonclick'>
             <span className='usericondashborad'>
-              <img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOS4yMjMiIGhlaWdodD0iMjIuODg4IiB2aWV3Qm94PSIwIDAgMTkuMjIzIDIyLjg4OCI+CiAgPGcgaWQ9InJlYWRpbmctYm9vayIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQwLjk5NCkiPgogICAgPHBhdGggaWQ9IlBhdGhfMSIgZGF0YS1uYW1lPSJQYXRoIDEiIGQ9Ik02MC4yMTcsMTQuNzUyYTIuMjM5LDIuMjM5LDAsMCwwLTEuNzg4LTIuMTlWMTAuMTQ4YS42NzEuNjcxLDAsMCwwLS45MDYtLjYyOGwtMS4yOC40OGE3LjgxOCw3LjgxOCwwLDAsMC0yLjk4MS0xLjkzNiw0LjQ3LDQuNDcsMCwxLDAtNS4zMTIsMEE3LjgxOCw3LjgxOCwwLDAsMCw0NC45NjgsMTBsLTEuMjgtLjQ4YS42NzEuNjcxLDAsMCwwLS45MDYuNjI4djIuNDE0YTIuMjM1LDIuMjM1LDAsMCwwLDAsNC4zOHYyLjU5M2EuNjcxLjY3MSwwLDAsMCwuNDM1LjYyOGw3LjE1MywyLjY4MmEuNjc4LjY3OCwwLDAsMCwuNDcxLDBsNy4xNTMtMi42ODJhLjY3MS42NzEsMCwwLDAsLjQzNS0uNjI4VjE2Ljk0MkEyLjIzOSwyLjIzOSwwLDAsMCw2MC4yMTcsMTQuNzUyWk00Ny40NzYsNC40N0EzLjEyOSwzLjEyOSwwLDEsMSw1MC42MDUsNy42LDMuMTMzLDMuMTMzLDAsMCwxLDQ3LjQ3Niw0LjQ3Wm0zLjEyOSw0LjQ3YTYuNDcyLDYuNDcyLDAsMCwxLDQuMjQyLDEuNTgybC00LjI0MiwxLjU5MS00LjI0Mi0xLjU5MUE2LjQ3Miw2LjQ3MiwwLDAsMSw1MC42MDUsOC45NDFabS04LjI3LDUuODExYS45LjksMCwwLDEsLjg5NC0uODk0aC40NDd2MS43ODhoLS40NDdBLjkuOSwwLDAsMSw0Mi4zMzUsMTQuNzUyWm0xLjc4OCwyLjIxM2ExLjEyLDEuMTIsMCwwLDAsLjg5NC0xLjFWMTMuNjM1YTEuMTIsMS4xMiwwLDAsMC0uODk0LTEuMVYxMS4xMTVsNS44MTEsMi4xNzlWMjEuMjVsLTUuODExLTIuMTc5Wm03LjE1Myw0LjI4NVYxMy4yOTVsNS44MTEtMi4xNzlWMTIuNTRhMS4xMiwxLjEyLDAsMCwwLS44OTQsMS4xVjE1Ljg3YTEuMTIsMS4xMiwwLDAsMCwuODk0LDEuMXYyLjEwNlptNi43MDYtNS42aC0uNDQ3VjEzLjg1OGguNDQ3YS44OTQuODk0LDAsMCwxLDAsMS43ODhaIiBmaWxsPSIjMDM2Ii8+CiAgPC9nPgo8L3N2Zz4K' alt=''/>  My Dashboard</span><hr/>
+              <img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOS4yMjMiIGhlaWdodD0iMjIuODg4IiB2aWV3Qm94PSIwIDAgMTkuMjIzIDIyLjg4OCI+CiAgPGcgaWQ9InJlYWRpbmctYm9vayIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQwLjk5NCkiPgogICAgPHBhdGggaWQ9IlBhdGhfMSIgZGF0YS1uYW1lPSJQYXRoIDEiIGQ9Ik02MC4yMTcsMTQuNzUyYTIuMjM5LDIuMjM5LDAsMCwwLTEuNzg4LTIuMTlWMTAuMTQ4YS42NzEuNjcxLDAsMCwwLS45MDYtLjYyOGwtMS4yOC40OGE3LjgxOCw3LjgxOCwwLDAsMC0yLjk4MS0xLjkzNiw0LjQ3LDQuNDcsMCwxLDAtNS4zMTIsMEE3LjgxOCw3LjgxOCwwLDAsMCw0NC45NjgsMTBsLTEuMjgtLjQ4YS42NzEuNjcxLDAsMCwwLS45MDYuNjI4djIuNDE0YTIuMjM1LDIuMjM1LDAsMCwwLDAsNC4zOHYyLjU5M2EuNjcxLjY3MSwwLDAsMCwuNDM1LjYyOGw3LjE1MywyLjY4MmEuNjc4LjY3OCwwLDAsMCwuNDcxLDBsNy4xNTMtMi42ODJhLjY3MS42NzEsMCwwLDAsLjQzNS0uNjI4VjE2Ljk0MkEyLjIzOSwyLjIzOSwwLDAsMCw2MC4yMTcsMTQuNzUyWk00Ny40NzYsNC40N0EzLjEyOSwzLjEyOSwwLDEsMSw1MC42MDUsNy42LDMuMTMzLDMuMTMzLDAsMCwxLDQ3LjQ3Niw0LjQ3Wm0zLjEyOSw0LjQ3YTYuNDcyLDYuNDcyLDAsMCwxLDQuMjQyLDEuNTgybC00LjI0MiwxLjU5MS00LjI0Mi0xLjU5MUE2LjQ3Miw2LjQ3MiwwLDAsMSw1MC42MDUsOC45NDFabS04LjI3LDUuODExYS45LjksMCwwLDEsLjg5NC0uODk0aC40NDd2MS43ODhoLS40NDdBLjkuOSwwLDAsMSw0Mi4zMzUsMTQuNzUyWm0xLjc4OCwyLjIxM2ExLjEyLDEuMTIsMCwwLDAsLjg5NC0xLjFWMTMuNjM1YTEuMTIsMS4xMiwwLDAsMC0uODk0LTEuMVYxMS4xMTVsNS44MTEsMi4xNzlWMjEuMjVsLTUuODExLTIuMTc5Wm03LjE1Myw0LjI4NVYxMy4yOTVsNS44MTEtMi4xNzlWMTIuNTRhMS4xMiwxLjEyLDAsMCwwLS44OTQsMS4xVjE1Ljg3YTEuMTIsMS4xMiwwLDAsMCwuODk0LDEuMXYyLjEwNlptNi43MDYtNS42aC0uNDQ3VjEzLjg1OGguNDQ3YS44OTQuODk0LDAsMCwxLDAsMS43ODhaIiBmaWxsPSIjMDM2Ii8+CiAgPC9nPgo8L3N2Zz4K' alt=''/><Link to="/dashboard">  My Dashboard</Link></span><hr/>
           <span className='usericonlogout' onClick={logoutbtn}>Logout</span></div>)}
       
 
@@ -69,32 +71,33 @@ const logoutbtn=()=>{
         <div>
           
          <Link to="/"><img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/navbar/logoPrepBytes.svg' alt='not-found' className='logo-img'/></Link></div>
-       {token?  <p onClick={handleusericon} className='usernamewithicon'><span>{username[0].toUpperCase()}</span>Hi {username.toUpperCase()} </p> : <div className='button-container'>
+       {token?  <p onClick={handleusericon} className='usernamewithicon'><span>{username[0]?.toUpperCase()}</span>Hi {username?.toUpperCase()}
+</p> : <div className='button-container'>
         <button className='login-btn' ><Link to="/login" style={{textDecoration:'none',color:' #ff219f'}}>Login</Link></button>
         <button className='signup-btn'><Link to="/register" style={{textDecoration:'none',color:'white'}}>Sing up</Link></button>
         </div>}
       <ul className='navlink-container'>
-             <li  className='study-material-drop'>Study Material<AiOutlineDown className='drop-icons'/> 
+             <li  className='study-material-drop'>Study Material <FontAwesomeIcon icon={faCaretDown}/>
              <ul className='drop-lists'>
-              <li><Link to="/videotutorial">Video Tutorial</Link></li>
-              <li><Link to='/mock-test'>Mock Test</Link></li>
+              <li><Link to="/videotutorial" className='nav-Link'>Video Tutorial</Link></li>
+              <li><Link to='/mock-test' className='nav-Link'>Mock Test</Link></li>
              </ul>
              </li>
-             <li className='course-program-drop'>Courses and program<AiOutlineDown className='drop-icons'/> 
+             <li className='course-program-drop' >Courses and program <FontAwesomeIcon icon={faCaretDown}/>
              <ul className='drop-lists-course'>
-              <li><Link to='/master-competitive-program'>Master Competitive Programing</Link></li>
-              <li><Link to='/fullstack'>Full Stack Program</Link></li>
+              <li><Link to='/master-competitive-program' className='nav-Link'>Master Competitive Programing</Link></li>
+              <li><Link to='/fullstack' className='nav-Link'>Full Stack Program</Link></li>
              </ul>
              </li>
-             <li><Link to='/elevation-academy'>Elevation Academy</Link></li>
-             <li className='project-drop'>Project<AiOutlineDown className='drop-icons'/> 
+             <li><Link to='/elevation-academy' className='nav-Link'>Elevation Academy</Link></li>
+             <li className='project-drop'>Project <FontAwesomeIcon icon={faCaretDown}/> 
              <ul className='drop-lists-project'>
-               <li><Link to="/html">HTML</Link></li>
-               <li><Link to='/css'>CSS</Link></li>
-               <li><Link to='/react'>REACT</Link></li>
-               <li><Link to='java'>JAVASCRIPT</Link></li>
-               <li><Link to='/node'>NODE</Link></li>
-               <li><Link to='/db'>DB</Link></li>
+               <li><Link to="/html" className='nav-Link'>HTML</Link></li>
+               <li><Link to='/css' className='nav-Link'>CSS</Link></li>
+               <li><Link to='/react' className='nav-Link'>REACT</Link></li>
+               <li><Link to='java' className='nav-Link'>JAVASCRIPT</Link></li>
+               <li><Link to='/node' className='nav-Link'>NODE</Link></li>
+               <li><Link to='/db' className='nav-Link'>DB</Link></li>
   
              </ul>
              

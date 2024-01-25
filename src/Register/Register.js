@@ -7,13 +7,13 @@ function Register() {
     const navigate=useNavigate()
 
   const [registerdata,registerdataset]=useState({
-    name:"",
-    
+    username:"",
+        
     email:"",
-    phone:"",
+    phonenumber:"",
     password:"",
     college:"",
-    passyear:""
+    passingyear:""
     
   })
 const registervalue=(e)=>{
@@ -25,7 +25,7 @@ const registervalue=(e)=>{
     e.preventDefault()
     
     axios
-      .post('https://clone-backend-evgl.onrender.com/register',registerdata)
+      .post('https://clonebackend-koqz.onrender.com/register',registerdata)
       .then((res) => {
         
         // setStore(res.data.msg);
@@ -50,12 +50,12 @@ const registervalue=(e)=>{
       });
 
       registerdataset({
-        name: "",            
-        email: "",
-        phone:"",
-        password: "",
-        college:"",
-        passyear:""
+        username: "",            
+            email: "",
+            phonenumber:"",
+            password: "",
+            college:"",
+            passingyear:""
        
       });
 
@@ -143,7 +143,7 @@ const registervalue=(e)=>{
               </div>
            <div className='name-item'>
              <label htmlFor='name'><h3>Name</h3></label>
-             <input type='text' id='name' name='name' value={registerdata.name} onChange={registervalue}/>
+             <input type='text' id='name' name='username' value={registerdata.username} onChange={registervalue}/>
            </div>
 
 
@@ -153,7 +153,7 @@ const registervalue=(e)=>{
            </div>
            <div className='phone-item'>
            <label htmlFor='phone'><h3>Phone no.</h3></label>
-             <input type='number' id='phone' name='phone' value={registerdata.phone} onChange={registervalue}/>
+             <input type='number' id='phone' name=' phonenumber' value={registerdata.phonenumber} onChange={registervalue}/>
            </div>
            <div className='password-item'>
            <label htmlFor='password'><h3>Password</h3></label>
@@ -169,7 +169,7 @@ const registervalue=(e)=>{
             </div>
             <div className='passingyear'>
             <label htmlFor='passyear'><h3>Passing year</h3></label>
-            <input  type='Number' id='passyear' name="passyear" value={registerdata.passyear} onChange={registervalue} />
+            <input  type='Number' id='passyear' name=" passingyear" value={registerdata.passingyear} onChange={registervalue} />
             </div>
            </div>
 

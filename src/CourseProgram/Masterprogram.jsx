@@ -1,7 +1,40 @@
 import React, { useState } from 'react'
 import "../CourseProgram/Masterprogram.css"
-
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 function Masterprogram() {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 2
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 2
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
+
+
+
+
+
+
+
+
+
+
+
+
+
   const [selectedBatch, setSelectedBatch] = useState(null);
 
   const handleBatchChange = (event) => {
@@ -184,6 +217,35 @@ function Masterprogram() {
                    <h1 style={{textAlign:'center',color:'#322e2e'}}>Curriculum</h1>
 
           </section>
+
+
+
+
+
+
+           <section className='master-slider-container'>
+
+           <Carousel responsive={responsive}>
+  <div className='master-slider-container-item'>Item 1</div>
+  <div className='master-slider-container-item'>Item 2</div>
+  <div className='master-slider-container-item'>Item 3</div>
+  <div className='master-slider-container-item'>Item 4</div>
+  <div className='master-slider-container-item'>Item 1</div>
+  <div className='master-slider-container-item'>Item 2</div>
+  <div className='master-slider-container-item'>Item 3</div>
+  <div className='master-slider-container-item'>Item 4</div>
+                            </Carousel>
+
+           </section>
+
+
+
+
+
+
+
+
+
 
             
 <section className='select-batch-container-mpc'>

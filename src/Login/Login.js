@@ -19,22 +19,22 @@ function Login() {
       const datasubmit=(e)=>{
         e.preventDefault()
         axios
-          .post('https://clone-backend-evgl.onrender.com/login',logindata)
+          .post('https://clonebackend-koqz.onrender.com/login',logindata)
           
           .then((res) => {
             
             
             
-            if (res.data.msg === "login successfully") {
+            if (res.data.msg === "your login successfully") {
                 localStorage.setItem("token", res.data.token);
                 console.log(res.data.token)
-                console.log(res.data.userdetail.name)
+                console.log(res.data.userdetail.username)
                 console.log(res.data.userdetail.email)
-                localStorage.setItem("selfname",res.data.userdetail.name)
+                localStorage.setItem("selfname",res.data.userdetail.username)
                 localStorage.setItem("selfdetails",res.data.userdetail.email)
     
               
-                alert(res.data.msg)
+                
                 navigate('/')
                
               
@@ -130,14 +130,14 @@ function Login() {
 
 
           <div className='login-form'>
-          <h2 ><Link to="/register" >SIGNUP</Link > <Link to="/login" >LOGIN</Link></h2><hr/>
+          <h2 ><Link to="/register" style={{textDecoration:"none",color:"grey"}}>SIGNUP</Link > <Link to="/login" style={{textDecoration:"none",color:"grey"}}>LOGIN</Link></h2><hr/>
             <h3 style={{textAlign:"center",color:"grey"}}>Sign in to your account</h3>
             <div className='inner-form'>
               <form autoComplete='off'>
-                <label htmlFor='email'>Email</label>
-                <input type='text' id='email' name='email' className='input-field' value={logindata.email} onChange={storedata}/>
-                <label htmlFor='password'>Password</label>
-                <input type='password' id='password' name='password'value={logindata.password} onChange={storedata} className='input-field' />
+                <label htmlFor='email-login'>Email</label>
+                <input type='text' id='email-login' name='email' className='input-email-login' value={logindata.email} onChange={storedata}/>
+                <label htmlFor='password-logi '>Password</label>
+                <input type='password' id='password-login' name='password'value={logindata.password} onChange={storedata} className='input-password-login' />
               </form>
             <div className='button-container-login'>
               <h4>Forgot your password?</h4>
