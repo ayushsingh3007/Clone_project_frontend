@@ -18,13 +18,7 @@ function Login() {
       };
       const datasubmit=(e)=>{
         e.preventDefault()
-        axios
-<<<<<<< HEAD
-          .post('https://clonebackend-koqz.onrender.com/login',logindata)
-=======
-          .post('http://localhost:4000/login',logindata)
->>>>>>> d860907913cb2fdb5c57ce07efc2f43951b5d114
-          
+        axios.post('https://clonebackend-koqz.onrender.com/login',logindata)      
           .then((res) => {
             
             
