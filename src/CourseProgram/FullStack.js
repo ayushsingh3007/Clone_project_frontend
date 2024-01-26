@@ -3,10 +3,33 @@ import "../CourseProgram/FullStack.css"
 import "../CourseProgram/FllStack1.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { useDataContext } from '../Elevation/Datacontext';
+
 
 const Fullstack = () => {
   const [selectedBatch, setSelectedBatch] = useState(null);
-
+  const { cardSliderData } = useDataContext();
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 3
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
   const handleBatchChange = (event) => {
     setSelectedBatch(event.target.value);
   };
@@ -561,6 +584,51 @@ Start learning web development from basics of HTML, CSS, Javascript.Master lates
            
  </div>
      </section>
+
+
+     <section className='elevation-slider-container'>
+          <p className='elevation-slider-para-1'>Testimonials</p>
+         <p className='elevation-slider-para-2'>Our Student Speaks</p>
+
+        <Carousel responsive={responsive}>
+          {cardSliderData.map((card) => (
+            <div key={card.id} className='elevation-slider-item'>
+            {/* <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/zenithWebp/Quote1.webp" alt="Name Decoration Image" loading="lazy"> */}
+
+              <div key={card.id} className='master-slider-container-item-name'>
+              <img src={card.imageUrl} alt="" />{card.name}</div>
+              <div>
+                
+                <p className='elevation-slider-des'>{card.description}</p>
+
+                
+                
+
+              </div>
+            </div>
+          ))}
+        </Carousel>
+          </section>  
+
+
+     <section className='get-in-touch-container'>
+      <div className='get-in-touch-container-img'>
+        <img src='	https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/digital-marketing/Feature.webp' alt=''/>
+      </div>
+      <div className='get-in-touch-container-card'>
+        <p>Still confused! Drop your details & get a call back from our academic counselling expert</p>
+        <button>
+          Get In Touch
+        </button>
+      </div>
+     </section>
+
+
+
+
+
+
+
 
 
     </>

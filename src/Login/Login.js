@@ -24,6 +24,7 @@ function Login() {
             
             
             if (res.data.msg === "your login successfully") {
+              navigate('/')
                 localStorage.setItem("token", res.data.token);
                 console.log(res.data.token)
                 console.log(res.data.userdetail.username)
@@ -33,14 +34,14 @@ function Login() {
     
               
                 
-                navigate('/')
+                
                
               
           }
           else{
             alert(res.data.msg);
           }
-          })
+          },[])
           .catch((error) => {
             console.log(error);
            

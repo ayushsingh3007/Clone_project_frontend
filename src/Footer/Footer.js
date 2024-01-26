@@ -62,7 +62,9 @@ function Footer() {
                      </div>
                    </div>
 <div  className='footer-item-hr'>
-  <hr/>
+  <hr />
+  <div>@Copyright2023</div>
+  <div><p>Privacy</p><p>Refund Policy</p><p>Terms of Use</p></div>
 </div>
 
 

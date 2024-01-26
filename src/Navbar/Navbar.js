@@ -28,13 +28,11 @@ export default function Navbar() {
   useEffect(() => {
     if (token) {
       console.log(token);
-        axios.get("http://localhost:4200/auth", { headers: { "authorization": `Bearer ${token}` } }) 
-
-            .then((res) => {
-                console.log(res.data.msg);
+      axios.get("http://localhost:4200/auth", { headers: { "authorization": `Bearer ${token}` } }) 
+      .then((res) => {
+          
                 if (res.data.msg ==="User Authorized") {
-                      // setloginout(true);
-                      //setprofilename(localStorage.getItem("selfname"))
+                      
                       navigate("/")                  
 
               }                

@@ -1,7 +1,30 @@
 import React from 'react'
 import "../Elevation/ElevationAcad.css"
 import "../Elevation/Elevation1.css"
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { useDataContext } from './Datacontext';
 function ElevationAcad() {
+  const { cardSliderData } = useDataContext();
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 3
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
   return (
     <>
       <section className='apply-now-banner-top'>
@@ -60,104 +83,116 @@ function ElevationAcad() {
 
          </div>
       </section>
+      <div className='ele-container2'>
+  How will you reach to your dream Job?
+  </div>
+  <div  className='ele-container3'>
+    
+    <div className='ele-container3-sub1'>
+      <div className='ele-container3-sub1-item1'>
+      Application & Shortlisting
+      <div className='ele-container3-sub1-item2'>
+      1
+      </div>
+      <div className='ele-container3-hr'>
+      <hr/>
+      </div>
+      </div>
+      <div className='ele-container3-sub1-item3'>
+      Attend Free Webinar
+      <div className='ele-container3-sub1-item4'>
+      2
+      </div>
+      <div className='ele-container3-hr'>
+      <hr/>
+      </div>
+      </div>
+      <div className='ele-container3-sub1-item5'>
+      Batch Commencement
+      <div className='ele-container3-sub1-item6'>
+      3
+      </div>
+      <div className='ele-container3-hr'>
+      <hr/>
+      </div>
+      </div>
+      <div className='ele-container3-sub1-item7'>
+      7 Months Program
+      <div className='ele-container3-sub1-item8'>
+      4
+      </div>
+      <div className='ele-container3-hr'>
+      <hr/>
+      </div>
+      </div>
+      <div className='ele-container3-sub1-item9'>
+      Guaranteed Placement
+      <div className='ele-container3-sub1-item10'>
+      5
+      </div>
+      <div className='ele-container3-hr'>
+      <hr/>
+      </div>
+      </div>
+      
 
+    </div>
+    <div className='ele-container3-sub2'>
+      <div className='ele-container3-sub2-item1'>
+        <div className='ele-container3-sub2-item2'>
+        Apply, fill the form & wait till we review your application. You will be selected based on the eligibility criteria (2023, 2022 & 2021 passouts)
+        </div>
+        <div >
+          <img className='ele-container3-sub2-item3' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/Application%2B%2BShortlisting.webp' alt='not-loaded'/>
+        </div>
 
-       <section className='howtoreachdreamjob'>
-                   {/* <h2 style={{textAlign:'center'}}>Why PrepBytes Elevation Academy?</h2>  */}
-                  <div className='howtoreachdreamjob-left'>
-                    <div className="howtoreachdreamjob-left-item-1">
-                      <span className='span-1'>1</span><span>Attend Free Webinar</span>
-                      <hr/>
-                    </div>
-                    <div className="howtoreachdreamjob-left-item-2">
-                    <span className='span-2'>2</span><span>Attend Free Webinar</span>
+      </div>
+      <div className='ele-container3-sub2-item1'>
+        <div className='ele-container3-sub2-item2'>
+        Go through the free classes and learn the important concepts while understanding how the program unfolds.
+        </div>
+        <div >
+          <img className='ele-container3-sub2-item3' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/5%2BDays%2BFree%2BClass.webp' alt='not-loaded'/>
+        </div>
 
-                    </div>
-                    <div className="howtoreachdreamjob-left-item-3">
-                    <span className='span-3'>3</span><span>Attend Free Webinar</span>
+      </div>
+      <div className='ele-container3-sub2-item1'>
+        <div className='ele-container3-sub2-item2'>
+        Embark on your journey of success once you receive the offer letter for successful enrolment.
+        </div>
+        <div >
+          <img className='ele-container3-sub2-item3' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/Complete%2BEnrollment%2B.webp' alt='not-loaded'/>
+        </div>
 
-                    </div>
-                    <div className="howtoreachdreamjob-left-item-4">
-                    <span className='span-4'>4</span><span>Attend Free Webinar</span>
+      </div>
+      <div className='ele-container3-sub2-item1'>
+        <div className='ele-container3-sub2-item2'>
+        You have now signed up for a learning-filled journey of 7 months that ends with you being placed in your dream company.
+        </div>
+        <div >
+          <img className='ele-container3-sub2-item3' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/4%2BMonths%2BPrograms.webp' alt='not-loaded'/>
+        </div>
 
-                    </div>
-                    <div className="howtoreachdreamjob-left-item-5">
-                    <span className='span-5'>5</span><span>Attend Free Webinar</span>
+      </div>
+      <div className='ele-container3-sub2-item1'>
+        <div className='ele-container3-sub2-item2'>
+        The program comes with interview opportunities and a placement guarantee of minimum 5 LPA.
+        </div>
+        <div >
+          <img className='ele-container3-sub2-item3' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/Interview%2BOpportunities%2B.webp' alt='not-loaded'/>
+        </div>
 
-                    </div>
-                  </div>
+      </div>
+      
+      
+      
+      
+    </div>
+    
+    
+  </div>
 
-
-
-
-
-
-
-
-                  <div className='howtoreachdreamjob-right'>
-
-                   <div className='howtoreachdreamjob-right-item-1'>
-                    <p>Apply, fill the form & wait till we review your application. You will be selected based on the eligibility criteria (2023, 2022 & 2021 passouts)</p>
-                    <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/Application%2B%2BShortlisting.webp" alt="" />
-                   </div>
-                   <div  className='howtoreachdreamjob-right-item-1'>
-                   <p>Go through the free classes and learn the important concepts while understanding how the program unfolds.</p>
-                    <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/5%2BDays%2BFree%2BClass.webp" alt="" />
-                   </div>
-                   <div  className='howtoreachdreamjob-right-item-1'>
-                   <p>Embark on your journey of success once you receive the offer letter for successful enrolment.</p>
-                    <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/Complete%2BEnrollment%2B.webp" alt="" />
-                   </div>
-                   <div  className='howtoreachdreamjob-right-item-1'>
-                   <p>You have now signed up for a learning-filled journey of 7 months that ends with you being placed in your dream company.</p>
-                    <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/4%2BMonths%2BPrograms.webp" alt="" />
-                   </div>
-                   <div  className='howtoreachdreamjob-right-item-1'>
-                   <p>The program comes with interview opportunities and a placement guarantee of minimum 5 LPA.</p>
-                    <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/Interview%2BOpportunities%2B.webp" alt="" />
-                   </div>
-
-                  </div>
-       </section>
-
-
-        <section className='elevationlearningcard'>
-          <h2>Why PrepBytes Elevation Academy?</h2>
-             <div className='elevationlearningcard-container'>
-              <div className="elevationlearningcard-item">
-                <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/Live+Learning.webp" alt="" />
-                <h4>Live Learning</h4>
-                <p>Master Mern Stack in Live Classes taken by Experts</p>
-              </div>
-              <div className="elevationlearningcard-item">
-              <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/1+week+of+Free+Classes.webp" alt="" />
-                <h4>Learn with Industry Experts</h4>
-                <p>Learn with leading tech mentors and gain access to real-time web development experience.</p>
-              </div>
-              <div className="elevationlearningcard-item">
-              <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/1+week+of+Free+Classes.webp" alt="" />
-                <h4>Learn by Doing</h4>
-                <p>Gain in depth experience by building real world projects</p>
-              </div>
-              <div className="elevationlearningcard-item">
-              <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/Learn+by+Doing.webp" alt="" />
-                <h4>Resume Building</h4>
-                <p>Get a resume that companies would shortlist</p>
-              </div>
-              <div className="elevationlearningcard-item">
-              <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/1+week+of+Free+Classes.webp" alt="" />
-                <h4>Interview Opportunities</h4>
-                <p>Get developer interview opportunities after course completion</p>
-              </div>
-              <div className="elevationlearningcard-item">
-              <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/Resume+Building.webp" alt="" />
-                <h4>Mock Interviews</h4>
-                <p>Interview practice with industry veterans with real-time feedbacks</p>
-              </div>
-             </div>
-        </section>
-
-         <section className='programsyllubus'>
+                <section className='programsyllubus'>
                 <div className="programsyllubus-text">
                  <h1>Program Syllabus</h1>
                  <p>Learn from the best and be prepared to crack full stack developer jobs</p>
@@ -273,9 +308,30 @@ function ElevationAcad() {
 
       </section>
 
-         <section className='students-elevation-slider'>
+      <section className='elevation-slider-container'>
+          <p className='elevation-slider-para-1'>Testimonials</p>
+         <p className='elevation-slider-para-2'>Our Student Speaks</p>
 
-         </section>
+        <Carousel responsive={responsive}>
+          {cardSliderData.map((card) => (
+            <div key={card.id} className='elevation-slider-item'>
+            {/* <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/zenithWebp/Quote1.webp" alt="Name Decoration Image" loading="lazy"> */}
+
+              <div key={card.id} className='master-slider-container-item-name'>
+              <img src={card.imageUrl} alt="" />{card.name}</div>
+              <div>
+                
+                <p className='elevation-slider-des'>{card.description}</p>
+
+                
+                
+
+              </div>
+            </div>
+          ))}
+        </Carousel>
+          </section>          
+
               
 
           <section className='student-place-text-container'>
@@ -456,8 +512,10 @@ function ElevationAcad() {
 
                  </div>
       </section>
+                   
 
 
+       
          
 
     </>

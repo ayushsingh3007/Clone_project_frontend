@@ -166,7 +166,7 @@ label h3{
     justify-content: space-between;
 
 }
-#name,#email,#password,#college,#passyear,#phone{
+#name,#email,#password,#college,#passingyear,#phonenumber{
     height: 50%;   
     outline: none;
     border: none;

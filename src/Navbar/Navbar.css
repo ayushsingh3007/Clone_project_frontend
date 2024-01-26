@@ -218,8 +218,8 @@ display: block;
   font-weight: bold;
 }
 .usernamewithicon span{
-  width: 45px;
-  height:45px;
+  width: 35px;
+  height:35px;
   border-radius: 50%;
   background:skyblue;
   display: flex;
@@ -323,8 +323,9 @@ div.menuicon{
     margin: auto;
     width: 40%;
     position: absolute;
-    right: 0px;
-    top:1%;
+    right: 10px;
+    top:3%;
+    color: skyblue;
 
   }
   

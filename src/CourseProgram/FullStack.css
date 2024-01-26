@@ -835,3 +835,51 @@
    font-size: 18px;
    background: white;
 }
+
+
+.get-in-touch-container{
+   width: 100vw;
+   
+   display: flex;
+   flex-direction: column;
+   margin-top: 5rem;
+   justify-content: center;
+   align-items: center;
+}
+.get-in-touch-container-img{
+   width: 100%;
+   height: 40rem;
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.get-in-touch-container-img img{
+   width: 90%;
+   height: 100%;
+}
+.get-in-touch-container-card{
+   width: 100%;
+   height: 8rem;
+   
+    background: transparent linear-gradient(90deg,rgba(45,111,162,.9294117647058824),rgba(23,56,81,.9294117647058824)) 0 0 no-repeat padding-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+    box-sizing: border-box;
+   }
+   .get-in-touch-container-card p{
+      color: #fff;
+    font-size: 18px;
+   }
+   .get-in-touch-container-card button{
+      width: 13%;
+      height: 3rem;
+      border-radius: 20px;
+      border: none;
+      color: white;
+      font-weight: bold;
+      background: #ff219f;
+   }

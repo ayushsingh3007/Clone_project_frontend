@@ -105,7 +105,7 @@ try {
              </div>
             
             <div><img src={item.imgsrc} alt='not-loaded' className='mock-img-size'/></div>
-            <div className='text-nameofthecourse'> {item.nameofcourse}</div>
+            <div className='text-nameofthecourse'> {item.nameofthecourse}</div>
             <div className='course-sub-cont-1'>
               <div>{item.date}<br/>Date</div>
               <div className='dummy'></div>
@@ -135,7 +135,7 @@ try {
              </div>
             
             <div><img src={item.imgsrc} alt='not-loaded' className='mock-img-size'/></div>
-            <div className='text-nameofthecourse'> {item.nameofcourse}</div>
+            <div className='text-nameofthecourse'> {item.nameofthecourse}</div>
             {/* <div className='course-sub-cont-1'>
               <div>{item.date}<br/>Date</div>
               <div className='dummy'></div>

@@ -87,7 +87,184 @@
         text-align: center;
         padding: 10px 5px;
     }
-
+    .ele-container3{
+        display: flex;
+        margin: 5%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        position: relative;
+    
+    }
+    ele-container3-sub1{
+        width: 30%;
+        border: 1px solid black;
+    }
+    .ele-container3-hr{
+        width:12%;
+        position: absolute;
+        right: -12%;
+        top:15px;
+        border-color: blue;
+    }
+    .ele-container3-sub1-item1{
+        position: relative;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
+        width: 340px;
+        height:50px;
+        border-radius: 5px;
+        border: 1px solid rgb(102, 102, 102);
+        font-size: 20px;
+        color:orange;
+        font-weight: 500;
+    
+    }
+    .ele-container3-sub1-item2{
+        position: absolute;
+        width: 30px;
+        height:30px;
+        border:1px dashed orange;
+        font-size: 22px;
+        background-color: rgb(248, 232, 202);
+        border-radius: 5px;
+        left:-15px;
+        top:15px;
+    }
+    .ele-container3-sub1-item3{
+        position: relative;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
+        width: 340px;
+        height:50px;
+        border-radius: 5px;
+        border: 1px solid rgb(102, 102, 102);
+        font-size: 20px;
+        color:rgb(179, 20, 91);
+        font-weight: 500;
+    
+    }
+    .ele-container3-sub1-item4{
+        position: absolute;
+        width: 30px;
+        height:30px;
+        border:1px dashed rgb(113, 18, 61);
+        font-size: 22px;
+        background-color: rgb(248, 232, 202);
+        border-radius: 5px;
+        left:-15px;
+        top:15px;
+    }
+    .ele-container3-sub1-item5{
+        position: relative;
+        margin-top: 70px;
+        margin-bottom: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
+        width: 340px;
+        height:50px;
+        border-radius: 5px;
+        border: 1px solid rgb(102, 102, 102);
+        font-size: 20px;
+        color:rgb(246, 5, 246);
+        font-weight: 500;
+    
+    }
+    .ele-container3-sub1-item6{
+        position: absolute;
+        width: 30px;
+        height:30px;
+        border:1px dashed rgb(246, 5, 246);
+        font-size: 22px;
+        background-color: rgb(248, 232, 202);
+        border-radius: 5px;
+        left:-15px;
+        top:15px;
+    }
+    .ele-container3-sub1-item7{
+        position: relative;
+        margin-top: 70px;
+        margin-bottom: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
+        width: 340px;
+        height:50px;
+        border-radius: 5px;
+        border: 1px solid rgb(102, 102, 102);
+        font-size: 20px;
+        color:rgb(95, 95, 240);
+        font-weight: 500;
+    
+    }
+    .ele-container3-sub1-item8{
+        position: absolute;
+        width: 30px;
+        height:30px;
+        border:1px dashed rgb(95, 95, 240);
+        font-size: 22px;
+        background-color: rgb(248, 232, 202);
+        border-radius: 5px;
+        left:-15px;
+        top:15px;
+    }
+    .ele-container3-sub1-item9{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        position: relative;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
+        width: 340px;
+        height:50px;
+        border-radius: 5px;
+        border: 1px solid rgb(102, 102, 102);
+        font-size: 20px;
+        color:rgb(7, 159, 7);
+        font-weight: 500;
+    
+    }
+    .ele-container3-sub1-item10{
+        position: absolute;
+        width: 30px;
+        height:30px;
+        border:1px dashed rgb(7, 159, 7);
+        font-size: 22px;
+        background-color: rgb(248, 232, 202);
+        border-radius: 5px;
+        left:-15px;
+        top:15px;
+    }
+    .ele-container3-sub2{
+        width: 59%;
+        background-color: rgb(242, 242, 242);
+        border: 1px solid red;
+        padding: 10px;
+    }
+    .ele-container3-sub2-item1{
+        display: flex;
+        padding: 20px;
+        margin-top: 10px;
+        border-radius: 10px;
+        justify-content: space-between;
+        text-align: left;
+        background-image: linear-gradient(to right,white,rgb(221, 237, 243));
+    }
+    .ele-container3-sub2-item2{
+        width:59%;
+        font-size: 18px;
+    }
+    .ele-container3-sub2-item3{
+        
+        width:100%;
+        height:80px;
+    }
  .batchstartdiv{
     width: 90%;
     min-height: 50%;
@@ -309,7 +486,7 @@
     border: 1px solid rgb(232, 63, 63);
     color: rgb(232, 63, 63);
      border-radius: 5px;
-     animation: glowing 5s infinite, border 5s infinite;
+     animation:glowing 5s infinite, border 5s infinite;
      display: flex;
      flex-direction: row;
      gap: 2%;
@@ -328,6 +505,9 @@
     justify-content: center;
     align-items: center;
     color:rgb(192, 39, 175);
+    
+
+
 }
 .howtoreachdreamjob-left-item-4{
     width: 80%;
@@ -1419,4 +1599,67 @@
     word-wrap: break-word;
     gap: 2%;
 
+}
+
+
+.elevation-slider-container{
+    width: 90vw;
+    margin-top: 3rem;
+    margin: auto;
+}
+
+
+.elevation-slider-item{
+width: 24rem;
+height: 24rem;
+box-shadow: 0 16px 32px rgba(0,0,0,.0784313725490196);
+display: flex;
+flex-direction: column;
+gap: 20%;
+border-radius: 20px;
+}
+.elevation-slider-para-1{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bolder;
+    font-size: 28px;
+    
+    color: #858585;
+}
+.elevation-slider-para-2{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bolder;
+    font-size: 28px;
+    
+    color:black;
+}
+.master-slider-container-item-name{
+ display: flex;
+ flex-direction: row;
+ gap: 10%;
+ 
+ align-items: center;
+ /* justify-content: center; */
+ width: 70%;
+ color: #000;
+ font: normal normal 600 1.2rem/2rem Inter;
+}
+.elevation-slider-des{
+    font-size:0.9rem;
+    color: rgba(106,127,134,.9294117647058824);
+    
+    line-height: 20px;
+    padding: 10px;
+}
+.master-slider-container-item-img{
+ width: 20%;
+ margin-top: 2%;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ margin: auto;
 }
