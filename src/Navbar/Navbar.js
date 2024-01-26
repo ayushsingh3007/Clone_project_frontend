@@ -28,7 +28,7 @@ export default function Navbar() {
   useEffect(() => {
     if (token) {
       console.log(token);
-        axios.get("https://clonebackend-koqz.onrender.com/auth", { headers: { "authorization": `Bearer ${token}` } }) 
+        axios.get("http://localhost:4200/auth", { headers: { "authorization": `Bearer ${token}` } }) 
 
             .then((res) => {
                 console.log(res.data.msg);

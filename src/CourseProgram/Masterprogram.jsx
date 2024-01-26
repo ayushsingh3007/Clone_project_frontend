@@ -1,28 +1,38 @@
 import React, { useState } from 'react'
 import "../CourseProgram/Masterprogram.css"
 import "../CourseProgram/Masterprogram1.css"
-// import Carousel from "react-multi-carousel";
-// import "react-multi-carousel/lib/styles.css";
+
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { useDataContext } from '../Elevation/Datacontext';
 function Masterprogram() {
-  // const responsive = {
-  //   superLargeDesktop: {
-  //     // the naming can be any, depends on you.
-  //     breakpoint: { max: 4000, min: 3000 },
-  //     items: 2
-  //   },
-  //   desktop: {
-  //     breakpoint: { max: 3000, min: 1024 },
-  //     items: 2
-  //   },
-  //   tablet: {
-  //     breakpoint: { max: 1024, min: 464 },
-  //     items: 2
-  //   },
-  //   mobile: {
-  //     breakpoint: { max: 464, min: 0 },
-  //     items: 1
-  //   }
-  // };
+  
+  const { cardSliderData } = useDataContext();
+  // const [selectedBatch, setSelectedBatch] = useState(null);
+
+
+
+
+
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 2
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 2
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
 
 
 
@@ -283,6 +293,40 @@ function Masterprogram() {
     </div>
    
 </section>
+
+
+
+<section className='master-slider-container'>
+        <Carousel responsive={responsive}>
+          {cardSliderData.map((card) => (
+            <div key={card.id} className='master-slider-container-item'>
+            {/* <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/zenithWebp/Quote1.webp" alt="Name Decoration Image" loading="lazy"> */}
+
+              <div key={card.id} className='master-slider-container-item-name'>
+              <img src={card.icon1} alt="" />{card.name}</div>
+              <div>
+                
+                <p className='master-slider-container-item-des'>{card.description}</p>
+
+                <img src={card.imageUrl} alt='' className='master-slider-container-item-img'/>
+                <img src={card.icon2} alt=''/>
+
+              </div>
+            </div>
+          ))}
+        </Carousel>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
 
         <section className='endofcourse'>
                 <p>By The End Of This Course, You Will Be Able To</p>

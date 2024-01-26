@@ -9,3 +9,25 @@ body{
   overflow-x: none;
   background:white;
 }
+
+.lazy-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust the height as needed to center vertically */
+}
+
+.lazy-loading img {
+  width: 100px; /* Set the width of the image */
+  height: 100px; /* Set the height of the image */
+  animation: spin 2s linear infinite; /* Apply a simple spin animation */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
