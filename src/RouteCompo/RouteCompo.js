@@ -19,12 +19,16 @@ import Css from '../Project/Css'
 import JavaCompo from '../Project/JavaCompo'
 import ReactCompo from '../Project/ReactCompo'
 import NodeCompo from '../Project/NodeCompo'
+import Footer from '../Footer/Footer'
 
 function RouteCompo() {
+
+ const isDashboardRoute = window.location.pathname.includes('/dashboard');
+
   return (
     <>
     <BrowserRouter>
-    <Navbar/>
+    {!isDashboardRoute && <Navbar />}
 
         
      <Routes>
@@ -48,7 +52,8 @@ function RouteCompo() {
          <Route path='/dashboard'element={<Dashboard/>}/>
 
       </Routes>
-    
+      {!isDashboardRoute && <Footer/>}
+
     
     </BrowserRouter>
     

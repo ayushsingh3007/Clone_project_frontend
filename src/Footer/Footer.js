@@ -49,7 +49,7 @@ function Footer() {
 
 
         <div className='footer-item footer-item-5'>
-        <h4  style={{textAlign:'left'}}>Latest Article</h4>
+        <h4  >Latest Article</h4>
                      <div>
                       <p>Wifi protected acess (WPA) </p>
                       <p>service Set Indentifier
