@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import '../Dashboard/Dashboard.css';
 import axios from 'axios';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import "../StudyMaterial/MockTest.css"
 
 const Dashboard = () => {
-  
+   const navigate=useNavigate()
   const [boughtcourses, setBoughtCourses] = useState([]);
   const [firstHandle, setFirstHandle] = useState(false);
   const [localName, setLocalName] = useState(localStorage.getItem('selfname'));
@@ -44,6 +44,7 @@ const Dashboard = () => {
     localStorage.removeItem('selfname');
    
     setLocalName(null);
+    navigate('/')
     
   };
 
