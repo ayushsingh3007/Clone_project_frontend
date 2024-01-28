@@ -144,21 +144,21 @@ const registervalue=(e)=>{
               </div>
            <div className='name-item'>
              <label htmlFor='name'><h3>Name</h3></label>
-             <input type='text' id='name' name='username' value={registerdata.username} onChange={registervalue} autoComplete='on'/>
+             <input type='text' id='name' name='username' value={registerdata.username} onChange={registervalue} autoComplete='on' required/>
            </div>
 
 
            <div className='email-item'>
            <label htmlFor='email'><h3>Email</h3></label>
-             <input type='text' id='email' name='email' value={registerdata.email} onChange={registervalue}/>
+             <input type='text' id='email' name='email' value={registerdata.email} onChange={registervalue} required/>
            </div>
            <div className='phone-item'>
            <label htmlFor='phonenumber'><h3>Phone no.</h3></label>
-             <input type='number' id='phonenumber' name='phonenumber' value={registerdata.phonenumber} onChange={registervalue}/>
+             <input type='number' id='phonenumber' name='phonenumber' value={registerdata.phonenumber} onChange={registervalue} required/>
            </div>
            <div className='password-item'>
            <label htmlFor='password'><h3>Password</h3></label>
-             <input type='password'  id='password' name='password' value={registerdata.password} onChange={registervalue}/>
+             <input type='password'  id='password' name='password' value={registerdata.password} onChange={registervalue} required/>
            </div>
 
 
@@ -166,17 +166,17 @@ const registervalue=(e)=>{
             <div className='collegepassyear'>
             <div className='college'>
               <label htmlFor='college'><h3>College</h3></label>
-              <input type='text' id='college' name='college' value={registerdata.college}  onChange={registervalue}/>
+              <input type='text' id='college' name='college' value={registerdata.college}  onChange={registervalue} required/>
             </div>
             <div className='passingyear'>
             <label htmlFor='passingyear'><h3>Passing year</h3></label>
-            <input  type='number' id='passingyear' name="passingyear" value={registerdata.passingyear} onChange={registervalue} />
+            <input  type='number' id='passingyear' name="passingyear" value={registerdata.passingyear} onChange={registervalue} required/>
             </div>
            </div>
 
             </div>
             <div>
-            <p>    <input type="checkbox" name="agree" id='checkbox'/> I agree to the terms and conditions</p>
+             <p>    <input type="checkbox" name="agree" id='checkbox' required/> I agree to the terms and conditions</p>
              <button className='sinup-submit' onClick={datasubmit}>SIGNUP</button>
             </div>
             </div>

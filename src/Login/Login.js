@@ -134,9 +134,9 @@ function Login() {
             <div className='inner-form'>
               <form autoComplete='off'>
                 <label htmlFor='email-login'>Email</label>
-                <input type='text' id='email-login' name='email' className='input-email-login' value={logindata.email} onChange={storedata}/>
+                <input type='text' id='email-login' name='email' className='input-email-login' value={logindata.email} onChange={storedata} required/>
                 <label htmlFor='password-login'>Password</label>
-                <input type='password' id='password-login' name='password'value={logindata.password} onChange={storedata} className='input-password-login' />
+                <input type='password' id='password-login' name='password'value={logindata.password} onChange={storedata} className='input-password-login' required/>
               </form>
             <div className='button-container-login'>
               <h4>Forgot your password?</h4>
