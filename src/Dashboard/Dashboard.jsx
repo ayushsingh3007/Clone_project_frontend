@@ -16,7 +16,7 @@ const Dashboard = () => {
   useEffect(() => {
     const buyData = async () => {
       try {
-        const response = await axios.get('http://localhost:4200/bought');
+        const response = await axios.get('https://clonebackend-koqz.onrender.com/bought');
         setBoughtCourses(response.data);
       } catch (error) {
         console.log(error);
@@ -41,8 +41,7 @@ const Dashboard = () => {
   const handleLogout = () => {
     localStorage.clear('token')
     setBoughtCourses([])
-    localStorage.removeItem('selfname');
-   
+    localStorage.removeItem('selfname')
     setLocalName(null);
     navigate('/')
     

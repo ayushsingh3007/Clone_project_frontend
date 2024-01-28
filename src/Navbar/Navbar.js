@@ -10,11 +10,13 @@ import axios from 'axios';
 
 
 export default function Navbar() {
-  const navigate=useNavigate()
-   let token=localStorage.getItem('token')
-   let username=localStorage.getItem('selfname')
+
+
+  let navigate=useNavigate();
+   let token=localStorage.getItem('token');
+   let username=localStorage.getItem('selfname');
    const [menuOpen, setMenuOpen] = useState(false);
-   const [userIcon,setuserIcon]=useState(false)
+   const [userIcon,setuserIcon]=useState(false);
    const handleMenuToggle = () => {
     setMenuOpen(!menuOpen);
   };
@@ -27,8 +29,8 @@ export default function Navbar() {
   };
   useEffect(() => {
     if (token) {
-      console.log(token);
-      axios.get("http://localhost:4200/auth", { headers: { "authorization": `Bearer ${token}` } }) 
+    
+      axios.get("https://clonebackend-koqz.onrender.com/auth", { headers: { "authorization": `Bearer ${token}` } }) 
       .then((res) => {
           
                 if (res.data.msg ==="User Authorized") {

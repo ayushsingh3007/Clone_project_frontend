@@ -29,7 +29,8 @@
   text-align: right;
 }
 .header-logo2{
-    padding-left: 20px;
+    position: absolute;
+    left: 10%;
 }
 .logo-size2{
   height: 75px;
@@ -57,7 +58,7 @@
     color: white;
     margin-top:18px ;
     font-size: 28px;
-    background-color: rgb(139, 139, 235);
+    background-color: skyblue;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,7 +71,7 @@
     margin-top:18px ;
     font-size: 20px;
     padding-top: 6px;
-    color: rgb(139, 139, 235);
+    color: skyblue;
     margin-left: 15px;
     
 
@@ -120,10 +121,10 @@
 .dropdown-content1 {
   display: none;
   position: absolute;
-  top:90%;
-  right: 2%;
+  top:100%;
+  right: 10%;
   font-size: 20px;
-  background-color:white;
+  background:white;
 
   min-width: 250px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -155,6 +156,9 @@
 .navbar-logout-btn1{
   width: 100%;
   border: none;
+  background:white;
+  font-weight: bolder;
+  font-size: large;
 
 }
 .dropdown1:hover .dropdown-content1 {
@@ -168,9 +172,9 @@
   width: 10rem;
 
   background-color:white;
-  position: fixed;
+  position: absolute;
   left: 0px;
-  top: 10%;
+  top: 100%;
   z-index: 0;
   
   /* box-shadow: 0px  10px 5px -5px rgba(221, 33, 33, 0.5); */
@@ -236,11 +240,11 @@ min-width: 70%;
 display: flex;
 
 position: fixed;
-left: 25%;
-top: 25%;
+left: 20%;
+top: 16%;
 
   
-  border: 1px solid black;
+  
 }
 
 
@@ -252,4 +256,5 @@ top: 25%;
   padding: 12px 15px;
   align-items: left;
   box-sizing: border-box;
+  color: grey;
 }

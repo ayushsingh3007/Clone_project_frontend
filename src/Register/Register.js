@@ -25,7 +25,7 @@ const registervalue=(e)=>{
     e.preventDefault()
     
     axios
-    .post('http://localhost:4200/register',registerdata)
+    .post('https://clonebackend-koqz.onrender.com/register',registerdata)
 
       .then((res) => {
         

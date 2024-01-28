@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter,  Route, Routes } from 'react-router-dom'
 
 import Dashboard from "../Dashboard/Dashboard"
-import Login from '../Login/Login'
+
  import Register from '../Register/Register'
 import Home from '../Home/Home'
 import VideoTutorial from '../StudyMaterial/VideoTutorial';
@@ -20,6 +20,8 @@ import JavaCompo from '../Project/JavaCompo'
 import ReactCompo from '../Project/ReactCompo'
 import NodeCompo from '../Project/NodeCompo'
 import Footer from '../Footer/Footer'
+import Login from '../Login/Login'
+
 
 function RouteCompo() {
 
@@ -33,8 +35,9 @@ function RouteCompo() {
         
      <Routes>
       <Route  path='/' element={<Home/>} />
-
+        
         <Route path='/login' element={<Login/>} />
+
         <Route path='/register' element={<Register/>}/>
         <Route path='/videotutorial' element={<VideoTutorial/>}/>
         <Route path='/mock-test' element={<MockTest/>}/>
