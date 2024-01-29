@@ -39,7 +39,7 @@ function Login() {
               
           }
           else{
-            alert(res.data.msg);
+             console.log('error')
           }
           },[])
           .catch((error) => {

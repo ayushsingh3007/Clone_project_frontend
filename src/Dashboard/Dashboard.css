@@ -338,5 +338,6 @@ top: 14%;
   color:white;
   background: skyblue;
   border-radius: 10px;
-
+  font-weight: bolder;
+  font-size: 14px;
 }

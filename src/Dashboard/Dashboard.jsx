@@ -44,7 +44,7 @@ const Dashboard = () => {
     setBoughtCourses([])
     localStorage.removeItem('selfname')
     setLocalName(null);
-    navigate('/')
+    navigate('/dashboard')
     
   };
 

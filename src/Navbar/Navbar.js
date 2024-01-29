@@ -25,7 +25,7 @@ export default function Navbar() {
   }
 
   const handleLinkClick = () => {
-    setMenuOpen(false);
+    setMenuOpen(!false);
   };
   useEffect(() => {
     if (token) {
@@ -35,9 +35,7 @@ export default function Navbar() {
           
                 if (res.data.msg ==="User Authorized") {
                       
-                      navigate("/")                  
-
-              }                
+                      navigate("/")            }                
               
             
             })
