@@ -1,51 +1,132 @@
 import React, { useState } from 'react'
 import "../CourseProgram/FullStack.css"
-import "../CourseProgram/FllStack1.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import { useDataContext } from '../Elevation/Datacontext';
-
+import { loadStripe } from '@stripe/stripe-js'
 
 const Fullstack = () => {
-  const [selectedBatch, setSelectedBatch] = useState(null);
-  const { cardSliderData } = useDataContext();
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 3
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
-  };
-  const handleBatchChange = (event) => {
-    setSelectedBatch(event.target.value);
-  };
-  const getPriceForBatch = (batch) => {
-    // Add your logic to determine the price for each batch
-    // For example, you can use a switch statement or an object mapping
-    switch (batch) {
-      case '1may':
-        return '$10.99';
-      case '15may':
-        return '$15.99';
-      default:
-        return 'N/A';
-    }
-  };
+  const [hide1,Sethide1]=useState(true)
+  let courseenroll=[{ 
+     
+    id:41,
+    catdivd:"companytests",
+    nameofthecourse:"Full Stack", 
+    imgsrc:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/mcafee.svg",
+    date:"Feb 1st ",
+    cat1:"Date",
+    participants:1101,
+    cat2:"Participants",
+    duration:"60 min",
+    cat3:"Duration",
+    price:3000000.00
+}]
+const course1handle=()=>{
+  courseenroll[0]['date']="Feb 1st";
+  console.log(courseenroll)
+}
+const course2handle=()=>{
+  courseenroll[0]['date']="Feb 15nth";
+  console.log(courseenroll)
+}
+  const handlehide1=()=>{
+    Sethide1(!hide1)
+  }
+  const [b1,Setb1]=useState(true)
+  const [b2,Setb2]=useState(false)
+  const [b3,Setb3]=useState(false)
+  const [b4,Setb4]=useState(false)
+  const [b5,Setb5]=useState(false)
+  const b1handle=()=>{
+
+    Setb1(true)
+    Setb2(false)
+    Setb3(false)
+    Setb4(false)
+    Setb5(false)
+  }
+  const b2handle=()=>{
+
+    Setb2(true)
+    Setb1(false)
+    Setb3(false)
+    Setb4(false)
+    Setb5(false)
+  }
+  const b3handle=()=>{
+
+    Setb3(true)
+    Setb2(false)
+    Setb1(false)
+    Setb4(false)
+    Setb5(false)
+  }
+  const b4handle=()=>{
+
+    Setb4(true)
+    Setb2(false)
+    Setb3(false)
+    Setb1(false)
+    Setb5(false)
+  }
+  const b5handle=()=>{
+
+    Setb5(true)
+    Setb2(false)
+    Setb3(false)
+    Setb4(false)
+    Setb1(false)
+  }
+  const checkitem=()=>{
+    
+                  
+                      courseenroll[0]['useremail']=localStorage.getItem("selfdetails")
+                      return [courseenroll[0]]
+  
+                  
+              
+
+  }
+  const   doenroll=async (id)=>{
+    const result=await checkitem()
+    
+    
+    
+    const stripe=await loadStripe(" pk_test_51OMERySJb30zHYKXhazWu96YHeq9esM7jjoHRU5Yl6OsFBFrIqAN4l6DR432lstZ8S1BEgMXk05yGcoIoqcZQ0FJ00fJW2eWVM")
+const body={
+products:result
+}
+const headers={
+"content-Type":"application/json"
+}
+try {
+const response = await fetch("https://prepbytesclonebackend.onrender.com/createcheckout1", {
+method: "POST",
+headers: headers,
+body: JSON.stringify(body),
+});
+
+if (!response.ok) {
+throw new Error(`HTTP error! Status: ${response.status}`);
+}
+
+const session = await response.json();
+console.log(session);
+
+const result = await stripe.redirectToCheckout({
+sessionId: session.id,
+});
+
+
+if (result.error) {
+console.log(result.error);
+}
+} catch (error) {
+console.error("Fetch error:", error);
+}
+
+}
   return (<>
+  <div className='full-main'>
   <div className='fs-container1'>
     <div className='fs-container1-item1'>
       <div className='fs-container1-sub1'>Partner with </div>
@@ -62,52 +143,25 @@ const Fullstack = () => {
       </div>
 
       <div className='fs-container1-sub6'>
-      Next Batch starts: 1st May, 2024
+      Next Batch starts: 15st May, 2024
       <div className='fs-container1-sub6-text2'>Limited seats available</div>
         
       </div>
 
       <div className='fs-container1-sub6'>
-      Next Batch starts: 1st May, 2024
+      Next Batch starts: 1st June, 2024
       <div className='fs-container1-sub6-text2'>Limited seats available</div>
         
       </div>
     </div>
-         
+
     </div>
-    <div className="batch-selector-container">
-      <label className='select-batch-label'>Select Batch</label>
-      <div className="radio-group">
-       <div> <input
-          type="radio"
-          id="batch1"
-          name="batch"
-          value="1may"
-          checked={selectedBatch === '1may'}
-          onChange={handleBatchChange}
-        />
-        <label htmlFor="batch1">1 May</label>
-           </div>
-  <div>         
-        <input
-          type="radio"
-          id="batch15"
-          name="batch"
-          value="15may"
-          checked={selectedBatch === '15may'}
-          onChange={handleBatchChange}
-        />
-        <label htmlFor="batch15">15 May</label>
-        </div>
-      </div>
-      <div className='priceandenroll-items'>
-      <p>Price: {getPriceForBatch(selectedBatch)}</p>
-      <span><button style={{background:'rgb(206, 50, 50)',borderRadius:'10px'}}>Enroll Now</button>
-      <button style={{background:' rgb(84, 139, 223)',borderRadius:'10px'}}>Try for free</button>
-      </span>
-      </div>
+    <div className='fs-container2'>
+      <div className='fs-container2-item1'>SELECT BATCH</div>
+      <div className='fs-container2-item2' onClick={course1handle}><input type='radio' name='dates'/>1st Feb<div className='fs-container2-item3'>Enrolment Started</div></div>
+      <div className='fs-container2-item2' onClick={course2handle}><input type='radio' name='dates'/>15nth Feb<div className='fs-container2-item3'>Enrolment Started</div></div>
+      <div className='fs-container2-item5'>30000 RS/- <br/> <button className='fs-container2-item4' onClick={doenroll}>Enroll Now</button></div>
     </div>
-   
     <div className='fs-container3'>
       <div className='fs-container3-sub1'>
         <div className='fs-container3-sub1-text1'>Languages & Tools you will learn
@@ -126,7 +180,7 @@ Start learning web development from basics of HTML, CSS, Javascript.Master lates
       <div className='fs-container4-sub2'>We have designed a unique program where you can learn Full stack & experience <br/> being a developer sitting at your home</div>
       <div className='fs-container4-sub3'>
         <div className='fs-container4-sub3-item1'>
-          <div className='fs-container4-sub3-item1-sty1'>
+          {b1 ?(<div onClick={b1handle} className='fs-container4-sub3-item1-sty1'>
           Batch Commencement
           <div className='fs-container4-sub3-item1-sty2'>
           <div className='fs-container4-sub3-item1-sty3'>
@@ -135,10 +189,17 @@ Start learning web development from basics of HTML, CSS, Javascript.Master lates
             </div>
           </div>
 
+          </div>):(<div onClick={b1handle} className='fs-container4-sub3-item2-sty1'>
+          Batch Commencement
+          <div className='fs-container4-sub3-item1-sty2'>
+          <div className='fs-container4-sub3-item1-sty3'>
+            1
+            
+            </div>
           </div>
 
-
-          <div className='fs-container4-sub3-item2-sty1'>
+          </div>)}
+          {b2 ?( <div onClick={b2handle} className='fs-container4-sub3-item1-sty1'>
           Learn required languages, framework & tools
           <div className='fs-container4-sub3-item1-sty2'>
           <div className='fs-container4-sub3-item1-sty3'>
@@ -148,9 +209,20 @@ Start learning web development from basics of HTML, CSS, Javascript.Master lates
           
 
           </div>
-        </div>
+        </div>):( <div onClick={b2handle} className='fs-container4-sub3-item2-sty1'>
+          Learn required languages, framework & tools
+          <div className='fs-container4-sub3-item1-sty2'>
+          <div className='fs-container4-sub3-item1-sty3'>
+            2
+            
+            </div>
+          
 
-        <div className='fs-container4-sub3-item2-sty1'>
+          </div>
+        </div>)}
+
+
+        {b3 ? (<div onClick={b3handle} className='fs-container4-sub3-item1-sty1'>
         Complete awesome real world projects
           <div className='fs-container4-sub3-item1-sty2'>
           <div className='fs-container4-sub3-item1-sty3'>
@@ -160,9 +232,19 @@ Start learning web development from basics of HTML, CSS, Javascript.Master lates
           
 
           </div>
-        </div>
+        </div>):(<div onClick={b3handle} className='fs-container4-sub3-item2-sty1'>
+        Complete awesome real world projects
+          <div className='fs-container4-sub3-item1-sty2'>
+          <div className='fs-container4-sub3-item1-sty3'>
+            3
+            
+            </div>
+          
 
-        <div className='fs-container4-sub3-item2-sty1'>
+          </div>
+        </div>)}
+
+        {b4 ? (<div onClick={b4handle} className='fs-container4-sub3-item1-sty1'>
         Experience the complete development lifecycle
           <div className='fs-container4-sub3-item1-sty2'>
           <div className='fs-container4-sub3-item1-sty3'>
@@ -172,9 +254,19 @@ Start learning web development from basics of HTML, CSS, Javascript.Master lates
           
 
           </div>
-        </div>
+        </div>):(<div onClick={b4handle} className='fs-container4-sub3-item2-sty1'>
+        Experience the complete development lifecycle
+          <div className='fs-container4-sub3-item1-sty2'>
+          <div className='fs-container4-sub3-item1-sty3'>
+            4
+            
+            </div>
+          
 
-        <div className='fs-container4-sub3-item2-sty1'>
+          </div>
+        </div>)}
+
+      {b5 ? (<div  onClick={b5handle} className='fs-container4-sub3-item1-sty1'>
         Be a certified Full Stack Developer
           <div className='fs-container4-sub3-item1-sty2'>
           <div className='fs-container4-sub3-item1-sty3'>
@@ -184,14 +276,27 @@ Start learning web development from basics of HTML, CSS, Javascript.Master lates
           
 
           </div>
+        </div>):(<div onClick={b5handle} className='fs-container4-sub3-item2-sty1'>
+        Be a certified Full Stack Developer
+          <div className='fs-container4-sub3-item1-sty2'>
+          <div className='fs-container4-sub3-item1-sty3'>
+            5
+            
+            </div>
+          
+
+          </div>
+        </div>)}
+
+        
         </div>
-        </div>
-        <div className='fs-container4-sub3-item2'>
-          <div className='fs-container4-sub3-item2-insub'>
-          <div className='fs-container4-sub3-item2-insub1'>
-            <div className='fs-container4-sub3-item2-insub1-style1'>
+        {b1 ? (<div className='fs-container4-sub3-item2'>
+        <div className='fs-container4-sub3-item2-insub1-style1'>
             Batch Commencement
             </div>
+          <div className='fs-container4-sub3-item2-insub'>
+          <div className='fs-container4-sub3-item2-insub1'>
+            
             <div className='fs-container4-sub3-item2-insub1-style2'>
             <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Get access to dashboard & complete plan
             </div>
@@ -219,9 +324,183 @@ Start learning web development from basics of HTML, CSS, Javascript.Master lates
 
           </div>
          
-          <div ><img className='fs-container4-sub3-item2-insub3' src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/how-it-works/works_batchcommencement.svg'  alt='not-loaded' width="80%" height="50%"/></div>
+          {/* <div ><img className='fs-container4-sub3-item2-insub3' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/full-stack-course/tools1.png'  alt='not-loaded'/></div>
+         */}
+        </div>):(<></>)}
+        {b2 ? (<div className='fs-container4-sub3-item2'>
+        <div className='fs-container4-sub3-item2-insub1-style1'>
+            Learn required languages, framework & tools
+            </div>
+          <div className='fs-container4-sub3-item2-insub'>
+          <div className='fs-container4-sub3-item2-insub1'>
+            
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Live online classes of Javascript, ReactJs, NodeJs,Express, HTML & CSS
+            </div>
+           
+
+          </div>
+          <div className='fs-container4-sub3-item2-insub2'>
+            <div className='fs-container4-sub3-item2-insub1-style2-style'>
+          <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Learn the industry wide used tools like MongoDB, Git & Jira
+            </div>
+            </div>
+           
+          </div>
+
+          </div>
+         
+          {/* <div ><img className='fs-container4-sub3-item2-insub3' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/full-stack-course/tools1.png'  alt='not-loaded'/></div>
+         */}
+        </div>):(<></>)}
+        {b3 ? (<div className='fs-container4-sub3-item2'>
+        <div className='fs-container4-sub3-item2-insub1-style1'>
+            Complete awesome real world projects
+            </div>
+          <div className='fs-container4-sub3-item2-insub'>
+          <div className='fs-container4-sub3-item2-insub1'>
+            
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />HTML Blog Page
+            </div>
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Todo App
+            </div>
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Chat App
+            </div>
+
+          </div>
+          <div className='fs-container4-sub3-item2-insub2'>
+            <div className='fs-container4-sub3-item2-insub1-style2-style'>
+          <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Reminder Clock App
+            </div>
+            </div>
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />React Blog
+            </div>
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />E-commerce Web App
+            </div>
+          </div>
+
+          </div>
+         
+          {/* <div ><img className='fs-container4-sub3-item2-insub3' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/full-stack-course/tools1.png'  alt='not-loaded'/></div>
+         */}
+        </div>):(<></>)}
+        {b4 ? (<div className='fs-container4-sub3-item2'>
+        <div className='fs-container4-sub3-item2-insub1-style1'>
+            Experience the complete development lifecycle
+            </div>
+          <div className='fs-container4-sub3-item2-insub'>
+          <div className='fs-container4-sub3-item2-insub1'>
+            
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Get access to dashboard & complete plan
+            </div>
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Access to recorded video lectures
+            </div>
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />One live session with mentors per week
+            </div>
+
+          </div>
+          <div className='fs-container4-sub3-item2-insub2'>
+            <div className='fs-container4-sub3-item2-insub1-style2-style'>
+          <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Introduction with lead mentor for this program
+            </div>
+            </div>
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Access to Mock Tests
+            </div>
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Every live session will be of 2 hours duration
+            </div>
+          </div>
+
+          </div>
+         
+          {/* <div ><img className='fs-container4-sub3-item2-insub3' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/full-stack-course/tools1.png'  alt='not-loaded'/></div>
+         */}
+        </div>):(<></>)}
+        {b5 ? (<div className='fs-container4-sub3-item2'>
+        <div className='fs-container4-sub3-item2-insub1-style1'>
+            Be a certified Full Stack Developer
+            </div>
+          <div className='fs-container4-sub3-item2-insub'>
+          <div className='fs-container4-sub3-item2-insub1'>
+            
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Get access to dashboard & complete plan
+            </div>
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Access to recorded video lectures
+            </div>
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />One live session with mentors per week
+            </div>
+
+          </div>
+          <div className='fs-container4-sub3-item2-insub2'>
+            <div className='fs-container4-sub3-item2-insub1-style2-style'>
+          <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Introduction with lead mentor for this program
+            </div>
+            </div>
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Access to Mock Tests
+            </div>
+            <div className='fs-container4-sub3-item2-insub1-style2'>
+            <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Every live session will be of 2 hours duration
+            </div>
+          </div>
+
+          </div>
+         
+          {/* <div ><img className='fs-container4-sub3-item2-insub3' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/full-stack-course/tools1.png'  alt='not-loaded'/></div>
+         */}
+        </div>):(<></>)}
+         {/* <div className='fs-container4-sub3-item2'>
+           <div className='fs-container4-sub3-item2-insub'>
+           <div className='fs-container4-sub3-item2-insub1'>
+             <div className='fs-container4-sub3-item2-insub1-style1'>
+             Batch Commencement
+             </div>
+             <div className='fs-container4-sub3-item2-insub1-style2'>
+             <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Get access to dashboard & complete plan
+             </div>
+             <div className='fs-container4-sub3-item2-insub1-style2'>
+             <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Access to recorded video lectures
+             </div>
+             <div className='fs-container4-sub3-item2-insub1-style2'>
+             <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />One live session with mentors per week
+             </div>
+
+           </div>
+           <div className='fs-container4-sub3-item2-insub2'>
+             <div className='fs-container4-sub3-item2-insub1-style2-style'>
+           <div className='fs-container4-sub3-item2-insub1-style2'>
+             <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Introduction with lead mentor for this program
+             </div>
+             </div>
+             <div className='fs-container4-sub3-item2-insub1-style2'>
+             <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Access to Mock Tests
+             </div>
+             <div className='fs-container4-sub3-item2-insub1-style2'>
+             <FontAwesomeIcon style={{color:'orange'}} icon={faCaretRight} />Every live session will be of 2 hours duration
+             </div>
+           </div>
+
+           </div>
+         
+            <div ><img className='fs-container4-sub3-item2-insub3' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/full-stack-course/tools1.png'  alt='not-loaded'/></div>
         
-        </div>
+         </div> */}
           
       </div>
     </div>
@@ -275,12 +554,9 @@ Start learning web development from basics of HTML, CSS, Javascript.Master lates
           Tech giants keep hiring for web developement roles. You will often find opening for Frontend, Backend or Full Stack Developers. Strong knowledge and good projects will help you grab an oppurtunity here
           </div>
           <div className='imgs-container'>
-          <div className='fs-container6-sub2-items-text4' >
-          <div>
-          <img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iODAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA4MCAyMCI+CiAgPGltYWdlIGlkPSJwYXlwYWwtc2Vla2xvZ28uY29tIiB3aWR0aD0iODAiIGhlaWdodD0iMjAiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBR3dBQUFBYkNBWUFBQUNaUVdxMEFBQUFBWE5TUjBJQXJzNGM2UUFBQURobFdFbG1UVTBBS2dBQUFBZ0FBWWRwQUFRQUFBQUJBQUFBR2dBQUFBQUFBcUFDQUFRQUFBQUJBQUFBYktBREFBUUFBQUFCQUFBQUd3QUFBQUNSNGNUN0FBQUlzVWxFUVZSb0JlMWFUMjhieHhWL2IwbW5ZaXRIZEpBQ05SclptMDlnRm1oUUN6MllBWExvclVMYlF3OEZUTmx0cjVaUFJSb0hvV0duUFZyNUFKYmtUMkRsRTVnNnlVQU9ZVDVCcVZoRkRqMW9uYmkyRlpOOC9iM1puZG5aUDZTV3N1dmFoUVlnWjk2LzJkbjM1djJaSVptODFseTZzY3pFZHozVXhLRUlEVUFja01nV0hZenVSUDF1TkpINW1QRENOQkJrWmhKYXpjQlRBR1lLOFdsendHdlVxUDJqZWY3VHpoVDJZOUlMMGtEV1lNemhVZWFGVnphWlphUDUzcWV0bzhnZnkxVFhRTVpnVEhTMnVtZ0paMDBxZTJpSjlER3FnZ2Fjd1pybmI3UXI4RTluWWZuMWRJWmo2dk5xb0o1T0VJUkVrb0pIR0dsb1BJS1lFV20ydWsxcXZIRnVrbnkwODlmdFNiU1hqdC9ZYTZIWVdpaDlMczkvUlN1bm9sTGFDMEI2Qmh1SFJBaUt1UlljUEtaZzlDeUhMWUtDQ21UWStORy9pcFNLbUxuNmwweTZodkoyYXVtbWJxYytGSFUxdXY5eHI1enJKV0J2NzYxaURiY21Qa2tlRWExL0hSR2pHRnRadkQ2UnJ5cGgvZXN0Mk1WRkxoY1M4WUJXMlJ5MTc1OFlnNm5ScG4xcXcrOHBxUEdQYWYzQmw3U3hQNU9ucVhkcDFWbjJmQitIN2RSaTVuc3ZKSHo3RTg4eTVuSDdjSFpFR3FFdWRMRjJPTzloSEh6VzQ5aE9EU1lTZWdRemxQRVlQb2Q5WGJFZG5ERnpJMXg4Tjl0QzUycWxtMlhpWTVsWEo5TCs2NFNNQWc5NzJwVlpOMi9KaEo1dVpPQU1ocDFieUI4OEhwWElsNk1FcG4zODNzOHQwYm13UlV6dGM5Nk5RL21kL1oxcnJCK1IycnNpOHBVdkQwK2JiWDVmK1BuSG5nSXgyYVZGZGgraGtoRDRLTXMveS9NMVYvcE5PRGJZcFBQVExBWTdPQnVTTEx5WlREOWo4U0hTOU5lRjRtZGc0ZWoraHdPRTYwMEwvMC83Z2dKcE43T2V5NHZkREt6QUtQOXVCWTRwaUp5c1NEOHVPbXBqS0F6N050ZFl4amxNT1RnNjhRWjkrOEVINWNScTJIYUdqVkZjK0UwTmlpUm5Henh1MjQ2YjUvOGVRaXVmQUc3YlBDaUU2N0poY0ozcVkreWl3RWFPM2VqK1I1c0ovNGFWcHhGZmpiNzRLUHM4RVBXYWpvU3ZPRDZxclVTVVV5Q2I2N21VUlhPM0ZoMStxM0hrd1BXOWk5aU1xNEJiTVE0YjAyekcrYytJSG5uUHF0K2hsZE1ER2xNN1k1WmFNSWdOaHBkMWszcURLdFdoR212L043L3p2TXRNNEJUcVRUZGxtTXNMdzJDUVpXYThxTmNTZytwMUdQTW9WWDdDZ3VQRnN0UUVTdUVJTnpCR09ZbVJONG1ITGREYmRqYXBTeGZqWlF0cnIwVU5lTzVhWldsSU5wNytwejkwTEM3aDcvdHlOUDUzbGk3eWtDNmQ2ZEhHTjlnNHc3c3dsbGxMS3NQQVV4YzVQNFRoT2c3UFE5WGZnRmhDOGgrNDhrN2lZY1FnRk51MGtLZzVTOE9nZWxZYUN0MGMyUmR4NlBLQjlReEhyZk5DYytsdkYyZzhhbEhBSGZoVzZHZzZrUHBhYkN3cEdNdnlGZWJrZUtkSE94OXZuVHAvOHlHV3Z4RHp5Z1VybzcwNUR4S244d285cEZIUU1UeDVCZXBaYlAwQjVPRjVvdDZRdStsaDJqSkZoM3gzRDRvUHpSeGxYNzZ4bEw2eTJJdlpPSXg3ZkF1WlBKNTRXTTZTQ2Rkdy9pU04zbnJMeWRqQnM1K2Nwc2UvWExKZ3NaOGg1NVNWNkRpUDljeWtBVXlWYXdoM245SFRnd2dYenJmODNRY3Z1RTVVMzFSUE1NWWtXVXVOZ2trUS8rMVVRclNGbVM4cURFOXFhdmhUUXhwNm85WUZMVFJqZkFsVE53Mlo3UENHSGl1Nlk5WUJvVXhUN3dwT2RCRWl1eGxqcWVJRFhMS3JVV0xQMjRRY2pKNDBsVXRiaW1lS0ZHME1oZ294SlNUTUVnVGY3Ri8rNCtsVXR1cElFSDhYblhJT2xXSnFIc3FUTUdqMVNFOUhYV3JVTzlDUGt4TWlQVXl2MlhuaVhIVWpoREUrc1RqSzVFWFpoQkl2T3Byd01zWmJ5YzlMTHBkb0dQWG5oZm5PR2VNNHdRa0RZNnlnVFRRWFpYS1RNZFo4MjkyRWFKN2EyRWV1ZkxUdlptTHVtM0UrSHdyMUZCL0VJY0N3Wkw3R1Aydzh5Q0NxQUxvZ1BybGFoZFh4aUUzQURnTm5rTzNzaCs0QWZqKzZmNjFqZm5jVFVRWEhEU0VyMnJtMlprR3Y3M2xqUWhFeXNMRGVsTURJdXhaR2Z5SFJ3NGJEYVNpa2VzZkI1aklnVi8zR1lXb2JQTWxIUG9kTFhxWGdaRWpJTnpCV3k4bWJnZDUrNUs2dFlsamxiWU9jdG9Mc1FMRjFtbkJvSGIzOTloTmxxTjdnV1FHTWxWL1FZUlBrejJBNWJ5a1ZaMTZ3ZUNnKzNaMFdHZmR0SDB6RG1zV2lrcVM0Q3RSOEo0MzZQZmE5bHFVVDdYdzRzTndGQlFvTWZua3haNUNVMjR6eVZWNlFIbGNjWnh3V0x6Z1laNjFZRmpkUGpMZXpMWkVOVUoyVVB2VFpPNmNibGpmVFozWVZqS1E3aXV2dm9ocnF6R3dzblRoL0J2TnlUZWE1V2VDVUJWWForVHhvenBWTVZ5d1B2Tk1rYkF1YmZoaHMrakNNNWZRQU5YM3VjcHBsR25Ob2g2Ym5OQ2RtOEJuQUsra1ZMOUxKa0JVWUQyOWxjRUV5cnlsd1BFcFNpQ0NIbFJjYzBtajh3R09QaHhxYkw1OXhMMWFnSHdGUnlKOVBSLzFEcDlGNHpuSFJZSGlaN2paL2NhTUxqeGtnb2JlaEJlUzRUUGlLOG5PcXh6V1hidTdDVUdkOUdveTFTMCtHSFI4WGoxVlBYcE1rMTNpb3dqREFPakZoMnBBM2J6OVlnT2Rzd2xGQzBEcWc1ZlJaSHdDbkxjVjdoVWdBb1pRUU01cnZaK0daY3g0WUQyMUNMQkNPaG9nUHNaNnM1cU1xL3cwWklSZDRUWTJqZjFYZ3dGUi9xemxqS1dmUFkvZUdHaFp6RFY1UXVnYk9uVldyUkFLVHgweCtTeC9DZXViakxlaGQzNkdWRXBLUkZpS21TYnFSUEwxclNBeGpodlFiUDVYOE00VzhVVktwZUpqbkhBNURmd0tVMEQwZm5qUlc3eERoRmJ5MFh3SWJkdlVRUThzSXB3VkhCaTF4cVd4eGVtU28vTk5ON1VUZnlrM3RlUjVWWUh5R0t2QnBPb2tMRmt2YXRnTVlOVXpINUo1Vno0Y0VaUnJQelEzUS9WVEgyWmFMeVZuaXpKQXFCL25uL1ZUUWhZTVVOV0dVWERQMWNDMmxDdEVFSGVFYXFtL3crTGxHNW1vREovcDA2RjdZNHN4dEJxZGx2K1k1ckdmVjBndTkrWVhBWGsxQkQ4NFRDcHhaUkZ5RXRlajJYZ2RyYkprVXBPRTBxRy9TSlhqVHhsNFB1R1lzNUwwL1U2bGUyQ1JvYzVlWVB1ZmIzLy8yVitNM1QvNGx4U1FqbmNTZHdndlUxd1poU25qOXdSUUZpMTIwRFBsbnhVclNVbCtkdmw2NnlEOTNsc3VYNk8yQWNvYlhBenRYdjVVeEZtNUpvaSt1OVYrSHhRY1RGZ25YelRXdFZLcUdnWnpvcXdUR29aQTZkazE2UUVjbzdGcjRWZSs1ZElIbVZKOC9hY083L2c4TXB1L3JuOXNxRnhtbGlucjV5UDhBTDVFZVNiaEp6OHNBQUFBQVNVVk9SSzVDWUlJPSIvPgo8L3N2Zz4K' alt='not-loaded'/> 
+          <div className='fs-container6-sub2-items-text4' ><div><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iODAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA4MCAyMCI+CiAgPGltYWdlIGlkPSJwYXlwYWwtc2Vla2xvZ28uY29tIiB3aWR0aD0iODAiIGhlaWdodD0iMjAiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBR3dBQUFBYkNBWUFBQUNaUVdxMEFBQUFBWE5TUjBJQXJzNGM2UUFBQURobFdFbG1UVTBBS2dBQUFBZ0FBWWRwQUFRQUFBQUJBQUFBR2dBQUFBQUFBcUFDQUFRQUFBQUJBQUFBYktBREFBUUFBQUFCQUFBQUd3QUFBQUNSNGNUN0FBQUlzVWxFUVZSb0JlMWFUMjhieHhWL2IwbW5ZaXRIZEpBQ05SclptMDlnRm1oUUN6MllBWExvclVMYlF3OEZUTmx0cjVaUFJSb0hvV0duUFZyNUFKYmtUMkRsRTVnNnlVQU9ZVDVCcVZoRkRqMW9uYmkyRlpOOC9iM1puZG5aUDZTV3N1dmFoUVlnWjk2LzJkbjM1djJaSVptODFseTZzY3pFZHozVXhLRUlEVUFja01nV0hZenVSUDF1TkpINW1QRENOQkJrWmhKYXpjQlRBR1lLOFdsendHdlVxUDJqZWY3VHpoVDJZOUlMMGtEV1lNemhVZWFGVnphWlphUDUzcWV0bzhnZnkxVFhRTVpnVEhTMnVtZ0paMDBxZTJpSjlER3FnZ2Fjd1pybmI3UXI4RTluWWZuMWRJWmo2dk5xb0o1T0VJUkVrb0pIR0dsb1BJS1lFV20ydWsxcXZIRnVrbnkwODlmdFNiU1hqdC9ZYTZIWVdpaDlMczkvUlN1bm9sTGFDMEI2Qmh1SFJBaUt1UlljUEtaZzlDeUhMWUtDQ21UWStORy9pcFNLbUxuNmwweTZodkoyYXVtbWJxYytGSFUxdXY5eHI1enJKV0J2NzYxaURiY21Qa2tlRWExL0hSR2pHRnRadkQ2UnJ5cGgvZXN0Mk1WRkxoY1M4WUJXMlJ5MTc1OFlnNm5ScG4xcXcrOHBxUEdQYWYzQmw3U3hQNU9ucVhkcDFWbjJmQitIN2RSaTVuc3ZKSHo3RTg4eTVuSDdjSFpFR3FFdWRMRjJPTzloSEh6VzQ5aE9EU1lTZWdRemxQRVlQb2Q5WGJFZG5ERnpJMXg4Tjl0QzUycWxtMlhpWTVsWEo5TCs2NFNNQWc5NzJwVlpOMi9KaEo1dVpPQU1ocDFieUI4OEhwWElsNk1FcG4zODNzOHQwYm13UlV6dGM5Nk5RL21kL1oxcnJCK1IycnNpOHBVdkQwK2JiWDVmK1BuSG5nSXgyYVZGZGgraGtoRDRLTXMveS9NMVYvcE5PRGJZcFBQVExBWTdPQnVTTEx5WlREOWo4U0hTOU5lRjRtZGc0ZWoraHdPRTYwMEwvMC83Z2dKcE43T2V5NHZkREt6QUtQOXVCWTRwaUp5c1NEOHVPbXBqS0F6N050ZFl4amxNT1RnNjhRWjkrOEVINWNScTJIYUdqVkZjK0UwTmlpUm5Henh1MjQ2YjUvOGVRaXVmQUc3YlBDaUU2N0poY0ozcVkreWl3RWFPM2VqK1I1c0ovNGFWcHhGZmpiNzRLUHM4RVBXYWpvU3ZPRDZxclVTVVV5Q2I2N21VUlhPM0ZoMStxM0hrd1BXOWk5aU1xNEJiTVE0YjAyekcrYytJSG5uUHF0K2hsZE1ER2xNN1k1WmFNSWdOaHBkMWszcURLdFdoR212L043L3p2TXRNNEJUcVRUZGxtTXNMdzJDUVpXYThxTmNTZytwMUdQTW9WWDdDZ3VQRnN0UUVTdUVJTnpCR09ZbVJONG1ITGREYmRqYXBTeGZqWlF0cnIwVU5lTzVhWldsSU5wNytwejkwTEM3aDcvdHlOUDUzbGk3eWtDNmQ2ZEhHTjlnNHc3c3dsbGxMS3NQQVV4YzVQNFRoT2c3UFE5WGZnRmhDOGgrNDhrN2lZY1FnRk51MGtLZzVTOE9nZWxZYUN0MGMyUmR4NlBLQjlReEhyZk5DYytsdkYyZzhhbEhBSGZoVzZHZzZrUHBhYkN3cEdNdnlGZWJrZUtkSE94OXZuVHAvOHlHV3Z4RHp5Z1VybzcwNUR4S244d285cEZIUU1UeDVCZXBaYlAwQjVPRjVvdDZRdStsaDJqSkZoM3gzRDRvUHpSeGxYNzZ4bEw2eTJJdlpPSXg3ZkF1WlBKNTRXTTZTQ2Rkdy9pU04zbnJMeWRqQnM1K2Nwc2UvWExKZ3NaOGg1NVNWNkRpUDljeWtBVXlWYXdoM245SFRnd2dYenJmODNRY3Z1RTVVMzFSUE1NWWtXVXVOZ2trUS8rMVVRclNGbVM4cURFOXFhdmhUUXhwNm85WUZMVFJqZkFsVE53Mlo3UENHSGl1Nlk5WUJvVXhUN3dwT2RCRWl1eGxqcWVJRFhMS3JVV0xQMjRRY2pKNDBsVXRiaW1lS0ZHME1oZ294SlNUTUVnVGY3Ri8rNCtsVXR1cElFSDhYblhJT2xXSnFIc3FUTUdqMVNFOUhYV3JVTzlDUGt4TWlQVXl2MlhuaVhIVWpoREUrc1RqSzVFWFpoQkl2T3Byd01zWmJ5YzlMTHBkb0dQWG5oZm5PR2VNNHdRa0RZNnlnVFRRWFpYS1RNZFo4MjkyRWFKN2EyRWV1ZkxUdlptTHVtM0UrSHdyMUZCL0VJY0N3Wkw3R1Aydzh5Q0NxQUxvZ1BybGFoZFh4aUUzQURnTm5rTzNzaCs0QWZqKzZmNjFqZm5jVFVRWEhEU0VyMnJtMlprR3Y3M2xqUWhFeXNMRGVsTURJdXhaR2Z5SFJ3NGJEYVNpa2VzZkI1aklnVi8zR1lXb2JQTWxIUG9kTFhxWGdaRWpJTnpCV3k4bWJnZDUrNUs2dFlsamxiWU9jdG9Mc1FMRjFtbkJvSGIzOTloTmxxTjdnV1FHTWxWL1FZUlBrejJBNWJ5a1ZaMTZ3ZUNnKzNaMFdHZmR0SDB6RG1zV2lrcVM0Q3RSOEo0MzZQZmE5bHFVVDdYdzRzTndGQlFvTWZua3haNUNVMjR6eVZWNlFIbGNjWnh3V0x6Z1laNjFZRmpkUGpMZXpMWkVOVUoyVVB2VFpPNmNibGpmVFozWVZqS1E3aXV2dm9ocnF6R3dzblRoL0J2TnlUZWE1V2VDVUJWWForVHhvenBWTVZ5d1B2Tk1rYkF1YmZoaHMrakNNNWZRQU5YM3VjcHBsR25Ob2g2Ym5OQ2RtOEJuQUsra1ZMOUxKa0JVWUQyOWxjRUV5cnlsd1BFcFNpQ0NIbFJjYzBtajh3R09QaHhxYkw1OXhMMWFnSHdGUnlKOVBSLzFEcDlGNHpuSFJZSGlaN2paL2NhTUxqeGtnb2JlaEJlUzRUUGlLOG5PcXh6V1hidTdDVUdkOUdveTFTMCtHSFI4WGoxVlBYcE1rMTNpb3dqREFPakZoMnBBM2J6OVlnT2Rzd2xGQzBEcWc1ZlJaSHdDbkxjVjdoVWdBb1pRUU01cnZaK0daY3g0WUQyMUNMQkNPaG9nUHNaNnM1cU1xL3cwWklSZDRUWTJqZjFYZ3dGUi9xemxqS1dmUFkvZUdHaFp6RFY1UXVnYk9uVldyUkFLVHgweCtTeC9DZXViakxlaGQzNkdWRXBLUkZpS21TYnFSUEwxclNBeGpodlFiUDVYOE00VzhVVktwZUpqbkhBNURmd0tVMEQwZm5qUlc3eERoRmJ5MFh3SWJkdlVRUThzSXB3VkhCaTF4cVd4eGVtU28vTk5ON1VUZnlrM3RlUjVWWUh5R0t2QnBPb2tMRmt2YXRnTVlOVXpINUo1Vno0Y0VaUnJQelEzUS9WVEgyWmFMeVZuaXpKQXFCL25uL1ZUUWhZTVVOV0dVWERQMWNDMmxDdEVFSGVFYXFtL3crTGxHNW1vREovcDA2RjdZNHN4dEJxZGx2K1k1ckdmVjBndTkrWVhBWGsxQkQ4NFRDcHhaUkZ5RXRlajJYZ2RyYkprVXBPRTBxRy9TSlhqVHhsNFB1R1lzNUwwL1U2bGUyQ1JvYzVlWVB1ZmIzLy8yVitNM1QvNGx4U1FqbmNTZHdndlUxd1poU25qOXdSUUZpMTIwRFBsbnhVclNVbCtkdmw2NnlEOTNsc3VYNk8yQWNvYlhBenRYdjVVeEZtNUpvaSt1OVYrSHhRY1RGZ25YelRXdFZLcUdnWnpvcXdUR29aQTZkazE2UUVjbzdGcjRWZSs1ZElIbVZKOC9hY083L2c4TXB1L3JuOXNxRnhtbGlucjV5UDhBTDVFZVNiaEp6OHNBQUFBQVNVVk9SSzVDWUlJPSIvPgo8L3N2Zz4K' alt='not-loaded'/> 
           </div>
-          <div>
-          <img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iODAiIGhlaWdodD0iMTQuNCIgdmlld0JveD0iMCAwIDgwIDE0LjQiPgogIDxpbWFnZSBpZD0iT3JhY2xlX2xvZ28iIHdpZHRoPSI4MCIgaGVpZ2h0PSIxNC40IiB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQUdRQUFBQVNDQVlBQUFDdG1YdUlBQUFBQVhOU1IwSUFyczRjNlFBQUFEaGxXRWxtVFUwQUtnQUFBQWdBQVlkcEFBUUFBQUFCQUFBQUdnQUFBQUFBQXFBQ0FBUUFBQUFCQUFBQVpLQURBQVFBQUFBQkFBQUFFZ0FBQUFCNjRla1VBQUFHQmtsRVFWUllDZTFZWFhJVFJ4Q2VIbGxVeW41QVZBVUI1aUZyWDhEbUJGRk9FSE1DeXlld09BSGlCTWduUUQ0QnlnbXdUeERuQWtZOFlNQ2tDdnNCSnhYaDZYemZ6STUzdFZwSks0UEpTNlpLbXIvdW5wNytueFdUYTU4YVNlUExzdDFWMFZadXVYU29LbWZXdWIyNzc0Y0hlWURUaDhtbU1mSTh2elp6N0hUUWZEZmNtd21EVGZJMldwR1hxaVlSMGNmTnQ4T2p1VGozazJSVXM3dkdLSGlhM2VSU24ybk5uR1c4NjVNcVp4U3BmcnlmdE5UYWJTT2FGUGVLOC9wbmZmemxCN09wTmVtQ3h6N082eTlGSUFweVpPUVY1ZzB3RlplbjlnSVFyZG10MDRmcnZlYmI0eWNSVUM1TkF3ZTA0bnh1YjZWMXVycSsyVHc1M3BrRis4K3k3ZURJbGo5WHpVdkFyczJDLzNNMTJScUp2QURNM1B1bzZwc21ETXNMTStVZENnTGVZdTNqNnZwVEZkTU5XT0IyVmxQZHYzTTJQQU9mRGMzQldZNC93WktnQkNoREZtWUM2SjBQcSt0ZDlOZHZZdG93aVBZMEF2UU9lQVVzUFRRUlNTandPQy8yTkM0bkZrcXJkaC9RN2hacExEci8rR0M5a3lsalBuYmRoVE9kbUNHOXd5cTkweGp2SWFNYUxTa3lyNGRXdGFjdUFFd2o3YXlsdFQ3bFBuc0lZVkIwY2JsMHYwekQ5M2pXTkNDNFBzYTNqUW9GenZGRUc2MFlDRC95Wjg0QmNOdUpoeDlNQUdNQjRmUWxQWWtOMXYrYmRkb0xzL0wvcGIvTlVmbE90VlVhOU1pYTV6bm9QZHk5bERmQ01EVGVlVDhjY3B6SzdPcjhKVm9UTHR2aUpwbS9kL0o2aStNSzdRQldlaFFzRWRBcUhmeTM4M2pGL0pMZmkyTjRWODhyVmdSOGxEY0krQ2tGek5BQ1h2c2VIand6eEJUUENKNG1pYWVFc0lEN3RQMzRCdjlHbGprZ05yZkRYQkJuaS9ZSVdiYWRJcDNmdXRBNHJrVG54NVBoQUZMYTk4QmlmcTJFVkFCQ1lYQVFseWpnT0k0OUJjd1F4VGxEeTYwTDE4T1FYZ0pMRSsraEhNY0c1WG1EOG5uaE95akRuNXZlblFiOU5jb2dMUXVCL3V5SnFnNllaUHg0a1QrSjRVQWFaUUpkaEZTb2NzWXg2QjFjOFFLRzVhVTg5Z09VdEVMK0N6UCt3M3Y4ZmFERVFiWjZjNk0wd2pSNFFnMjU0R3RQV3NJTk5rbEVWSTZ1UTR3eEVKV1dSeFhraEhtNXAzaUdXbW5IdFRTZXhxbnhWVS9xSFZhbEZ6ZnFsNjRYeWxsajBuQnhSUU0zOGNLWkZjTWpuVy9SaDZveVVHTDRqcktZVDdzOHRGMlZ2VWJkdFJTU1AvalMyRTFyc2hERVBWWkRhdXhHSGk2T1VaVlFlTnVjMDkzamV1eHpJZWw4NlMvWGordE1pS2VyYS9zd0p0VDdzZzB2NlhMTnYxVWkwSGZxdlJFdWZ0YjV0TkNXS1VUc0p1Z2VMRTQ3dzZnWmQ2VFoxSTlxemh5TmFyNTZ1bDNZR3BzV0t5SHZIVmZGaHVsTmhGTWZLcUVRTkhoTEIxMkhNS2Nyd1Z2SGlOL2d4RWVFMm1JSDRISGJtNFlCaGVnZmNQTU50U2FaQmpSclBjVFFBRkVXcnJ3MVAyU3l0cjlQcCtOMml0V1NzOEtIb0c5cEloOURENkZ5N1JDOEkyZm9OcnlqTzZhMGIyQmdZd2RXbXJoSHhiQmJDUzBIaEtRZWEzQi9LWWFRaFpxcTNZb0lSYUhHOWNDazI0bnp0TitEcFR3enhsK2luOTlqb2taU0RsVWJxcmpSc3ZRUW03WDRDOG9ncGpUNGtnODBGRXFDaWtTOTk0UzFtL3NmdjdOdGYrMUpGaG9aQkNLQ2IwVzJ1d2hCZWtkOFFaZmxnRHl0TkdidVpXdTZjZS9rdUZ0bVVmbTZuaS9hK0tyTmNDZEg1SU01QktybysxMFVLM3c5VDBMZXdFb3MvWTNaelVlTTY1eGsvVnZDaHkyUERvTHJ6OFBGWnBORHNvWUZaNTliaWptZ0RCdmZ2RHFaNHZ3M3JCZEZPRi9HTWxtakVaWWhqejlNOW91dzQzTWFsTm1xZnpZMHNQQk93ZXY1OUVHU0ttb2MrbHZPeE9YTFhYa0ZwVnpiTzRXTStRUmFzNit1elNTRTFVd2ZZWGxhVUlDbm42ZnJLNkVWT1lBeU43ak9zRVZQNFppTjM4WENTeHdRK1BReUhoSUNUUEgvdytyYUVDSHVKeWh3aUpmNUdpdTdxeThJUmVBcGMvTEJSeW8rbUM0cWgvUDZaNWVrMFdWM0N2blM1Ykw3V1VLR1MwL0UrRklpazR0NldML1F5cUdCaWJkK3FWdWc0NjJZd29kRnRVbVh5b29oRUtvNnJLSU00dkVGSDNwSlNJdGVMODQ4NFZyRmhxOFUvZ3RBUmZBTWpCVVQ3MFR2SjgvWnpyeFIrZjI4UW9nYVlyeDdsSVdVMlFRQjk0YVhicjU5M1JxcmJtYWorVjBmZ294clphRDJCV052U016aFljY1BuTm4rN0ZHYW4wS1lTbC8yZDk4ZDk2eTZ4eFdGNUw4QUJBTmcxVm01alNtU3NxQk1LSnY1RlBKaGJqNzAveEQva1FUK0Jabm95aHpFOHc0REFBQUFBRWxGVGtTdVFtQ0MiLz4KPC9zdmc+Cg==' alt='not-loaded'/></div>
+          <div><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iODAiIGhlaWdodD0iMTQuNCIgdmlld0JveD0iMCAwIDgwIDE0LjQiPgogIDxpbWFnZSBpZD0iT3JhY2xlX2xvZ28iIHdpZHRoPSI4MCIgaGVpZ2h0PSIxNC40IiB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQUdRQUFBQVNDQVlBQUFDdG1YdUlBQUFBQVhOU1IwSUFyczRjNlFBQUFEaGxXRWxtVFUwQUtnQUFBQWdBQVlkcEFBUUFBQUFCQUFBQUdnQUFBQUFBQXFBQ0FBUUFBQUFCQUFBQVpLQURBQVFBQUFBQkFBQUFFZ0FBQUFCNjRla1VBQUFHQmtsRVFWUllDZTFZWFhJVFJ4Q2VIbGxVeW41QVZBVUI1aUZyWDhEbUJGRk9FSE1DeXlld09BSGlCTWduUUQ0QnlnbXdUeERuQWtZOFlNQ2tDdnNCSnhYaDZYemZ6STUzdFZwSks0UEpTNlpLbXIvdW5wNytueFdUYTU4YVNlUExzdDFWMFZadXVYU29LbWZXdWIyNzc0Y0hlWURUaDhtbU1mSTh2elp6N0hUUWZEZmNtd21EVGZJMldwR1hxaVlSMGNmTnQ4T2p1VGozazJSVXM3dkdLSGlhM2VSU24ybk5uR1c4NjVNcVp4U3BmcnlmdE5UYWJTT2FGUGVLOC9wbmZmemxCN09wTmVtQ3h6N082eTlGSUFweVpPUVY1ZzB3RlplbjlnSVFyZG10MDRmcnZlYmI0eWNSVUM1TkF3ZTA0bnh1YjZWMXVycSsyVHc1M3BrRis4K3k3ZURJbGo5WHpVdkFyczJDLzNNMTJScUp2QURNM1B1bzZwc21ETXNMTStVZENnTGVZdTNqNnZwVEZkTU5XT0IyVmxQZHYzTTJQQU9mRGMzQldZNC93WktnQkNoREZtWUM2SjBQcSt0ZDlOZHZZdG93aVBZMEF2UU9lQVVzUFRRUlNTandPQy8yTkM0bkZrcXJkaC9RN2hacExEci8rR0M5a3lsalBuYmRoVE9kbUNHOXd5cTkweGp2SWFNYUxTa3lyNGRXdGFjdUFFd2o3YXlsdFQ3bFBuc0lZVkIwY2JsMHYwekQ5M2pXTkNDNFBzYTNqUW9GenZGRUc2MFlDRC95Wjg0QmNOdUpoeDlNQUdNQjRmUWxQWWtOMXYrYmRkb0xzL0wvcGIvTlVmbE90VlVhOU1pYTV6bm9QZHk5bERmQ01EVGVlVDhjY3B6SzdPcjhKVm9UTHR2aUpwbS9kL0o2aStNSzdRQldlaFFzRWRBcUhmeTM4M2pGL0pMZmkyTjRWODhyVmdSOGxEY0krQ2tGek5BQ1h2c2VIand6eEJUUENKNG1pYWVFc0lEN3RQMzRCdjlHbGprZ05yZkRYQkJuaS9ZSVdiYWRJcDNmdXRBNHJrVG54NVBoQUZMYTk4QmlmcTJFVkFCQ1lYQVFseWpnT0k0OUJjd1F4VGxEeTYwTDE4T1FYZ0pMRSsraEhNY0c1WG1EOG5uaE95akRuNXZlblFiOU5jb2dMUXVCL3V5SnFnNllaUHg0a1QrSjRVQWFaUUpkaEZTb2NzWXg2QjFjOFFLRzVhVTg5Z09VdEVMK0N6UCt3M3Y4ZmFERVFiWjZjNk0wd2pSNFFnMjU0R3RQV3NJTk5rbEVWSTZ1UTR3eEVKV1dSeFhraEhtNXAzaUdXbW5IdFRTZXhxbnhWVS9xSFZhbEZ6ZnFsNjRYeWxsajBuQnhSUU0zOGNLWkZjTWpuVy9SaDZveVVHTDRqcktZVDdzOHRGMlZ2VWJkdFJTU1AvalMyRTFyc2hERVBWWkRhdXhHSGk2T1VaVlFlTnVjMDkzamV1eHpJZWw4NlMvWGordE1pS2VyYS9zd0p0VDdzZzB2NlhMTnYxVWkwSGZxdlJFdWZ0YjV0TkNXS1VUc0p1Z2VMRTQ3dzZnWmQ2VFoxSTlxemh5TmFyNTZ1bDNZR3BzV0t5SHZIVmZGaHVsTmhGTWZLcUVRTkhoTEIxMkhNS2Nyd1Z2SGlOL2d4RWVFMm1JSDRISGJtNFlCaGVnZmNQTU50U2FaQmpSclBjVFFBRkVXcnJ3MVAyU3l0cjlQcCtOMml0V1NzOEtIb0c5cEloOURENkZ5N1JDOEkyZm9OcnlqTzZhMGIyQmdZd2RXbXJoSHhiQmJDUzBIaEtRZWEzQi9LWWFRaFpxcTNZb0lSYUhHOWNDazI0bnp0TitEcFR3enhsK2luOTlqb2taU0RsVWJxcmpSc3ZRUW03WDRDOG9ncGpUNGtnODBGRXFDaWtTOTk0UzFtL3NmdjdOdGYrMUpGaG9aQkNLQ2IwVzJ1d2hCZWtkOFFaZmxnRHl0TkdidVpXdTZjZS9rdUZ0bVVmbTZuaS9hK0tyTmNDZEg1SU01QktybysxMFVLM3c5VDBMZXdFb3MvWTNaelVlTTY1eGsvVnZDaHkyUERvTHJ6OFBGWnBORHNvWUZaNTliaWptZ0RCdmZ2RHFaNHZ3M3JCZEZPRi9HTWxtakVaWWhqejlNOW91dzQzTWFsTm1xZnpZMHNQQk93ZXY1OUVHU0ttb2MrbHZPeE9YTFhYa0ZwVnpiTzRXTStRUmFzNit1elNTRTFVd2ZZWGxhVUlDbm42ZnJLNkVWT1lBeU43ak9zRVZQNFppTjM4WENTeHdRK1BReUhoSUNUUEgvdytyYUVDSHVKeWh3aUpmNUdpdTdxeThJUmVBcGMvTEJSeW8rbUM0cWgvUDZaNWVrMFdWM0N2blM1Ykw3V1VLR1MwL0UrRklpazR0NldML1F5cUdCaWJkK3FWdWc0NjJZd29kRnRVbVh5b29oRUtvNnJLSU00dkVGSDNwSlNJdGVMODQ4NFZyRmhxOFUvZ3RBUmZBTWpCVVQ3MFR2SjgvWnpyeFIrZjI4UW9nYVlyeDdsSVdVMlFRQjk0YVhicjU5M1JxcmJtYWorVjBmZ294clphRDJCV052U016aFljY1BuTm4rN0ZHYW4wS1lTbC8yZDk4ZDk2eTZ4eFdGNUw4QUJBTmcxVm01alNtU3NxQk1LSnY1RlBKaGJqNzAveEQva1FUK0Jabm95aHpFOHc0REFBQUFBRWxGVGtTdVFtQ0MiLz4KPC9zdmc+Cg==' alt='not-loaded'/></div>
           </div>
           <div className='fs-container6-sub2-items-text4' ><div><img  src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iODAiIGhlaWdodD0iMjMuMTU4IiB2aWV3Qm94PSIwIDAgODAgMjMuMTU4Ij4KICA8aW1hZ2UgaWQ9IndhbG1hcnQtYXIyMSIgd2lkdGg9IjgwIiBoZWlnaHQ9IjIzLjE1OCIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFISUFBQUFoQ0FZQUFBQUZ4LzhrQUFBQUFYTlNSMElBcnM0YzZRQUFBRGhsV0VsbVRVMEFLZ0FBQUFnQUFZZHBBQVFBQUFBQkFBQUFHZ0FBQUFBQUFxQUNBQVFBQUFBQkFBQUFjcUFEQUFRQUFBQUJBQUFBSVFBQUFBQXNCUVUzQUFBSThFbEVRVlJvQmUxYVRXNGJOeFIrbEdRZ3ljYnFva0NhVGRRVGVPUUxaQXcwMlVZK1FlUVQxQVppb0x2SXU2STJFT1VFVVU5Z1pac1U4UGdDMWVRRWxUZUpnUzVxYjlLaWxzUitINGNjYzhZaldXcmlSRVdId0pqayt5RTU3K043NUJ0WlNWbSt1QVgwNnlDWWlCeUtrb1lXaWFvMTJWUWI4ZGtpQzZzc0lsekszb3dGeGlKZGdzalJsVWc0R2NuMm9qT1ZRQzVxc1NXVkw0RmNBbURnaGNQY01oWUtxOVF0Z2N4WjhJdDBWUlpJZ0JJdnVvNFN5RVV0dHFUeUpaQTNCSXcrQ3VxOGpjNHpmRVhsUExDVzlkQ2lNWkx4bXc4Y0QrRzVMSi9hQWlhZFVIS0VjZXRJSi9wSUo3Wm1wUlA2VFJBaS9hQzhLZFdIOFV4Yy9IUkZ0TVNWRmRtb2ZmTjAwSWYycWgzajFmdURadGUyVFFYK05ocVBIUTM4RGRkbS9mWHVJS2hwZWU1b2ViNmpGOVVaWFNWdjMrODNPZGRTbDI5MkJ4R3NuSGlDbHIxM0I4MU9mc0ZqSlIzSTFFbEgzWnBjU0FDd3R0VERPTXJMTHRvZnZ3bWVBZlJPcXFja1lMcFNJMEVwQ1ZsajkyQmU1RFJlQWU4SnVvRWozWDA2Q0U4UG1wSHJyMmhwUVNzMGZhM2ZPdm84ZFZWTFBUZjNQR3BMTHdNamhwbEZJa2VreHdHRUxyeHRKOE5qcDRiUU9ySlVMWVUyUkNodFlFTWNRaXJGd21vUXVBYlB5TWdSc0lCa3AxbENmWHZBWFpWUmhFTG81RmtEZkkrditqN3ZmOXp1VG5uMzdmSHJZSkEvTzIzWTNkTmFqaXNWejl2c0lORDVIbDQzZ01ONHRrNW5PQUVtM2RwSVNiU1Mwa1R1L2pCb25QN1lISkowcTNaVk1Rc2NoSlNzVVpZRnV5NHlEZnVIWThsWTMyZjNkSC85Mk9jdDJtWVlyb3BlSFlzNi8zMi9HZnY2YnA0aW5pL0g5dDNkWDVQTldsVW43ajN6TXZtK0cvL0tPeWk1NzhiNzYwSzlQZXMyejZnTHIrdkFnM293Zmh2ZGJUeXJlSkxDVUNneUdMME90bXFQNHA0alU4ZTEvWHIwSnFBWHRueWFiWjhBK0k0Ym8wYWozTnY5OVJ5SW1Na3FFd1Bla01LWDNxZlA0WHBEeE9BMUh6aStvQnBMZzdJc0RMa012YmlGUFVHM0xmajJsRVJya1h1N0EzWjZIeTVreDcwd0NVVUZzdGd2U1lIOFY3ZHJjcGlFSzhVMUNjN3Q2TStSYkZMQzhNYU1FbG1lbTROUjVVNU52dGRLMmhpalFSMVRzRGFPZzQyODQyK013cm50K05EREVKblNyb2hxazRKTnY0RXFZcHNGWGpaRVJVQzc5cE5iQmxBY0tTL0I3K0daV3V3bEtBTWl2YmJLTXpoMzN0SXVvcldLMHRFU0lFMFhMeCt5b1VYRmVJWnMweGhtaDZKdFFTZVpJZmFZTlFZTVViWHhGSlUyRFYvRW1FYTdzeUpIN2h4MU11emZYcEdYVTNuZUhMZHU0ZEtSWEQ0YVR0L1ZIQWRuL0JHOTNkSDhHaHVnbTUvYjU4L1RadGlrdDFWcStDQ3VaUXM2SjlRaklOZnE4K3dVZ1pNWis3NkNiVGZnZ1dFZVJQTEJNeVd5dFRqdzJGZjJ6RlJhSXJRNXFDa3BnQjdvUUxKUDVvVkNyZVZuS0cvU205N3ROeFZDeVZhaWlURmhQSHF0Njg5UkIzanBWeGh6RDIrZlhnU3duaFowaTNtWXc0SEQ4RWw5cnVGQ3BNbjFzSFliRCt1c0E4enR3blVra1lWV2Y1dktlNEphNnhQUytlQ21ldWF4cmpRSktNTWdRRzA0UUs0STVRalU0UWJBODIzdFlkd3FBdENwbUZ1cmYwNEN0RFV5blNHTVlNV0NpQldia2dEWUorZ3dxQ2tjZ3cwYnB0cHN1M0s2Myt3aGpMVUE0bVBTOENJaHFnalB0WVVnSUtVaGFJSXcyWVVYL3VHVXJ2TDBFRnRsbFh5a1JDR3FtRzJuenpZTDE0ak4xTUY2amhMS1pYcGwrN2JTNXhPdFdxY0g2MUdXbnZTVXFCNDJScWVJTjRzMkM1QzhIc0VFYmVZbW9ZNEJNbk5PWW9meVhER0dzQ2g5K0ZzaWhxaUtPZk9NbXdkVU5xQWJHWTBMeUxveEd1blVSK2g3QWk5cWdSMXcxNVB1Q2paQXB1L29SYldxWEo0alBQZHU3dzZPTWVZRHlxSk81N1E4WnRLT2w1bkRPN3NEcVBLNUxGUFdnK09rNTZkYWx3ckwxekpBY2xrOEI1MFJlRnRGMjd3c3c4ZFpkLzBNSW1mcHBRZzNWWUxsQVBMUFdHTXcva2pLaEJpRFRDbFpRMDRSSW5reXVYNDN6bEJQTmhVdlM0Z2VzK1NLZU5DSml1Z2ZTMk5PQ0U4Ynpqdk9QUEtJY2ttQmQwV3VEV0lJRU5iWVIvaEk2UTR3NE5Qd1V4TjRXSit5QkJlNi9LVzd6ajRpOFRIYW14T05HeDNQdUM5UXNoY1dmWTV3dkdQV2czVmR0NXlQM1VUNThYRUxmWXgwNGdpMzJOOXNXcEVYeWZRQllKMTVKK1ZSdnlTZ0dRR3ZrM29rYzBDQThNenlxR0M4WnVMdFNnQVlnLzZZTXRpdEhkYW1WSk5OZ0J0cE93VVJudnorWUQyMEVuSnZzUXVPVS92NDJsMVlPSkpTYlh3RzdMTnBReTJiTjE1R3Z3UlBjT1Byd01ZTkY2UlF0NjZkZUdTT3BjRElJWDFpWG9vTkVGVkY5dkxuTExCTFN1WXM4Ri9lZ2tRcGdwMUl3eWIyVXNUUTZ4SnJMSzd1K0REYU1HMmpBZTgwWjVkUHUrbTJDZi9lSkJOM2FRTU5hMDBNNVBIbmJNYWVYTU5yWjVyR20vQmRGSjcwRzJ6Vnc0UjUyWjJNUWxFSDZRY2l5TEhQd3JwRDRIQkV6K1lHY2J6VUkwbmdMUkNlWmp3dTZST2s5U0hiTEFUYkp2YTBoQUhORDcxQ1F3RXhGa3o0QUY3NERHRnNpREhiZUVMRCtJeC9lQUc2NDMvc0dNc2gxdFRCRWtPc1ovdGZMY1Y4R0xHYTJQQ3d4eHJzZHViL1dJQ3ZOdlNlNTVBcXVpZWN3SHZhZVkvaXgzQ3VDOG4rQy9WZDNPY005c1lhZ3NlMWR2Q3M0akdGZ01MV0lUWktCK050NHJrczdxeHpsQXhJanNnYzBTK1Y1SHdrNmQxUHpUNFdjNXl5RVg3eDdiQkhFRFAwVk9EbUd4TlJQbUM4UWZjTmlNd05FVTNjQ2hocVhYdFdqUzlLUFd6NWMwOG15RzlTOUJNUVBTSFRoTzJRRXdaNUVPbTk0SGNJRHM3bFozazE1SjdkQ3RPcG9nL3F5bnlRMzg0QXlYd1B3bnMwdWpHOEI1SWIvQVAvd3dzTE1rYUFNWmlhT0I3clB5K2tCZDBYcVpFZ2cxQ3doYk9KQzNGSmZVeFpKdEhwWEY0cTRXaXNDeEp0ZkdWSzFvZnplOGh4dkhLRlo5NEpGeHZxVUk3clF2dkZoNUVLUjBweHJjZWt1WG5jMkt3ZHpSdGY2T1VYb2tKR0w0eG1BS1dzTDVQdmczZU96NWFiMVVkeDIzcVpMeTc0NVNOSUNjVWZ4a1U5aW1Qb1UyNHZsWFVOMkFHYm9DeWYyZ0wyaCtVSTQ2NEMxRmY0WWJrWVFEdnh2L3BoT2NrVTd0Tkw4Y055V0FMNXFWRjA0REJjd3RQeVliUm9PdjFMME1KZDR0RHgrRW51dWp6VGhHTnYvTXhseHcxVTFoOXZBUnRDbzNsR0FvaVhvWlVLSTJuZzd4RFAxSklmUDNOR1R0VXFHVXR2Z1JMSVpZQklHdzlNVnpMTzlWUEdqRVlKNUF6amZDNFdMa1FOZnk2a0w1bSt6NXZXTG9HY1pwbi9HTDBFY2prQTYyRVpKMllwVENmc2ovVExzYlJ5RlovVkF2OEFLRjJzc3pjWUNLQUFBQUFBU1VWT1JLNUNZSUk9Ii8+Cjwvc3ZnPgo=' alt='not loaded'/></div> </div>
           <div className='fs-container6-sub2-items-text4' >
@@ -355,7 +631,7 @@ Start learning web development from basics of HTML, CSS, Javascript.Master lates
       </div>
       <div className='fs-container7-sub2'>
         <div>Annual Salary</div>
-        <img  src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/machine-learning/download.svg' alt='not-loaded'/>
+        <img className='fs-container7-sub2-imgsize' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/machine-learning/download.svg' alt='not-loaded'/>
       </div>
 
     </div>
@@ -476,161 +752,85 @@ Start learning web development from basics of HTML, CSS, Javascript.Master lates
 
     </div>
     </div>
-    <div className='fs-container11-sub4'><div className='fs-container11-sub4-sty1'>Course Content</div><div> <button className='fs-container11-sub4-sty2'>Hide</button></div></div>
+    <div className='fs-container11-sub4'><div className='fs-container11-sub4-sty1'>Course Content</div><div>{ hide1 ? (<> <button className='fs-container11-sub4-sty2' onClick={handlehide1}>Hide</button></>):(<><button className='fs-container11-sub4-sty2' onClick={handlehide1}>View details</button></>)} </div></div>
   
 
-     <div className='fs-container-12'>
-           <div className='fs-container-12-item-1'>
-            <img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/projects/HTML_HTML.svg' alt=''/>
-            <h5>HTML Blog Page</h5>
-            <p>Start your web development by making a simple blog page using HTML.</p>
-           </div>
+    { hide1 ?
+      ( 
+        <div className='fs-container12'>
+      <div className='fs-container12-sub'>
+        <div><img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/projects/HTML_HTML.svg' alt='not-loaded'/></div>
+        <div className='fs-container12-sub-text2'>HTML Blog Page</div>
+        <div>Start your web development by making a simple blog page using HTML.</div>
 
-          
-           <div className='fs-container-12-item-1'>
-            <img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/projects/Clock.svg' alt=''/>
-            <h5>Reminder Clock App</h5>
-            <p>Want to build an app to keep your reminders? Build your own Digital Reminder Clock App using HTML, CSS and JS</p>
-           </div>
-           
+      </div>
 
-          
-           <div className='fs-container-12-item-1'>
-            <img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/projects/app_todo.svg' alt=''/>
-            <h5>HTML Blog Page</h5>
-            <p>Start your web development by making a simple blog page using HTML.</p>
-           </div>
+      <div className='fs-container12-sub'>
+        <div><img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/projects/Clock.svg' alt='not-loaded'/></div>
+        <div className='fs-container12-sub-text2'>Reminder Clock App</div>
+        <div>Want to build an app to keep your reminders? Build your own Digital Reminder Clock App using HTML, CSS and JS</div>
 
-      
-           <div className='fs-container-12-item-1'>
-            <img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/projects/app_blog.svg' alt=''/>
-            <h5>ToDo App</h5>
-            <p>This will be a basic project to make your understanding of HTML and CSS clear but you can use it to keep your ToDos as well.</p>
-           </div>
+      </div>
 
+      <div className='fs-container12-sub'>
+        <div><img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/projects/app_todo.svg' alt='not-loaded'/></div>
+        <div className='fs-container12-sub-text2'>ToDo App</div>
+        <div>This will be a basic project to make your understanding of HTML and CSS clear but you can use it to keep your ToDos as well.</div>
 
-      
-           <div className='fs-container-12-item-1'>
-            <img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/projects/app_blog.svg' alt=''/>
-            <h5>React Blog App</h5>
-            <p>Create your own Medium website. Through the project you will understand how React , Node and MongoDB work together to create magic.</p>
-           </div>
+      </div>
 
-        </div>
+      <div className='fs-container12-sub'>
+        <div><img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/projects/app_blog.svg' alt='not-loaded'/></div>
+        <div className='fs-container12-sub-text2'>React Blog App</div>
+        <div>Create your own Medium website. Through the project you will understand how React , Node and MongoDB work together to create magic.</div>
 
+      </div>
 
-     
-      <section className='fs-container-13'>
-           <div className='fs-container-13-left'>
-           <p>Get a real time project</p>
-           <div  className='fs-container-13-left-img-text'>
-      <span>
-        <img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/real-time/real.svg' alt=''/>
-        <p>Get a real time project</p>
-        </span> 
-       <span>
-       <img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/real-time/experience.svg' alt=''/>
-       <p>Experience agile methodology & Work with industry experts</p>
-       </span>
-       <span>
-         <img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/real-time/deploy.svg' alt=''/>
-         <p>Deploy your project to Production</p>
-         </span> 
+      <div className='fs-container12-sub'>
+        <div><img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/projects/app_shopping.svg' alt='not-loaded'/></div>
+        <div className='fs-container12-sub-text2'>E-commerce Web App</div>
+        <div>This will be one of the major projects of the program. It will be a full-fledged working website. Just add some products and you will be ready to sell online and take payments.</div>
+
+      </div>
+
+    </div>):(<> </>)
+    
+    }
+    <div className='fs-container13'>
+      <div className='fs-container13-sub1'>
+        <div className='fs-container13-sub1-item1'>Get a real time project</div>
        
-           </div>
-           </div>
-           <div className='fs-container-13-right'>
-
-           <h2>Certification</h2>
-           <p>Joint Co-Branded Participation Certificate & Partner Completion Certificate</p>
-           <div>
-            <img src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/development-programs/nasscom-certificate-full-satck-mern.png' alt=''/>
-           </div>
-           </div>
-      </section>
-
-
-
-
-     <section className='fs-container-14'>
-      <div className='fs-container-14-card'>
-           <div className='fs-container-14-left'>
-            <div>
-            <img src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNS4yLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCIgWw0KCTwhRU5USVRZIG5zX2V4dGVuZCAiaHR0cDovL25zLmFkb2JlLmNvbS9FeHRlbnNpYmlsaXR5LzEuMC8iPg0KCTwhRU5USVRZIG5zX2FpICJodHRwOi8vbnMuYWRvYmUuY29tL0Fkb2JlSWxsdXN0cmF0b3IvMTAuMC8iPg0KCTwhRU5USVRZIG5zX2dyYXBocyAiaHR0cDovL25zLmFkb2JlLmNvbS9HcmFwaHMvMS4wLyI+DQoJPCFFTlRJVFkgbnNfdmFycyAiaHR0cDovL25zLmFkb2JlLmNvbS9WYXJpYWJsZXMvMS4wLyI+DQoJPCFFTlRJVFkgbnNfaW1yZXAgImh0dHA6Ly9ucy5hZG9iZS5jb20vSW1hZ2VSZXBsYWNlbWVudC8xLjAvIj4NCgk8IUVOVElUWSBuc19zZncgImh0dHA6Ly9ucy5hZG9iZS5jb20vU2F2ZUZvcldlYi8xLjAvIj4NCgk8IUVOVElUWSBuc19jdXN0b20gImh0dHA6Ly9ucy5hZG9iZS5jb20vR2VuZXJpY0N1c3RvbU5hbWVzcGFjZS8xLjAvIj4NCgk8IUVOVElUWSBuc19hZG9iZV94cGF0aCAiaHR0cDovL25zLmFkb2JlLmNvbS9YUGF0aC8xLjAvIj4NCl0+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zOng9IiZuc19leHRlbmQ7IiB4bWxuczppPSImbnNfYWk7IiB4bWxuczpncmFwaD0iJm5zX2dyYXBoczsiDQoJIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjZweCIgaGVpZ2h0PSIyNnB4Ig0KCSB2aWV3Qm94PSIwIDAgMjYgMjYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI2IDI2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojRjRBMzRDO30NCjwvc3R5bGU+DQo8bWV0YWRhdGE+DQoJPHNmdyAgeG1sbnM9IiZuc19zZnc7Ij4NCgkJPHNsaWNlcz48L3NsaWNlcz4NCgkJPHNsaWNlU291cmNlQm91bmRzICBib3R0b21MZWZ0T3JpZ2luPSJ0cnVlIiBoZWlnaHQ9IjI2IiB3aWR0aD0iMjYiIHg9Ii0xIiB5PSItMSI+PC9zbGljZVNvdXJjZUJvdW5kcz4NCgk8L3Nmdz4NCjwvbWV0YWRhdGE+DQo8Zz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTMuMiw0LjJoLTEuNGwtMC41LDguOWwwLjEsMC45bDYuNiw1LjlsMS0xLjFMMTMuNywxM0wxMy4yLDQuMnoiLz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTMsMEM1LjgsMCwwLDUuOCwwLDEzczUuOCwxMywxMywxM3MxMy01LjgsMTMtMTNTMjAuMiwwLDEzLDB6IE0xMywyMy44QzcsMjMuOCwyLjIsMTksMi4yLDEzUzcsMi4yLDEzLDIuMg0KCQlTMjMuOCw3LDIzLjgsMTNTMTksMjMuOCwxMywyMy44eiIvPg0KPC9nPg0KPC9zdmc+DQo=' alt=''/>
-            <p>Course duration</p>
-            <h2>80 Hours</h2>
-            </div>
-            <div>
-              <img src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNS4yLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCIgWw0KCTwhRU5USVRZIG5zX2V4dGVuZCAiaHR0cDovL25zLmFkb2JlLmNvbS9FeHRlbnNpYmlsaXR5LzEuMC8iPg0KCTwhRU5USVRZIG5zX2FpICJodHRwOi8vbnMuYWRvYmUuY29tL0Fkb2JlSWxsdXN0cmF0b3IvMTAuMC8iPg0KCTwhRU5USVRZIG5zX2dyYXBocyAiaHR0cDovL25zLmFkb2JlLmNvbS9HcmFwaHMvMS4wLyI+DQoJPCFFTlRJVFkgbnNfdmFycyAiaHR0cDovL25zLmFkb2JlLmNvbS9WYXJpYWJsZXMvMS4wLyI+DQoJPCFFTlRJVFkgbnNfaW1yZXAgImh0dHA6Ly9ucy5hZG9iZS5jb20vSW1hZ2VSZXBsYWNlbWVudC8xLjAvIj4NCgk8IUVOVElUWSBuc19zZncgImh0dHA6Ly9ucy5hZG9iZS5jb20vU2F2ZUZvcldlYi8xLjAvIj4NCgk8IUVOVElUWSBuc19jdXN0b20gImh0dHA6Ly9ucy5hZG9iZS5jb20vR2VuZXJpY0N1c3RvbU5hbWVzcGFjZS8xLjAvIj4NCgk8IUVOVElUWSBuc19hZG9iZV94cGF0aCAiaHR0cDovL25zLmFkb2JlLmNvbS9YUGF0aC8xLjAvIj4NCl0+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zOng9IiZuc19leHRlbmQ7IiB4bWxuczppPSImbnNfYWk7IiB4bWxuczpncmFwaD0iJm5zX2dyYXBoczsiDQoJIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjZweCIgaGVpZ2h0PSIyNnB4Ig0KCSB2aWV3Qm94PSIwIDAgMjYgMjYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI2IDI2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojRDNEM0Q4O30NCgkuc3Qxe2ZpbGw6I0Y0QTM0Qzt9DQo8L3N0eWxlPg0KPG1ldGFkYXRhPg0KCTxzZncgIHhtbG5zPSImbnNfc2Z3OyI+DQoJCTxzbGljZXM+PC9zbGljZXM+DQoJCTxzbGljZVNvdXJjZUJvdW5kcyAgYm90dG9tTGVmdE9yaWdpbj0idHJ1ZSIgaGVpZ2h0PSIyMS44IiB3aWR0aD0iMjUiIHg9IjAiIHk9Ii0yLjEiPjwvc2xpY2VTb3VyY2VCb3VuZHM+DQoJPC9zZnc+DQo8L21ldGFkYXRhPg0KPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMxKSI+DQoJPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTEpIj4NCgkJPHBhdGggY2xhc3M9InN0MCIgZD0iTTQuNywyNkgxLjNjLTAuNSwwLTAuOC0wLjQtMC44LTAuOGMwLDAsMCwwLDAsMFY1LjFjMC0wLjUsMC40LTAuOCwwLjgtMC44aDMuM2MwLjUsMCwwLjgsMC40LDAuOCwwLjgNCgkJCWMwLDAsMCwwLDAsMHYyMC4xQzUuNSwyNS42LDUuMSwyNiw0LjcsMjZDNC43LDI2LDQuNywyNiw0LjcsMjZ6Ii8+DQoJPC9nPg0KCTxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ0LjMzMyAzLjQ0NCkiPg0KCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNC43LDQuMkgxLjNjLTAuNSwwLTAuOCwwLjQtMC44LDAuOHYxNi43YzAsMC41LDAuNCwwLjgsMC44LDAuOGgzLjNjMC41LDAsMC44LTAuNCwwLjgtMC44VjUuMQ0KCQkJQzUuNSw0LjYsNS4xLDQuMiw0LjcsNC4yeiIvPg0KCTwvZz4NCgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDkuOCw4LjV2MTYuN2MwLDAuNS0wLjQsMC44LTAuOCwwLjhoLTEuN1Y3LjdINDlDNDkuNSw3LjcsNDkuOCw4LDQ5LjgsOC41eiIvPg0KCTxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM3LjY2NyA2Ljc3OCkiPg0KCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNC43LDE5LjJIMS4zYy0wLjUsMC0wLjgtMC40LTAuOC0wLjhWNS4xYzAtMC41LDAuNC0wLjgsMC44LTAuOGgzLjNjMC41LDAsMC44LDAuNCwwLjgsMC44djEzLjMNCgkJCUM1LjUsMTguOCw1LjEsMTkuMiw0LjcsMTkuMkM0LjcsMTkuMiw0LjcsMTkuMiw0LjcsMTkuMnoiLz4NCgk8L2c+DQoJPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzEgMTAuMTExKSI+DQoJCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik00LjcsMTUuOUgxLjNjLTAuNSwwLTAuOC0wLjQtMC44LTAuOHYtMTBjMC0wLjUsMC40LTAuOCwwLjgtMC44aDMuM2MwLjUsMCwwLjgsMC40LDAuOCwwLjh2MTANCgkJCUM1LjUsMTUuNSw1LjEsMTUuOSw0LjcsMTUuOXoiLz4NCgk8L2c+DQo8L2c+DQo8L3N2Zz4NCg==' alt=''/>
-            <p>Level</p>
-            <h2>Beginners & Intermediate</h2>
-            </div>
-           </div>
-           <div className='fs-container-14-right'>
-            <p>Not sure? Talk to our advisors</p>
-            <div>
-              <label htmlFor='emailid'>Email *
-              </label>
-              <input type='email' id='emailid' className='emailinput'/>
-            </div>
-            <div>
-            <label htmlFor='contact'>Phone no. *</label>
-            <input type='number' id='contact' className='emailinput'/>
-            </div>
-            <button className='getintouchbtn'>Get In Touch</button>
-              
-           </div>
-          
-           
- </div>
-     </section>
-
-
-     <section className='elevation-slider-container'>
-          <p className='elevation-slider-para-1'>Testimonials</p>
-         <p className='elevation-slider-para-2'>Our Student Speaks</p>
-
-        <Carousel responsive={responsive}>
-          {cardSliderData.map((card) => (
-            <div key={card.id} className='elevation-slider-item'>
-            {/* <img src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/coursePageNew/zenithWebp/Quote1.webp" alt="Name Decoration Image" loading="lazy"> */}
-
-              <div key={card.id} className='master-slider-container-item-name'>
-              <img src={card.imageUrl} alt="" />{card.name}</div>
-              <div>
-                
-                <p className='elevation-slider-des'>{card.description}</p>
-
-                
-                
-
-              </div>
-            </div>
-          ))}
-        </Carousel>
-          </section>  
-
-
-     <section className='get-in-touch-container'>
-      <div className='get-in-touch-container-img'>
-        <img src='	https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/digital-marketing/Feature.webp' alt=''/>
+        <div className='fs-container13-sub1-item2'>
+          <div><img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/real-time/real.svg' alt='not-loaded'/></div>
+          <div className='fs-container13-sub1-item2-sub1'>Get a real time project</div>
+        </div>
+        <div className='fs-container13-sub1-item2'>
+          <div><img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/real-time/experience.svg' alt='not-loaded'/></div>
+          <div className='fs-container13-sub1-item2-sub1'>Experience agile methodology <br/> &  Work with industry experts</div>
+       
+        </div>
+        <div className='fs-container13-sub1-item2'>
+          <div><img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/real-time/deploy.svg' alt='not-loaded'/></div>
+          <div className='fs-container13-sub1-item2-sub1'>Deploy your project to <br /> Production</div>
+       
+        </div>
       </div>
-      <div className='get-in-touch-container-card'>
-        <p>Still confused! Drop your details & get a call back from our academic counselling expert</p>
-        <button>
-          Get In Touch
-        </button>
+      
+      
+      <div className='fs-container13-sub2'>
+        <div className='fs-container13-sub2-text1'>
+        Certification
+        </div>
+        <div className='fs-container13-sub2-text2'>Joint Co-Branded Participation Certificate & Partner Completion Certificate</div>
+        <div><img className='fs-container13-sub2-text3' src='https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/development-programs/nasscom-certificate-full-satck-mern.png ' alt='not-loaded'/></div>
       </div>
-     </section>
 
-
-
-
-
-
-
-
-
+    </div>
+    <div className='fs-container14'>
+      
+      <img className='fs-container14-imgsize' src="https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/digital-marketing/Feature.webp" alt="not-loade"/>
+    </div >
+    </div>
     </>
     
   )

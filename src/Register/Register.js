@@ -38,7 +38,7 @@ const registervalue=(e)=>{
 
           console.log(res.data.token)
           
-          alert(res.data.msg)
+          
           navigate('/login')
       }
       else{
