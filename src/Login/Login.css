@@ -202,3 +202,101 @@ body{
         
     
 }
+
+
+
+
+
+
+@media screen and (min-width:461px) and (max-width:960px){
+    .login-form{
+        width: 100vw;
+        height: 75%;
+        background: white;
+        border-radius: 10px;
+        
+    }
+    .inner-form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;}
+    
+        .login-right-container{
+            width: 60%;
+            height: 35rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            margin-bottom: 2%;
+        }
+        .login-form h2{
+            word-spacing:50px;
+            padding: 10px 25%;
+            font-weight: lighter;
+            color: gray;
+        }
+        .button-container-login button{
+            height:35px;
+            font-size: larger;
+            background:skyblue;
+            border: none;
+             color:white;
+             border-radius: 5px;
+             margin-bottom: 2%;
+        }
+        
+    
+}
+
+   
+
+
+
+
+
+@media screen and (min-width:961px) and (max-width:1260px){
+    .login-form{
+        width: 100vw;
+        height: 75%;
+        background: white;
+        border-radius: 10px;
+        
+    }
+    .inner-form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;}
+    
+        .login-right-container{
+            width: 40%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            margin-right: 2%;
+            margin-top: 10%;
+            
+        }
+        .login-form h2{
+            word-spacing:50px;
+            padding: 10px 10%;
+            font-weight: lighter;
+            color: gray;
+        }
+        .button-container-login button{
+            height:35px;
+            font-size: larger;
+            background:skyblue;
+            border: none;
+             color:white;
+             border-radius: 5px;
+             margin-bottom: 2%;
+        }
+        
+    
+}
+
+
+

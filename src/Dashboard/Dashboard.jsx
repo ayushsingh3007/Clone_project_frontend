@@ -5,8 +5,8 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import "../Dashboard/Dashboard1.css"
 
-import "../StudyMaterial/MockTest.css"
 
 const Dashboard = () => {
    const navigate=useNavigate()
@@ -27,7 +27,7 @@ const Dashboard = () => {
   }, []);
 
   const sidebarStyle = {
-    width: firstHandle ? '6%' : '18%',
+    width: firstHandle ? '6%' : '30%',
     transition: 'width 2s',
   };
 

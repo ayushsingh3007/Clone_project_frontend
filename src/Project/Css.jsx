@@ -9,7 +9,7 @@ function Css() {
               <h2 style={{fontFamily:"cursive",color:"grey"}}>Html Blog App </h2>
              <div className='project_conatiner-left-item-1'>
             <img src='https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/full-stack/projects/HTML_HTML.svg' alt=''/>
-            <h5>HTML Blog Page</h5>
+            <h5>ToDo App</h5>
             <p>Start your web development by making a simple blog page using HTML.</p>
            </div>
            <p>Host Link: https://ayushsingh3007.github.io/project_1/</p>

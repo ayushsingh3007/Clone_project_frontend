@@ -1,4 +1,4 @@
-@media screen and (min-width:260px) and (max-width:768px){
+@media screen and (min-width:260px) and (max-width:468px){
    
     body{
         overflow-x: hidden;
@@ -1341,13 +1341,12 @@
         margin: auto;
         line-height: 30px;
         padding-top: 10%;
-        
-    
-    }
+        }
     .student-place-text-container p{
        width: 100%;
        display: flex;
        margin: auto;
+       font-weight: bold;
     }
     
     .company-img-card{
@@ -1629,14 +1628,14 @@
     
     
     .elevation-slider-container{
-        width: 90vw;
+        width: 100vw;
         margin-top: 3rem;
         margin: auto;
     }
     
     
     .elevation-slider-item{
-    width: 24rem;
+    width: 100vw;
     height: 24rem;
     box-shadow: 0 16px 32px rgba(0,0,0,.0784313725490196);
     display: flex;
@@ -1665,24 +1664,3422 @@
     .master-slider-container-item-name{
      display: flex;
      flex-direction: row;
-     gap: 10%;
+     gap: 8%;
      
      align-items: center;
      /* justify-content: center; */
-     width: 70%;
+     width: 100%;
      color: #000;
-     font: normal normal 600 1.2rem/2rem Inter;
+     font-weight: bold;
+     font-size: 1.4rem;
     }
     .elevation-slider-des{
-        font-size:0.9rem;
-        color: rgba(106,127,134,.9294117647058824);
-        
+        font-size:1.3;
+        color:grey;
+    
         line-height: 20px;
-        padding: 10px;
+        padding-left: 2%;
+        margin:1px;
     }
     .master-slider-container-item-img{
      width: 20%;
      margin-top: 2%;
+     margin-left: 4%;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     margin: auto;
+    }
+    
+}
+
+@media screen and (min-width:480px) and (max-width:768px){
+   
+    body{
+        overflow-x: hidden;
+    }
+    
+    .apply-now-banner-top{
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: space-between;
+        background: rgb(253, 240, 215);
+    }
+    .apply-now-banner-top-left{
+        width: 100%;
+        height: 30rem;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 7%;
+    }
+    .apply-now-banner-top-left h1{
+        line-height: 30px;
+        width: 80%;
+    }
+    .apply-now-banner-top-left p{
+        line-height: 30px;
+        width: 80%;
+        font-weight: bold;
+        color: #424242;
+        margin-top: 2%;
+    }
+    .apply-now-banner-top-right{
+        width: 100%;
+        height: 30rem;
+        margin-top: 2%;
+        background-image: url('https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/ISA-masthead-mern-5.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    .apply-now-banner-top-btn{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 2%;
+          margin-top: 1%;
+    }
+    .apply-now{
+        width: 80%;
+        height: 2rem;
+        font-size: 16px;
+        background-color: #00a5ec ;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        z-index: 1;
+    }
+    .getacall{
+        width: 80%;
+        height: 2rem;
+        font-size: 16px;
+        border-radius: 3px;
+        background: white;
+        color:#00a5ec ;
+        border: 1px solid #00a5ec ;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        z-index: 1;
+    }
+    
+    .forgraduate20222023{
+        width: 95vw;
+        height: 10rem;
+        margin: auto;
+        background: rgb(153, 209, 231);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .forgraduate20222023-left{
+        width: 100%;
+        
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        justify-content: space-between;
+        
+        }
+        .forgraduate20222023 h1{
+            color:#095170;
+            text-align: center;
+            padding: 10px 5px;
+        }
+        .ele-container2{
+            display: none;
+        }
+
+        .ele-container3{
+    
+            margin: 5%;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            position: relative;
+            display: none;
+        
+        }
+        /* ele-container3-sub1{
+            width: 30%;
+            border: 1px solid black;
+        } */
+        .ele-container3-hr{
+            width:12%;
+            position: absolute;
+            right: -12%;
+            top:15px;
+            border-color: blue;
+        }
+        .ele-container3-sub1-item1{
+            position: relative;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 15px;
+            width: 340px;
+            height:50px;
+            border-radius: 5px;
+            border: 1px solid rgb(102, 102, 102);
+            font-size: 20px;
+            color:orange;
+            font-weight: 500;
+        
+        }
+        .ele-container3-sub1-item2{
+            position: absolute;
+            width: 30px;
+            height:30px;
+            border:1px dashed orange;
+            font-size: 22px;
+            background-color: rgb(248, 232, 202);
+            border-radius: 5px;
+            left:-15px;
+            top:15px;
+        }
+        .ele-container3-sub1-item3{
+            position: relative;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 15px;
+            width: 340px;
+            height:50px;
+            border-radius: 5px;
+            border: 1px solid rgb(102, 102, 102);
+            font-size: 20px;
+            color:rgb(179, 20, 91);
+            font-weight: 500;
+        
+        }
+        .ele-container3-sub1-item4{
+            position: absolute;
+            width: 30px;
+            height:30px;
+            border:1px dashed rgb(113, 18, 61);
+            font-size: 22px;
+            background-color: rgb(248, 232, 202);
+            border-radius: 5px;
+            left:-15px;
+            top:15px;
+        }
+        .ele-container3-sub1-item5{
+            position: relative;
+            margin-top: 70px;
+            margin-bottom: 60px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 15px;
+            width: 340px;
+            height:50px;
+            border-radius: 5px;
+            border: 1px solid rgb(102, 102, 102);
+            font-size: 20px;
+            color:rgb(246, 5, 246);
+            font-weight: 500;
+        
+        }
+        .ele-container3-sub1-item6{
+            position: absolute;
+            width: 30px;
+            height:30px;
+            border:1px dashed rgb(246, 5, 246);
+            font-size: 22px;
+            background-color: rgb(248, 232, 202);
+            border-radius: 5px;
+            left:-15px;
+            top:15px;
+        }
+        .ele-container3-sub1-item7{
+            position: relative;
+            margin-top: 70px;
+            margin-bottom: 60px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 15px;
+            width: 340px;
+            height:50px;
+            border-radius: 5px;
+            border: 1px solid rgb(102, 102, 102);
+            font-size: 20px;
+            color:rgb(95, 95, 240);
+            font-weight: 500;
+        
+        }
+        .ele-container3-sub1-item8{
+            position: absolute;
+            width: 30px;
+            height:30px;
+            border:1px dashed rgb(95, 95, 240);
+            font-size: 22px;
+            background-color: rgb(248, 232, 202);
+            border-radius: 5px;
+            left:-15px;
+            top:15px;
+        }
+        .ele-container3-sub1-item9{
+            margin-top: 60px;
+            margin-bottom: 60px;
+            position: relative;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 15px;
+            width: 340px;
+            height:50px;
+            border-radius: 5px;
+            border: 1px solid rgb(102, 102, 102);
+            font-size: 20px;
+            color:rgb(7, 159, 7);
+            font-weight: 500;
+        
+        }
+        .ele-container3-sub1-item10{
+            position: absolute;
+            width: 30px;
+            height:30px;
+            border:1px dashed rgb(7, 159, 7);
+            font-size: 22px;
+            background-color: rgb(248, 232, 202);
+            border-radius: 5px;
+            left:-15px;
+            top:15px;
+        }
+        .ele-container3-sub2{
+            width: 59%;
+            background-color: rgb(242, 242, 242);
+            border: 1px solid red;
+            padding: 10px;
+        }
+        .ele-container3-sub2-item1{
+            display: flex;
+            padding: 20px;
+            margin-top: 10px;
+            border-radius: 10px;
+            justify-content: space-between;
+            text-align: left;
+            background-image: linear-gradient(to right,white,rgb(221, 237, 243));
+        }
+        .ele-container3-sub2-item2{
+            width:59%;
+            font-size: 18px;
+        }
+        .ele-container3-sub2-item3{
+            
+            width:100%;
+            height:80px;
+        }
+        
+     .batchstartdiv{
+        width: 100%;
+        min-height: 50%;
+        /* padding: 12px 20px; */
+        background:  #00a5ec;
+        font-size: large;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top:3% ;
+     }   
+    
+     .forgraduate20222023-right{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 3%;
+        
+        
+     }
+     .forgraduate20222023-right-item-1, .forgraduate20222023-right-item-2, .forgraduate20222023-right-item-3{
+        width: 35%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3%;
+        justify-content: center;
+        
+     }
+     .forgraduate20222023-right-item-1 p{
+           font-size: 12px;
+        background: #d6f3ff 0 0 no-repeat padding-box;
+        border: .5px dashed #00a5ec;
+        border-radius: 6px;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 8px;
+     }
+     .forgraduate20222023-right-item-1 h4{
+          color:#095170;
+          font-size: 13px;
+     }
+    
+     .forgraduate20222023-right-item-2 p{
+        font-size: 14px;
+     background: #d6f3ff 0 0 no-repeat padding-box;
+     border: .5px dashed #00a5ec;
+     border-radius: 6px;
+     width: 80%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 10px 8px;
+    }
+    .forgraduate20222023-right-item-2 h4{
+        color:#095170;
+        font-size: 14px;
+    }
+    .forgraduate20222023-right-item-3 p{
+        font-size: 12px;
+     background: #d6f3ff 0 0 no-repeat padding-box;
+     border: .5px dashed #00a5ec;
+     border-radius: 6px;
+     width: 80%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 10px 8px;
+    }
+    .forgraduate20222023-right-item-3 h4{
+        color:#095170;
+    }
+    
+     .forgraduate20222023-right div img{
+        width: 40%;
+     }
+     .linebetween{
+        
+        width: 20%;
+        border: 1px solid  #00a5ec;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        align-items: center;
+        margin: auto;
+     }
+    
+     .howtoreachdreamjob{
+        width: 80vw;
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        gap: 2%;
+        
+    
+     }
+    
+     .howtoreachdreamjob-left{
+        width: 40%;
+        height: 50rem;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 9%;
+    
+     }
+     .hrline-howtoreachdreamjob-1{
+        width: 10%;
+        position: relative;
+        top: 20%;
+        left: 38%;
+        background:  rgb(180, 234, 255);
+        border: 1px solid rgb(180, 234, 255);
+    
+     }
+     .hrline-howtoreachdreamjob-2{
+        width: 12%;
+        position: relative;
+        top: 11%;
+        left: 38%;
+        background:  rgb(180, 234, 255);
+        border: 1px solid rgb(180, 234, 255);
+    
+     }
+    
+     .howtoreachdreamjob-left-item-1{
+         width: 100%;
+         height: 4rem;
+         border: 1px solid #c2c2c2;;
+         border-radius: 5px;
+         display: flex;
+         flex-direction: row;
+         gap: 2%;
+         justify-content: center;
+         align-items: center;
+         color: orange;
+    
+     }
+     .span-1{
+        position: relative;
+        left: -27%;
+        width: auto;
+        height: auto;
+        padding: 8px 10px;
+        font-size: 18px;
+        color:black;
+        border: 1px dashed orange;
+        border-radius: 5px;
+        font-weight: bold;
+        background: rgb(180, 234, 255);
+     }
+     .span-2{
+        position: relative;
+        left: -27%;
+        width: auto;
+        height: auto;
+        padding: 8px 10px;
+        font-size: 18px;
+        color:black;
+        border: 1px dashed  rgb(232, 63, 63);
+        border-radius: 5px;
+        font-weight: bold;
+        background: rgb(180, 234, 255);
+    
+     }
+     .span-3{
+        position: relative;
+        left: -27%;
+        width: auto;
+        height: auto;
+        padding: 8px 10px;
+        font-size: 18px;
+        color:black;
+        border: 1px dashed rgb(192, 39, 175);
+        border-radius: 5px;
+        font-weight: bold;
+        background: rgb(180, 234, 255);
+    
+     }
+     .span-4{
+        position: relative;
+        left: -27%;
+        width: auto;
+        height: auto;
+        padding: 8px 10px;
+        font-size: 18px;
+        color:black;
+        border: 1px dashed  #00a5ec;
+        border-radius: 5px;
+        font-weight: bold;
+        background: rgb(180, 234, 255);
+    
+     }
+     .span-5{
+        position: relative;
+        left: -27%;
+        width: auto;
+        height: auto;
+        padding: 8px 10px;
+        font-size: 18px;
+        color:black;
+        border: 1px dashed orange;
+        border-radius: 5px;
+        font-weight: bold;
+        background: rgb(180, 234, 255);
+    
+     }
+    
+     
+     .howtoreachdreamjob-left-item-2{
+        width: 80%;
+        height: 4rem;
+        border: 1px solid rgb(232, 63, 63);
+        color: rgb(232, 63, 63);
+         border-radius: 5px;
+         animation:glowing 5s infinite, border 5s infinite;
+         display: flex;
+         flex-direction: row;
+         gap: 2%;
+         justify-content: center;
+         align-items: center;
+         color: orange;
+    }
+    .howtoreachdreamjob-left-item-3{
+        width: 80%;
+        height: 4rem;
+        border: 1px solid #c2c2c2;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        gap: 2%;
+        justify-content: center;
+        align-items: center;
+        color:rgb(192, 39, 175);
+        
+    
+    
+    }
+    .howtoreachdreamjob-left-item-4{
+        width: 80%;
+        height: 4rem;
+        border: 1px solid #c2c2c2;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        gap: 2%;
+        justify-content: center;
+        align-items: center;
+        color:  #00a5ec;
+    }
+    .howtoreachdreamjob-left-item-5{
+        width: 80%;
+        height: 4rem;
+        border: 1px solid #c2c2c2;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        gap: 2%;
+        justify-content: center;
+        align-items: center;
+        color:green;
+    }
+    .howtoreachdreamjob-right{
+        width: 54%;
+        height: 45rem;
+        
+        background: #f7f7f7 ;
+        display: flex;
+        flex-direction: column;
+        gap: 2%;
+        justify-content: center;
+        align-items: center;
+      box-shadow: 1px 1px 20px grey;
+      border: none;
+        
+     }
+    .howtoreachdreamjob-right-item-1{
+        width: 90%;
+        height: 18%;
+            display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 5px;
+        box-sizing: border-box;
+        font-size: 14px;
+        /* align-items: center; */
+        border: none;
+        box-shadow: 1px 1px 5px grey;
+    
+    
+    }
+    .forgraduate20222023-right-item-1 p{
+        align-items: center;
+        display: flex;
+        width: 65%;
+    }
+    .forgraduate20222023-right-item-1 img{
+        width: 20%;
+        height: 90%;
+        
+    }
+    .elevationlearningcard{
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        
+        flex-direction:column;
+    
+    }
+    .elevationlearningcard-container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 10%;
+        
+    }
+    
+    .elevationlearningcard-item{
+        width: 30%;
+        height: 14rem;
+        
+        margin-bottom: 2%;
+        border-radius: 2%;
+        border: 1px solid grey;
+        box-shadow: 1px 1px 5px grey;
+        box-sizing: border-box;
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 8%;
+    }
+    .elevationlearningcard-item img{
+        width: 20%;
+        background: #fdf0d7 ;
+        border-radius: 5px;
+    }
+    .elevationlearningcard-item p{
+        width: 80%;
+        font-size: 16px;
+        font-style: normal;
+        color: grey;
+    }
+    
+    .programsyllubus{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        width: 50vw;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+        margin-top: 5%;
+    }
+    .programsyllubus-text{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .programsyllubus-text p{
+        width: 80%;
+        text-align: center;
+        margin-top: 6%;
+        color:grey;
+        line-height: 25px;
+        font-weight: bold;
+        
+    }
+    
+    
+    .elevation-course-program-container{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+         padding-top: 4rem;
+         box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        gap: 5rem;
+        margin-top: 5rem;
+    }
+    
+    .elevation-course-program-container-item-1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 12rem;
+        
+    }
+    .elevation-course-program-container-item-1 hr{
+        width: 0px;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        border: 1px solid grey;
+    }
+    .elevation-course-program-week-1{
+        width: 100%;
+        height: 40%;
+        background: rgb(247, 128, 119);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .elevation-course-program-week-1 h4{
+        color:white;
+        font-weight: lighter;
+        font-size: 10px;
+    
+    }
+    
+    .elevation-course-program-developertype-1{
+        width: 100%;
+        height: 39%;
+        border: 1px solid grey;
+        border-left: 5px solid   rgb(247, 128, 119);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        font-weight: bold;
+        font-size: larger;
+    
+    }
+    .elevation-course-program-developertype-text-number-1{
+        background: rgb(247, 128, 119);
+        border: 5px solid white;
+        font-size: larger;
+        padding: 10px 13px;
+        border-radius: 10px;
+        color:white;
+        box-sizing: border-box;
+         align-items: center;
+         
+    }
+    
+    .elevation-course-program-developertype-plus-1{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:large;
+        color:rgb(247, 128, 119);
+        background: rgb(243, 242, 242);
+        margin-right: 2%;
+    
+    }
+    
+    
+    
+    .elevation-course-program-container-item-2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 12rem;
+        
+    }
+    .elevation-course-program-container-item-2 hr{
+        width: 0px;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        border: 1px solid grey;
+    }
+    .elevation-course-program-week-2{
+        width: 100%;
+        height: 40%;
+         
+        background: rgb(101, 187, 229);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .elevation-course-program-week-2 h4{
+        color:white;
+        font-weight: lighter;
+        font-size: 22px;
+    
+    }
+    
+    .elevation-course-program-developertype-2{
+        width: 100%;
+        height: 39%;
+        border: 1px solid grey;
+        border-left: 5px solid   rgb(101, 187, 229);;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1px;
+        font-weight: bolder;
+        font-size: larger;
+    
+    }
+    .elevation-course-program-developertype-text-number-2{
+    
+        background: rgb(101, 187, 229);
+            border: 5px solid white;
+        font-size: larger;
+        padding: 10px 13px;
+        border-radius: 10px;
+        color:white;
+        box-sizing: border-box;
+        text-align: center;
+         
+    }
+    
+    .elevation-course-program-developertype-plus-2{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:large;
+        color:rgb(101, 187, 229);
+        background: rgb(243, 242, 242);
+        margin-right: 2%;
+    
+    }
+    
+    
+    .elevation-course-program-container-item-3{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 12rem;
+        
+    }
+    .elevation-course-program-container-item-3 hr{
+        width: 0px;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        border: 1px solid grey;
+    }
+    .elevation-course-program-week-3{
+        width: 100%;
+        height: 40%;
+    
+        background: rgb(101, 187, 229);
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .elevation-course-program-week-3 h4{
+        color:white;
+        font-weight: lighter;
+        font-size: 22px;
+    
+    }
+    
+    .elevation-course-program-developertype-3{
+        width: 100%;
+        height: 39%;
+        border: 1px solid grey;
+        border-left: 5px solid   rgb(247, 128, 119);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bolder;
+        font-size: larger;
+    
+    }
+    .elevation-course-program-developertype-text-number-3{
+    
+        background: rgb(101, 187, 229);
+            border: 5px solid white;
+        font-size: larger;
+        padding: 10px 13px;
+        border-radius: 10px;
+        color:white;
+        box-sizing: border-box;
+         
+    }
+    
+    .elevation-course-program-developertype-plus-3{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:large;
+        color: rgb(101, 187, 229);;
+        background: rgb(243, 242, 242);
+        margin-right: 2%;
+    
+    }
+    
+    .elevation-course-program-container-item-4{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 12rem;
+        
+    }
+    .elevation-course-program-container-item-4 hr{
+        width: 0px;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        border: 1px solid grey;
+    }
+    .elevation-course-program-week-4{
+        width: 100%;
+        height: 40%;
+        background: rgb(247, 128, 119);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .elevation-course-program-week-4 h4{
+        color:white;
+        font-weight: lighter;
+        font-size: 22px;
+    
+    }
+    
+    .elevation-course-program-developertype-4{
+        width: 100%;
+        height: 39%;
+        border: 1px solid grey;
+        border-left: 5px solid   rgb(247, 128, 119);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bolder;
+        font-size: larger;
+    
+    }
+    .elevation-course-program-developertype-text-number-4{
+        background: rgb(247, 128, 119);
+        border: 5px solid white;
+        font-size: larger;
+        padding: 10px 13px;
+        border-radius: 10px;
+        color:white;
+        box-sizing: border-box;
+         
+    }
+    
+    .elevation-course-program-developertype-plus-4{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:large;
+        color:rgb(247, 128, 119);
+        background: rgb(243, 242, 242);
+        margin-right: 2%;
+    
+    }
+    
+    
+    
+    
+    .elevation-course-program-container-item-5{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 12rem;
+        
+    }
+    .elevation-course-program-container-item-5 hr{
+        width: 0px;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        border: 1px solid grey;
+    }
+    .elevation-course-program-week-5{
+        width: 100%;
+        height: 40%;
+        background: rgb(247, 128, 119);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .elevation-course-program-week-5 h4{
+        color:white;
+        font-weight: lighter;
+        font-size: 22px;
+    
+    }
+    
+    .elevation-course-program-developertype-5{
+        width: 100%;
+        height: 39%;
+        border: 1px solid grey;
+        border-left: 5px solid   rgb(247, 128, 119);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bolder;
+        font-size: larger;
+    
+    }
+    .elevation-course-program-developertype-text-number-5{
+        background: rgb(247, 128, 119);
+        border: 5px solid white;
+        font-size: larger;
+        padding: 10px 13px;
+        border-radius: 10px;
+        color:white;
+        box-sizing: border-box;
+         
+    }
+    
+    .elevation-course-program-developertype-plus-5{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:large;
+        color:rgb(247, 128, 119);
+        background: rgb(243, 242, 242);
+        margin-right: 2%;
+    
+    }
+    
+    
+    
+    
+    .elevation-course-program-container-item-6{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 12rem;
+        
+    }
+    .elevation-course-program-container-item-6 hr{
+        width: 0px;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        border: 1px solid grey;
+    }
+    .elevation-course-program-week-6{
+        width: 100%;
+        height: 40%;
+    
+        background: rgb(101, 187, 229);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .elevation-course-program-week-6 h4{
+        color:white;
+        font-weight: lighter;
+        font-size: 22px;
+    
+    }
+    
+    .elevation-course-program-developertype-6{
+        width: 100%;
+        height: 39%;
+        border: 1px solid grey;
+        border-left: 5px solid   rgb(101, 187, 229);;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bolder;
+        font-size: larger;
+    
+    }
+    .elevation-course-program-developertype-text-number-6{
+    
+        background: rgb(101, 187, 229);
+        border: 5px solid white;
+        font-size: larger;
+        padding: 10px 13px;
+        border-radius: 10px;
+        color:white;
+        box-sizing: border-box;
+         
+    }
+    
+    .elevation-course-program-developertype-plus-6{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:large;
+        
+        background: rgb(101, 187, 229);
+        background: rgb(243, 242, 242);
+        margin-right: 2%;
+    
+    }
+    
+    
+    
+    .elevation-course-program-container-item-7{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 12rem;
+        
+    }
+    .elevation-course-program-container-item-7 hr{
+        width: 0px;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        border: 1px solid grey;
+    }
+    .elevation-course-program-week-7{
+        width: 100%;
+        height: 40%;
+        background: rgb(247, 128, 119);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .elevation-course-program-week-7 h4{
+        color:white;
+        font-weight: lighter;
+        font-size: 22px;
+    
+    }
+    
+    .elevation-course-program-developertype-7{
+        width: 100%;
+        height: 39%;
+        border: 1px solid grey;
+        border-left: 5px solid   rgb(247, 128, 119);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bolder;
+        font-size: larger;
+    
+    }
+    .elevation-course-program-developertype-text-number-7{
+        background: rgb(247, 128, 119);
+        border: 5px solid white;
+        font-size: larger;
+        padding: 10px 13px;
+        border-radius: 10px;
+        color:white;
+        box-sizing: border-box;
+         
+    }
+    
+    .elevation-course-program-developertype-plus-7{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:large;
+        color:rgb(247, 128, 119);
+        background: rgb(243, 242, 242);
+        margin-right: 2%;
+    
+    }
+    
+    
+    
+    .elevation-course-program-container-item-8{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 12rem;
+        
+    }
+    .elevation-course-program-container-item-8 hr{
+        width: 0px;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        border: 1px solid grey;
+    }
+    .elevation-course-program-week-8{
+        width: 100%;
+        height: 40%;
+        background:rgb(247, 182, 67);;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .elevation-course-program-week-8 h4{
+        color:white;
+        font-weight: lighter;
+        font-size: 22px;
+    
+    }
+    
+    .elevation-course-program-developertype-8{
+        width: 100%;
+        height: 39%;
+        border: 1px solid grey;
+        border-left: 5px solid   rgb(247, 182, 67);;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bolder;
+        font-size: larger;
+    
+    }
+    .elevation-course-program-developertype-text-number-8{
+        background:rgb(247, 182, 67);;
+        border: 5px solid white;
+        font-size: larger;
+        padding: 10px 13px;
+        border-radius: 10px;
+        color:white;
+        box-sizing: border-box;
+         
+    }
+    
+    .elevation-course-program-developertype-plus-8{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:large;
+        color:rgb(247, 182, 67);;
+        background: rgb(243, 242, 242);
+        margin-right: 2%;
+    
+    }
+    
+    .upcoming-batch-banner-container{
+         width: 100vw;
+    
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         margin: auto;
+         margin-top: 5rem;
+         background: #fdf0d7;
+    
+    }
+    
+    .upcoming-batch-banner-text{
+        width: 55%;
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px;
+        gap: 10%;
+        justify-content: space-around;
+        font-size: small;
+        line-height: 25px;
+    
+    }
+    .upcoming-batch-banner-text button{
+        width: 100%;
+        height: 30%;
+        color: white;
+        font-size: large;
+        background:  rgb(101, 187, 229);
+        border: none;
+    }
+    .upcoming-batch-banner-img{
+        width: 32%;
+        height: 10rem;
+    }
+    .upcoming-batch-banner-img img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    .students-elevation-slider{
+        width: 80vw;
+        
+        box-shadow: 1px 1px 10px grey;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin: auto;
+        position: relative;
+        top: 2%;
+       
+    }
+    
+    
+    .student-place-text-container{
+        width: 50vw;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+        text-align: center;
+        margin: auto;
+        line-height: 30px;
+        padding-top: 10%;
+        }
+    .student-place-text-container p{
+       width: 100%;
+       display: flex;
+       margin: auto;
+       font-weight: bold;
+    }
+    
+    .company-img-card{
+        width: 100vw;
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+        margin-top: 3%;
+        justify-content: space-between;
+    
+    
+    }
+    
+    .company-img-card img{
+        width: 27%;
+        height: 5rem;
+        
+        margin-bottom: 2%;
+    }
+    
+    
+    
+    .applications-container{
+        width: 100vw;
+        background: #e5f4fb;
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
+        gap: 5%;
+        
+    }
+    
+    
+    .applications-container-item-1{
+        width: 100%;
+        height: 10rem;
+        
+        padding: 3% 20px;
+        box-sizing: border-box;
+    }
+    .applications-container-item-1 h1{
+        font-size: 25px;
+        font-weight: bolder;
+    
+    
+    }
+    
+    .applications-container-item-2{
+        width: 100%;
+        height: 10rem;
+    
+        
+    }
+    
+    .applications-container-item-2 h2{
+        font-size: 16px;
+        padding: 5% 20px;
+        font-weight: bold;
+    }
+    .applications-container-item-3{
+        width: 100%;
+        height: 26rem;
+        
+        background: white;
+        border-left: 5px solid rgb(232, 63, 63);
+        margin-top: 1%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    
+    .stepapplication{
+        width: 40%;
+        height: 100%;
+         text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 3%;
+    }
+    
+    .stepapplication span{
+        width: 100%;
+        height: 15%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3%;
+        padding: 10px;
+        margin-top: 12%;
+        font-size: large;
+        font-weight: lighter;
+        color: rgb(232, 63, 63);
+    }
+    
+    
+    .stepapplication span img{
+        width: 20%;
+        height: 50%;
+    }
+    
+    .aplication{
+        width: 56%;
+        height: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 22%;
+    }
+    .aplication ul{
+        display: flex;
+        flex-direction: column;
+        gap: 25%;
+        /* justify-content: space-around; */
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+    }
+    .aplication ul li{
+        width: 98%;
+        height: 20%;
+        display: flex;
+        gap: 3%;
+        font-weight: bold;
+        color: grey;
+    }
+    
+    .payment-plans-container{
+        width: 100vw;
+        height: 38rem;
+        background: #fdf0d7;
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+    .payment-plans-container h1, h4{
+    display: none;
+    }
+    .payment-plans-container button{
+        background: #00a5ec;
+        height: 10%;
+        width: 35%;
+        border: none;
+        color: white;
+    }
+    .payment-plans-container-item {
+        width: 85%;
+        height: 40%;
+        border-radius: 10px;
+        background:#d6f4ff;
+        display: flex;
+        padding: 12px 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    .payment-plans-container-item img{
+        width: 40%;
+        height: 25%;
+        position: relative;
+        left: 4%;
+    }
+    
+    .payment-plans-container-item div{
+        width: 58%;
+        height: 100%;
+        padding: 10px 10px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 4%;
+    }
+    .mentors-card_elevation{
+        margin-top: 2%;
+        width: 100vw;
+       margin: auto;
+    
+        display: flex;
+        justify-content: center;
+        flex-direction:column;
+        align-items: center;
+        font-weight: bolder;
+        gap: 4rem;
+    }
+    .free-webinar-container{
+          width: 100vw;
+           margin-top: 10%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 10%;
+          
+          justify-content: center;
+          align-items: center;
+          background: #fdf0d7;
+    }
+    
+    .free-webinar-container-item-1{
+        width: 30%;
+        height: 24rem;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .free-webinar-container-item-1 img{
+        width: 100%;
+    }
+    .free-webinar-container-item-2{
+        width: 45%;
+        height: 24rem;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 8%;
+        justify-content: center;
+        align-items: left;
+    }
+    .free-webinar-container-item-2 h1{
+        font-size: 38px;
+    }
+    .free-webinar-container-item-2 p{
+        color: grey;
+    }
+    .free-webinar-container-item-2 div{
+        border: none;
+        height: 20%;
+        background:#f78077;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        
+    
+    }
+    
+    .free-webinar-container-item-2 button{
+        width: 75%;
+        height: 10%;
+        background: #00a5ec;
+        border: none;
+        color: white;
+    }
+    
+    .free-webinar-container-item-3{
+        margin-top: 2%;
+        width: 100%;
+        height:20rem;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8%;
+        background: #f78077;
+    }
+    
+    .free-webinar-container-item-3 div{
+        width: 30%;
+        height: 100%;
+        color: white;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        word-wrap: break-word;
+        gap: 2%;
+    
+    }
+    
+    
+    .elevation-slider-container{
+        width: 100vw;
+        margin-top: 3rem;
+        margin: auto;
+    }
+    
+    
+    .elevation-slider-item{
+    width: 50vw;
+    height: 24rem;
+    box-shadow: 0 16px 32px rgba(0,0,0,.0784313725490196);
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+    border-radius: 20px;
+    }
+    .elevation-slider-para-1{
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-weight: bolder;
+        font-size: 28px;
+        
+        color: #858585;
+    }
+    .elevation-slider-para-2{
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-weight: bolder;
+        font-size: 28px;
+        
+        color:black;
+    }
+    .master-slider-container-item-name{
+     display: flex;
+     flex-direction: row;
+     gap: 8%;
+     
+     align-items: center;
+     /* justify-content: center; */
+     width: 100%;
+     color: #000;
+     font-weight: bold;
+     font-size: 1.4rem;
+    }
+    .elevation-slider-des{
+        font-size:1.3;
+        color:grey;
+    
+        line-height: 20px;
+        padding-left: 2%;
+        margin:1px;
+    }
+    .master-slider-container-item-img{
+     width: 20%;
+     margin-top: 2%;
+     margin-left: 4%;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     margin: auto;
+    }
+    
+}
+
+
+
+
+@media screen and (min-width:769px) and (max-width:1068px){
+   
+    body{
+        overflow-x: hidden;
+    }
+    
+    .apply-now-banner-top{
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: space-between;
+        background: rgb(253, 240, 215);
+    }
+    .apply-now-banner-top-left{
+        width: 100%;
+        height: 30rem;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 7%;
+    }
+    .apply-now-banner-top-left h1{
+        line-height: 30px;
+        width: 80%;
+    }
+    .apply-now-banner-top-left p{
+        line-height: 30px;
+        width: 80%;
+        font-weight: bold;
+        color: #424242;
+        margin-top: 2%;
+    }
+    .apply-now-banner-top-right{
+        width: 100%;
+        height: 30rem;
+        margin-top: 2%;
+        background-image: url('https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/ISA-masthead-mern-5.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    .apply-now-banner-top-btn{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 2%;
+          margin-top: 1%;
+    }
+    .apply-now{
+        width: 80%;
+        height: 2rem;
+        font-size: 16px;
+        background-color: #00a5ec ;
+        border-radius: 3px;
+        border: none;
+        color: white;
+        z-index: 1;
+    }
+    .getacall{
+        width: 80%;
+        height: 2rem;
+        font-size: 16px;
+        border-radius: 3px;
+        background: white;
+        color:#00a5ec ;
+        border: 1px solid #00a5ec ;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        z-index: 1;
+    }
+    
+    .forgraduate20222023{
+        width: 95vw;
+        height: 10rem;
+        margin: auto;
+        background: rgb(153, 209, 231);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .forgraduate20222023-left{
+        width: 100%;
+        
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        justify-content: space-between;
+        
+        }
+        .forgraduate20222023 h1{
+            color:#095170;
+            text-align: center;
+            padding: 10px 5px;
+        }
+        .ele-container2{
+            display: none;
+        }
+
+        .ele-container3{
+    
+            margin: 5%;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            position: relative;
+            display: none;
+        
+        }
+        /* ele-container3-sub1{
+            width: 30%;
+            border: 1px solid black;
+        } */
+        .ele-container3-hr{
+            width:12%;
+            position: absolute;
+            right: -12%;
+            top:15px;
+            border-color: blue;
+        }
+        .ele-container3-sub1-item1{
+            position: relative;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 15px;
+            width: 340px;
+            height:50px;
+            border-radius: 5px;
+            border: 1px solid rgb(102, 102, 102);
+            font-size: 20px;
+            color:orange;
+            font-weight: 500;
+        
+        }
+        .ele-container3-sub1-item2{
+            position: absolute;
+            width: 30px;
+            height:30px;
+            border:1px dashed orange;
+            font-size: 22px;
+            background-color: rgb(248, 232, 202);
+            border-radius: 5px;
+            left:-15px;
+            top:15px;
+        }
+        .ele-container3-sub1-item3{
+            position: relative;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 15px;
+            width: 340px;
+            height:50px;
+            border-radius: 5px;
+            border: 1px solid rgb(102, 102, 102);
+            font-size: 20px;
+            color:rgb(179, 20, 91);
+            font-weight: 500;
+        
+        }
+        .ele-container3-sub1-item4{
+            position: absolute;
+            width: 30px;
+            height:30px;
+            border:1px dashed rgb(113, 18, 61);
+            font-size: 22px;
+            background-color: rgb(248, 232, 202);
+            border-radius: 5px;
+            left:-15px;
+            top:15px;
+        }
+        .ele-container3-sub1-item5{
+            position: relative;
+            margin-top: 70px;
+            margin-bottom: 60px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 15px;
+            width: 340px;
+            height:50px;
+            border-radius: 5px;
+            border: 1px solid rgb(102, 102, 102);
+            font-size: 20px;
+            color:rgb(246, 5, 246);
+            font-weight: 500;
+        
+        }
+        .ele-container3-sub1-item6{
+            position: absolute;
+            width: 30px;
+            height:30px;
+            border:1px dashed rgb(246, 5, 246);
+            font-size: 22px;
+            background-color: rgb(248, 232, 202);
+            border-radius: 5px;
+            left:-15px;
+            top:15px;
+        }
+        .ele-container3-sub1-item7{
+            position: relative;
+            margin-top: 70px;
+            margin-bottom: 60px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 15px;
+            width: 340px;
+            height:50px;
+            border-radius: 5px;
+            border: 1px solid rgb(102, 102, 102);
+            font-size: 20px;
+            color:rgb(95, 95, 240);
+            font-weight: 500;
+        
+        }
+        .ele-container3-sub1-item8{
+            position: absolute;
+            width: 30px;
+            height:30px;
+            border:1px dashed rgb(95, 95, 240);
+            font-size: 22px;
+            background-color: rgb(248, 232, 202);
+            border-radius: 5px;
+            left:-15px;
+            top:15px;
+        }
+        .ele-container3-sub1-item9{
+            margin-top: 60px;
+            margin-bottom: 60px;
+            position: relative;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 15px;
+            width: 340px;
+            height:50px;
+            border-radius: 5px;
+            border: 1px solid rgb(102, 102, 102);
+            font-size: 20px;
+            color:rgb(7, 159, 7);
+            font-weight: 500;
+        
+        }
+        .ele-container3-sub1-item10{
+            position: absolute;
+            width: 30px;
+            height:30px;
+            border:1px dashed rgb(7, 159, 7);
+            font-size: 22px;
+            background-color: rgb(248, 232, 202);
+            border-radius: 5px;
+            left:-15px;
+            top:15px;
+        }
+        .ele-container3-sub2{
+            width: 59%;
+            background-color: rgb(242, 242, 242);
+            border: 1px solid red;
+            padding: 10px;
+        }
+        .ele-container3-sub2-item1{
+            display: flex;
+            padding: 20px;
+            margin-top: 10px;
+            border-radius: 10px;
+            justify-content: space-between;
+            text-align: left;
+            background-image: linear-gradient(to right,white,rgb(221, 237, 243));
+        }
+        .ele-container3-sub2-item2{
+            width:59%;
+            font-size: 18px;
+        }
+        .ele-container3-sub2-item3{
+            
+            width:100%;
+            height:80px;
+        }
+        
+     .batchstartdiv{
+        width: 100%;
+        min-height: 50%;
+        /* padding: 12px 20px; */
+        background:  #00a5ec;
+        font-size: large;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top:3% ;
+     }   
+    
+     .forgraduate20222023-right{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 3%;
+        
+        
+     }
+     .forgraduate20222023-right-item-1, .forgraduate20222023-right-item-2, .forgraduate20222023-right-item-3{
+        width: 35%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3%;
+        justify-content: center;
+        
+     }
+     .forgraduate20222023-right-item-1 p{
+           font-size: 12px;
+        background: #d6f3ff 0 0 no-repeat padding-box;
+        border: .5px dashed #00a5ec;
+        border-radius: 6px;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 8px;
+     }
+     .forgraduate20222023-right-item-1 h4{
+          color:#095170;
+          font-size: 13px;
+     }
+    
+     .forgraduate20222023-right-item-2 p{
+        font-size: 14px;
+     background: #d6f3ff 0 0 no-repeat padding-box;
+     border: .5px dashed #00a5ec;
+     border-radius: 6px;
+     width: 80%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 10px 8px;
+    }
+    .forgraduate20222023-right-item-2 h4{
+        color:#095170;
+        font-size: 14px;
+    }
+    .forgraduate20222023-right-item-3 p{
+        font-size: 12px;
+     background: #d6f3ff 0 0 no-repeat padding-box;
+     border: .5px dashed #00a5ec;
+     border-radius: 6px;
+     width: 80%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 10px 8px;
+    }
+    .forgraduate20222023-right-item-3 h4{
+        color:#095170;
+    }
+    
+     .forgraduate20222023-right div img{
+        width: 40%;
+     }
+     .linebetween{
+        
+        width: 20%;
+        border: 1px solid  #00a5ec;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        align-items: center;
+        margin: auto;
+     }
+    
+     .howtoreachdreamjob{
+        width: 80vw;
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        gap: 2%;
+        
+    
+     }
+    
+     .howtoreachdreamjob-left{
+        width: 40%;
+        height: 50rem;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 9%;
+    
+     }
+     .hrline-howtoreachdreamjob-1{
+        width: 10%;
+        position: relative;
+        top: 20%;
+        left: 38%;
+        background:  rgb(180, 234, 255);
+        border: 1px solid rgb(180, 234, 255);
+    
+     }
+     .hrline-howtoreachdreamjob-2{
+        width: 12%;
+        position: relative;
+        top: 11%;
+        left: 38%;
+        background:  rgb(180, 234, 255);
+        border: 1px solid rgb(180, 234, 255);
+    
+     }
+    
+     .howtoreachdreamjob-left-item-1{
+         width: 100%;
+         height: 4rem;
+         border: 1px solid #c2c2c2;;
+         border-radius: 5px;
+         display: flex;
+         flex-direction: row;
+         gap: 2%;
+         justify-content: center;
+         align-items: center;
+         color: orange;
+    
+     }
+     .span-1{
+        position: relative;
+        left: -27%;
+        width: auto;
+        height: auto;
+        padding: 8px 10px;
+        font-size: 18px;
+        color:black;
+        border: 1px dashed orange;
+        border-radius: 5px;
+        font-weight: bold;
+        background: rgb(180, 234, 255);
+     }
+     .span-2{
+        position: relative;
+        left: -27%;
+        width: auto;
+        height: auto;
+        padding: 8px 10px;
+        font-size: 18px;
+        color:black;
+        border: 1px dashed  rgb(232, 63, 63);
+        border-radius: 5px;
+        font-weight: bold;
+        background: rgb(180, 234, 255);
+    
+     }
+     .span-3{
+        position: relative;
+        left: -27%;
+        width: auto;
+        height: auto;
+        padding: 8px 10px;
+        font-size: 18px;
+        color:black;
+        border: 1px dashed rgb(192, 39, 175);
+        border-radius: 5px;
+        font-weight: bold;
+        background: rgb(180, 234, 255);
+    
+     }
+     .span-4{
+        position: relative;
+        left: -27%;
+        width: auto;
+        height: auto;
+        padding: 8px 10px;
+        font-size: 18px;
+        color:black;
+        border: 1px dashed  #00a5ec;
+        border-radius: 5px;
+        font-weight: bold;
+        background: rgb(180, 234, 255);
+    
+     }
+     .span-5{
+        position: relative;
+        left: -27%;
+        width: auto;
+        height: auto;
+        padding: 8px 10px;
+        font-size: 18px;
+        color:black;
+        border: 1px dashed orange;
+        border-radius: 5px;
+        font-weight: bold;
+        background: rgb(180, 234, 255);
+    
+     }
+    
+     
+     .howtoreachdreamjob-left-item-2{
+        width: 80%;
+        height: 4rem;
+        border: 1px solid rgb(232, 63, 63);
+        color: rgb(232, 63, 63);
+         border-radius: 5px;
+         animation:glowing 5s infinite, border 5s infinite;
+         display: flex;
+         flex-direction: row;
+         gap: 2%;
+         justify-content: center;
+         align-items: center;
+         color: orange;
+    }
+    .howtoreachdreamjob-left-item-3{
+        width: 80%;
+        height: 4rem;
+        border: 1px solid #c2c2c2;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        gap: 2%;
+        justify-content: center;
+        align-items: center;
+        color:rgb(192, 39, 175);
+        
+    
+    
+    }
+    .howtoreachdreamjob-left-item-4{
+        width: 80%;
+        height: 4rem;
+        border: 1px solid #c2c2c2;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        gap: 2%;
+        justify-content: center;
+        align-items: center;
+        color:  #00a5ec;
+    }
+    .howtoreachdreamjob-left-item-5{
+        width: 80%;
+        height: 4rem;
+        border: 1px solid #c2c2c2;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        gap: 2%;
+        justify-content: center;
+        align-items: center;
+        color:green;
+    }
+    .howtoreachdreamjob-right{
+        width: 54%;
+        height: 45rem;
+        
+        background: #f7f7f7 ;
+        display: flex;
+        flex-direction: column;
+        gap: 2%;
+        justify-content: center;
+        align-items: center;
+      box-shadow: 1px 1px 20px grey;
+      border: none;
+        
+     }
+    .howtoreachdreamjob-right-item-1{
+        width: 90%;
+        height: 18%;
+            display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 5px;
+        box-sizing: border-box;
+        font-size: 14px;
+        /* align-items: center; */
+        border: none;
+        box-shadow: 1px 1px 5px grey;
+    
+    
+    }
+    .forgraduate20222023-right-item-1 p{
+        align-items: center;
+        display: flex;
+        width: 65%;
+    }
+    .forgraduate20222023-right-item-1 img{
+        width: 20%;
+        height: 90%;
+        
+    }
+    .elevationlearningcard{
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        
+        flex-direction:column;
+    
+    }
+    .elevationlearningcard-container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 10%;
+        
+    }
+    
+    .elevationlearningcard-item{
+        width: 30%;
+        height: 14rem;
+        
+        margin-bottom: 2%;
+        border-radius: 2%;
+        border: 1px solid grey;
+        box-shadow: 1px 1px 5px grey;
+        box-sizing: border-box;
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 8%;
+    }
+    .elevationlearningcard-item img{
+        width: 20%;
+        background: #fdf0d7 ;
+        border-radius: 5px;
+    }
+    .elevationlearningcard-item p{
+        width: 80%;
+        font-size: 16px;
+        font-style: normal;
+        color: grey;
+    }
+    
+    .programsyllubus{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        width: 50vw;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+        margin-top: 5%;
+    }
+    .programsyllubus-text{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .programsyllubus-text p{
+        width: 80%;
+        text-align: center;
+        margin-top: 6%;
+        color:grey;
+        line-height: 25px;
+        font-weight: bold;
+        
+    }
+    
+    
+    .elevation-course-program-container{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+         padding-top: 4rem;
+         box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        gap: 5rem;
+        margin-top: 5rem;
+    }
+    
+    .elevation-course-program-container-item-1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 12rem;
+        
+    }
+    .elevation-course-program-container-item-1 hr{
+        width: 0px;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        border: 1px solid grey;
+    }
+    .elevation-course-program-week-1{
+        width: 100%;
+        height: 40%;
+        background: rgb(247, 128, 119);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .elevation-course-program-week-1 h4{
+        color:white;
+        font-weight: lighter;
+        font-size: 10px;
+    
+    }
+    
+    .elevation-course-program-developertype-1{
+        width: 100%;
+        height: 39%;
+        border: 1px solid grey;
+        border-left: 5px solid   rgb(247, 128, 119);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        font-weight: bold;
+        font-size: larger;
+    
+    }
+    .elevation-course-program-developertype-text-number-1{
+        background: rgb(247, 128, 119);
+        border: 5px solid white;
+        font-size: larger;
+        padding: 10px 13px;
+        border-radius: 10px;
+        color:white;
+        box-sizing: border-box;
+         align-items: center;
+         
+    }
+    
+    .elevation-course-program-developertype-plus-1{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:large;
+        color:rgb(247, 128, 119);
+        background: rgb(243, 242, 242);
+        margin-right: 2%;
+    
+    }
+    
+    
+    
+    .elevation-course-program-container-item-2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 12rem;
+        
+    }
+    .elevation-course-program-container-item-2 hr{
+        width: 0px;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        border: 1px solid grey;
+    }
+    .elevation-course-program-week-2{
+        width: 100%;
+        height: 40%;
+         
+        background: rgb(101, 187, 229);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .elevation-course-program-week-2 h4{
+        color:white;
+        font-weight: lighter;
+        font-size: 22px;
+    
+    }
+    
+    .elevation-course-program-developertype-2{
+        width: 100%;
+        height: 39%;
+        border: 1px solid grey;
+        border-left: 5px solid   rgb(101, 187, 229);;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1px;
+        font-weight: bolder;
+        font-size: larger;
+    
+    }
+    .elevation-course-program-developertype-text-number-2{
+    
+        background: rgb(101, 187, 229);
+            border: 5px solid white;
+        font-size: larger;
+        padding: 10px 13px;
+        border-radius: 10px;
+        color:white;
+        box-sizing: border-box;
+        text-align: center;
+         
+    }
+    
+    .elevation-course-program-developertype-plus-2{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:large;
+        color:rgb(101, 187, 229);
+        background: rgb(243, 242, 242);
+        margin-right: 2%;
+    
+    }
+    
+    
+    .elevation-course-program-container-item-3{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 12rem;
+        
+    }
+    .elevation-course-program-container-item-3 hr{
+        width: 0px;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        border: 1px solid grey;
+    }
+    .elevation-course-program-week-3{
+        width: 100%;
+        height: 40%;
+    
+        background: rgb(101, 187, 229);
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .elevation-course-program-week-3 h4{
+        color:white;
+        font-weight: lighter;
+        font-size: 22px;
+    
+    }
+    
+    .elevation-course-program-developertype-3{
+        width: 100%;
+        height: 39%;
+        border: 1px solid grey;
+        border-left: 5px solid   rgb(247, 128, 119);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bolder;
+        font-size: larger;
+    
+    }
+    .elevation-course-program-developertype-text-number-3{
+    
+        background: rgb(101, 187, 229);
+            border: 5px solid white;
+        font-size: larger;
+        padding: 10px 13px;
+        border-radius: 10px;
+        color:white;
+        box-sizing: border-box;
+         
+    }
+    
+    .elevation-course-program-developertype-plus-3{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:large;
+        color: rgb(101, 187, 229);;
+        background: rgb(243, 242, 242);
+        margin-right: 2%;
+    
+    }
+    
+    .elevation-course-program-container-item-4{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 12rem;
+        
+    }
+    .elevation-course-program-container-item-4 hr{
+        width: 0px;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        border: 1px solid grey;
+    }
+    .elevation-course-program-week-4{
+        width: 100%;
+        height: 40%;
+        background: rgb(247, 128, 119);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .elevation-course-program-week-4 h4{
+        color:white;
+        font-weight: lighter;
+        font-size: 22px;
+    
+    }
+    
+    .elevation-course-program-developertype-4{
+        width: 100%;
+        height: 39%;
+        border: 1px solid grey;
+        border-left: 5px solid   rgb(247, 128, 119);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bolder;
+        font-size: larger;
+    
+    }
+    .elevation-course-program-developertype-text-number-4{
+        background: rgb(247, 128, 119);
+        border: 5px solid white;
+        font-size: larger;
+        padding: 10px 13px;
+        border-radius: 10px;
+        color:white;
+        box-sizing: border-box;
+         
+    }
+    
+    .elevation-course-program-developertype-plus-4{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:large;
+        color:rgb(247, 128, 119);
+        background: rgb(243, 242, 242);
+        margin-right: 2%;
+    
+    }
+    
+    
+    
+    
+    .elevation-course-program-container-item-5{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 12rem;
+        
+    }
+    .elevation-course-program-container-item-5 hr{
+        width: 0px;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        border: 1px solid grey;
+    }
+    .elevation-course-program-week-5{
+        width: 100%;
+        height: 40%;
+        background: rgb(247, 128, 119);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .elevation-course-program-week-5 h4{
+        color:white;
+        font-weight: lighter;
+        font-size: 22px;
+    
+    }
+    
+    .elevation-course-program-developertype-5{
+        width: 100%;
+        height: 39%;
+        border: 1px solid grey;
+        border-left: 5px solid   rgb(247, 128, 119);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bolder;
+        font-size: larger;
+    
+    }
+    .elevation-course-program-developertype-text-number-5{
+        background: rgb(247, 128, 119);
+        border: 5px solid white;
+        font-size: larger;
+        padding: 10px 13px;
+        border-radius: 10px;
+        color:white;
+        box-sizing: border-box;
+         
+    }
+    
+    .elevation-course-program-developertype-plus-5{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:large;
+        color:rgb(247, 128, 119);
+        background: rgb(243, 242, 242);
+        margin-right: 2%;
+    
+    }
+    
+    
+    
+    
+    .elevation-course-program-container-item-6{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 12rem;
+        
+    }
+    .elevation-course-program-container-item-6 hr{
+        width: 0px;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        border: 1px solid grey;
+    }
+    .elevation-course-program-week-6{
+        width: 100%;
+        height: 40%;
+    
+        background: rgb(101, 187, 229);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .elevation-course-program-week-6 h4{
+        color:white;
+        font-weight: lighter;
+        font-size: 22px;
+    
+    }
+    
+    .elevation-course-program-developertype-6{
+        width: 100%;
+        height: 39%;
+        border: 1px solid grey;
+        border-left: 5px solid   rgb(101, 187, 229);;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bolder;
+        font-size: larger;
+    
+    }
+    .elevation-course-program-developertype-text-number-6{
+    
+        background: rgb(101, 187, 229);
+        border: 5px solid white;
+        font-size: larger;
+        padding: 10px 13px;
+        border-radius: 10px;
+        color:white;
+        box-sizing: border-box;
+         
+    }
+    
+    .elevation-course-program-developertype-plus-6{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:large;
+        
+        background: rgb(101, 187, 229);
+        background: rgb(243, 242, 242);
+        margin-right: 2%;
+    
+    }
+    
+    
+    
+    .elevation-course-program-container-item-7{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 12rem;
+        
+    }
+    .elevation-course-program-container-item-7 hr{
+        width: 0px;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        border: 1px solid grey;
+    }
+    .elevation-course-program-week-7{
+        width: 100%;
+        height: 40%;
+        background: rgb(247, 128, 119);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .elevation-course-program-week-7 h4{
+        color:white;
+        font-weight: lighter;
+        font-size: 22px;
+    
+    }
+    
+    .elevation-course-program-developertype-7{
+        width: 100%;
+        height: 39%;
+        border: 1px solid grey;
+        border-left: 5px solid   rgb(247, 128, 119);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bolder;
+        font-size: larger;
+    
+    }
+    .elevation-course-program-developertype-text-number-7{
+        background: rgb(247, 128, 119);
+        border: 5px solid white;
+        font-size: larger;
+        padding: 10px 13px;
+        border-radius: 10px;
+        color:white;
+        box-sizing: border-box;
+         
+    }
+    
+    .elevation-course-program-developertype-plus-7{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:large;
+        color:rgb(247, 128, 119);
+        background: rgb(243, 242, 242);
+        margin-right: 2%;
+    
+    }
+    
+    
+    
+    .elevation-course-program-container-item-8{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 12rem;
+        
+    }
+    .elevation-course-program-container-item-8 hr{
+        width: 0px;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        border: 1px solid grey;
+    }
+    .elevation-course-program-week-8{
+        width: 100%;
+        height: 40%;
+        background:rgb(247, 182, 67);;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .elevation-course-program-week-8 h4{
+        color:white;
+        font-weight: lighter;
+        font-size: 22px;
+    
+    }
+    
+    .elevation-course-program-developertype-8{
+        width: 100%;
+        height: 39%;
+        border: 1px solid grey;
+        border-left: 5px solid   rgb(247, 182, 67);;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bolder;
+        font-size: larger;
+    
+    }
+    .elevation-course-program-developertype-text-number-8{
+        background:rgb(247, 182, 67);;
+        border: 5px solid white;
+        font-size: larger;
+        padding: 10px 13px;
+        border-radius: 10px;
+        color:white;
+        box-sizing: border-box;
+         
+    }
+    
+    .elevation-course-program-developertype-plus-8{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:large;
+        color:rgb(247, 182, 67);;
+        background: rgb(243, 242, 242);
+        margin-right: 2%;
+    
+    }
+    
+    .upcoming-batch-banner-container{
+         width: 100vw;
+    
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         margin: auto;
+         margin-top: 5rem;
+         background: #fdf0d7;
+    
+    }
+    
+    .upcoming-batch-banner-text{
+        width: 55%;
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px;
+        gap: 10%;
+        justify-content: space-around;
+        font-size: small;
+        line-height: 25px;
+    
+    }
+    .upcoming-batch-banner-text button{
+        width: 100%;
+        height: 30%;
+        color: white;
+        font-size: large;
+        background:  rgb(101, 187, 229);
+        border: none;
+    }
+    .upcoming-batch-banner-img{
+        width: 32%;
+        height: 10rem;
+    }
+    .upcoming-batch-banner-img img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    .students-elevation-slider{
+        width: 80vw;
+        
+        box-shadow: 1px 1px 10px grey;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin: auto;
+        position: relative;
+        top: 2%;
+       
+    }
+    
+    
+    .student-place-text-container{
+        width: 50vw;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+        text-align: center;
+        margin: auto;
+        line-height: 30px;
+        padding-top: 10%;
+        }
+    .student-place-text-container p{
+       width: 100%;
+       display: flex;
+       margin: auto;
+       font-weight: bold;
+    }
+    
+    .company-img-card{
+        width: 100vw;
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+        margin-top: 3%;
+        justify-content: space-between;
+    
+    
+    }
+    
+    .company-img-card img{
+        width: 27%;
+        height: 5rem;
+        
+        margin-bottom: 2%;
+    }
+    
+    
+    
+    .applications-container{
+        width: 100vw;
+        background: #e5f4fb;
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
+        gap: 5%;
+        
+    }
+    
+    
+    .applications-container-item-1{
+        width: 100%;
+        height: 10rem;
+        
+        padding: 3% 20px;
+        box-sizing: border-box;
+    }
+    .applications-container-item-1 h1{
+        font-size: 25px;
+        font-weight: bolder;
+    
+    
+    }
+    
+    .applications-container-item-2{
+        width: 100%;
+        height: 10rem;
+    
+        
+    }
+    
+    .applications-container-item-2 h2{
+        font-size: 16px;
+        padding: 5% 20px;
+        font-weight: bold;
+    }
+    .applications-container-item-3{
+        width: 100%;
+        height: 26rem;
+        
+        background: white;
+        border-left: 5px solid rgb(232, 63, 63);
+        margin-top: 1%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    
+    .stepapplication{
+        width: 40%;
+        height: 100%;
+         text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 3%;
+    }
+    
+    .stepapplication span{
+        width: 100%;
+        height: 15%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3%;
+        padding: 10px;
+        margin-top: 12%;
+        font-size: large;
+        font-weight: lighter;
+        color: rgb(232, 63, 63);
+    }
+    
+    
+    .stepapplication span img{
+        width: 20%;
+        height: 50%;
+    }
+    
+    .aplication{
+        width: 56%;
+        height: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 22%;
+    }
+    .aplication ul{
+        display: flex;
+        flex-direction: column;
+        gap: 25%;
+        /* justify-content: space-around; */
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+    }
+    .aplication ul li{
+        width: 98%;
+        height: 20%;
+        display: flex;
+        gap: 3%;
+        font-weight: bold;
+        color: grey;
+    }
+    
+    .payment-plans-container{
+        width: 100vw;
+        height: 38rem;
+        background: #fdf0d7;
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+    .payment-plans-container h1, h4{
+    display: none;
+    }
+    .payment-plans-container button{
+        background: #00a5ec;
+        height: 10%;
+        width: 35%;
+        border: none;
+        color: white;
+    }
+    .payment-plans-container-item {
+        width: 85%;
+        height: 40%;
+        border-radius: 10px;
+        background:#d6f4ff;
+        display: flex;
+        padding: 12px 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    .payment-plans-container-item img{
+        width: 40%;
+        height: 25%;
+        position: relative;
+        left: 4%;
+    }
+    
+    .payment-plans-container-item div{
+        width: 58%;
+        height: 100%;
+        padding: 10px 10px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 4%;
+    }
+    .mentors-card_elevation{
+        margin-top: 2%;
+        width: 100vw;
+       margin: auto;
+    
+        display: flex;
+        justify-content: center;
+        flex-direction:column;
+        align-items: center;
+        font-weight: bolder;
+        gap: 4rem;
+    }
+    .free-webinar-container{
+          width: 100vw;
+           margin-top: 10%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 10%;
+          
+          justify-content: center;
+          align-items: center;
+          background: #fdf0d7;
+    }
+    
+    .free-webinar-container-item-1{
+        width: 30%;
+        height: 24rem;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .free-webinar-container-item-1 img{
+        width: 100%;
+    }
+    .free-webinar-container-item-2{
+        width: 45%;
+        height: 24rem;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 8%;
+        justify-content: center;
+        align-items: left;
+    }
+    .free-webinar-container-item-2 h1{
+        font-size: 38px;
+    }
+    .free-webinar-container-item-2 p{
+        color: grey;
+    }
+    .free-webinar-container-item-2 div{
+        border: none;
+        height: 20%;
+        background:#f78077;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        
+    
+    }
+    
+    .free-webinar-container-item-2 button{
+        width: 75%;
+        height: 10%;
+        background: #00a5ec;
+        border: none;
+        color: white;
+    }
+    
+    .free-webinar-container-item-3{
+        margin-top: 2%;
+        width: 100%;
+        height:20rem;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8%;
+        background: #f78077;
+    }
+    
+    .free-webinar-container-item-3 div{
+        width: 30%;
+        height: 100%;
+        color: white;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        word-wrap: break-word;
+        gap: 2%;
+    
+    }
+    
+    
+    .elevation-slider-container{
+        width: 100vw;
+        margin-top: 3rem;
+        margin: auto;
+    }
+    
+    
+    .elevation-slider-item{
+    width: 50vw;
+    height: 24rem;
+    box-shadow: 0 16px 32px rgba(0,0,0,.0784313725490196);
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+    border-radius: 20px;
+    }
+    .elevation-slider-para-1{
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-weight: bolder;
+        font-size: 28px;
+        
+        color: #858585;
+    }
+    .elevation-slider-para-2{
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-weight: bolder;
+        font-size: 28px;
+        
+        color:black;
+    }
+    .master-slider-container-item-name{
+     display: flex;
+     flex-direction: row;
+     gap: 8%;
+     
+     align-items: center;
+     /* justify-content: center; */
+     width: 100%;
+     color: #000;
+     font-weight: bold;
+     font-size: 1.4rem;
+    }
+    .elevation-slider-des{
+        font-size:1.3;
+        color:grey;
+    
+        line-height: 20px;
+        padding-left: 2%;
+        margin:1px;
+    }
+    .master-slider-container-item-img{
+     width: 20%;
+     margin-top: 2%;
+     margin-left: 4%;
      display: flex;
      flex-direction: row;
      justify-content: center;

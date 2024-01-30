@@ -517,10 +517,10 @@
         padding-top: 2%;
     } */
     .mentors-chart-container p{
-       color: #858585;
+       color: #b3b0b0;
        
        width: 90%;
-       font-weight: bolder;
+       font-weight: 550;
     }
     
     .chart-items-mentor{
@@ -560,11 +560,12 @@
     }
     .name-mentor{
         width: 100%;
-        padding:52px 18px;
+        padding:20% 7%;
     
         font-weight: 600;
         font-size: 18px;
         margin-left: 15px;
+        
     }
     .post-mentor{
         font-size: 14px;
@@ -694,7 +695,7 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          gap: 2%;
+          gap: 1%;
           width: 80%;
           height: 30rem;
           margin-bottom: 2%;
@@ -712,13 +713,15 @@
     }
     
     .be-a-part-heading{
-        width: 68%;
-        height: 18%;
+        width: 88%;
+        height: 15%;
+        text-align: center;
         
     }
     .be-a-part-des{
         width: 80%;
         height: 18%;
+        margin-top: 3%;
         text-align: center;
         color: #858585;
         font-size: 14px;
